@@ -9,23 +9,39 @@ markdown_extensions:
   - codehilite                 # Resaltado de sintaxis en código
   - pymdownx.extra             # Extensiones avanzadas de Markdown
   - pymdownx.tabbed            # Pestañas dentro del contenido
-  - pymdownx.superfences       # Mejora bloques de código
+  - pymdownx.superfences:      # Mejora bloques de código
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.betterem          # Corrige problemas con negritas y cursivas
   - pymdownx.emoji             # Soporte para emojis
   - toc:
       permalink: true          # Enlaces permanentes en la tabla de contenido
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 # Tema y configuración
 theme:
   name: "mkdocs"
   language: "es"
   color_mode: "dark"
+  include_sidebar: false
   user_color_mode_toggle: true
   prev_next_buttons_location: "bottom"
+  features:
+    - content.code.copy
+    - content.code.select
 
 # Navegación
 nav:
    - Self-Hosting:
+      - Centro Multimedia: self-hosting/centro_multimedia/centro_multimedia.md
       - Duplicati: self-hosting/duplicati/duplicati.md
       - Homarr: self-hosting/homarr/homarr.md
       - Homebridge: self-hosting/homebridge/homebridge.md
@@ -33,6 +49,7 @@ nav:
       - MkDocs: self-hosting/mkdocs/mkdocs.md
       - Nextcloud: self-hosting/nextcloud/nextcloud.md
       - Nginx: self-hosting/nginx/nginx.md
+      - OpenProject: self-hosting/open_project/open_project.md
       - PiHole: self-hosting/pihole/pihole.md
       - Plex: self-hosting/plex/plex.md
       - Portainer: self-hosting/portainer/portainer.md
@@ -50,6 +67,8 @@ nav:
       - Comandos útiles: docker/comandos.md
       - Optimización y troubleshooting: docker/troubleshooting.md
    - Linux:
+      - Cositas:
+         - Proxmark3: linux/cositas/proxmark3/proxmark3.md
       - Script:
          - Bash:
             - "file_detail_info": linux/script/bash/file_detail_info/file_detail_info.md
@@ -70,6 +89,8 @@ nav:
          - Guía DDNS: linux/redes/ddns/ddns.md
          - Guía DHCP: linux/redes/dhcp/dhcp.md
          - Guía SSH: linux/redes/ssh/ssh.md
+         - Guía Ethernet en Linux: linux/redes/failover_wifi_ethernet/failover_wifi_ethernet.md
+
    - Raspberry Pi:
       - Introducción: raspberrypi/raspberrypi.md
       - Instalación básica: raspberrypi/instalacion-basica/instalacion-basica.md

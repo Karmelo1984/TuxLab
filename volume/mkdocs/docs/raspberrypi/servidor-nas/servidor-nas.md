@@ -13,10 +13,10 @@ version: 1.0.0
 **Descripción**:  
 OpenMediaVault (OMV) es un sistema operativo de red de código abierto basado en Debian, diseñado para gestionar y compartir archivos en una red doméstica o empresarial. Ofrece una interfaz web sencilla para administrar almacenamiento, compartir archivos y configurar servicios de red.
 
-**Características principales**:  
-- ✅ **Administración de Almacenamiento** - OMV permite gestionar discos, particiones y sistemas RAID desde una interfaz web intuitiva.  
-- ✅ **Compartición de Archivos** - Facilita el acceso a archivos a través de SMB/CIFS, NFS, FTP, y WebDAV.  
-- ✅ **Servicios de Red** - Incluye servicios como servidor DLNA/UPnP, servidor de impresión, y servidor BitTorrent.  
+**Características principales**  
+- **Administración de Almacenamiento**: OMV permite gestionar discos, particiones y sistemas RAID desde una interfaz web intuitiva.  
+- **Compartición de Archivos**: Facilita el acceso a archivos a través de SMB/CIFS, NFS, FTP, y WebDAV.  
+- **Servicios de Red**: Incluye servicios como servidor DLNA/UPnP, servidor de impresión, y servidor BitTorrent.  
 
 ---
 
@@ -25,9 +25,9 @@ OpenMediaVault (OMV) es un sistema operativo de red de código abierto basado en
 Antes de instalar OpenMediaVault en tu Raspberry Pi, asegúrate de cumplir con los **requisitos previos**:
 
 ### Requisitos previos
-- 📌 **Sistema operativo compatible**: Raspberry Pi OS Lite (64-bit) o similar.
-- 📌 **Dependencias**: Conexión a internet y hardware compatible.
-- 📌 **Acceso**: Acceso a la terminal de la Raspberry Pi con permisos de administrador.
+- **Sistema operativo compatible**: Raspberry Pi OS Lite (64-bit) o similar.
+- **Dependencias**: Conexión a internet y hardware compatible.
+- **Acceso**: Acceso a la terminal de la Raspberry Pi con permisos de administrador.
 
 ### Instalación en Raspberry Pi
 

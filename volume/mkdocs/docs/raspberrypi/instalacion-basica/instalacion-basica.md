@@ -14,18 +14,18 @@ version: 1.0.0
 Guía detallada sobre los primeros pasos para configurar una Raspberry Pi, incluyendo la instalación de Raspbian Lite 64bit, Docker, Docker Compose y mhddfs.
 
 **Características principales**:  
-- ✅ **Instalación de Raspbian Lite 64bit** - Configuración inicial y acceso remoto por SSH.  
-- ✅ **Configuración de red estática** - Asignación de IP manual usando `dhcpcd` o `systemd-networkd`.  
-- ✅ **Instalación de paquetes esenciales** - Herramientas básicas para administración del sistema.  
+- **Instalación de Raspbian Lite 64bit** - Configuración inicial y acceso remoto por SSH.  
+- **Configuración de red estática** - Asignación de IP manual usando `dhcpcd` o `systemd-networkd`.  
+- **Instalación de paquetes esenciales** - Herramientas básicas para administración del sistema.  
 
 ---
 
 ## Instalación
 
 ### Requisitos previos
-- 📌 **Hardware**: Raspberry Pi (cualquier modelo soportado) y una tarjeta microSD.  
-- 📌 **Software**: Raspberry Pi Imager, cliente SSH (PuTTY o terminal de Linux/macOS).  
-- 📌 **Conexión a Internet**: Cable Ethernet o Wi-Fi configurado previamente.  
+- **Hardware**: Raspberry Pi (cualquier modelo soportado) y una tarjeta microSD.  
+- **Software**: Raspberry Pi Imager, cliente SSH (PuTTY o terminal de Linux/macOS).  
+- **Conexión a Internet**: Cable Ethernet o Wi-Fi configurado previamente.  
 
 ### Instalación de Raspbian Lite 64bit
 
