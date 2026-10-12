@@ -8,7 +8,7 @@ version: 1.0.0
 
 # WatchYourLAN
 
-![WatchYourLAN](img/img-watchyourlan-header-01.png)
+![WatchYourLAN](img/img-watchyourlan-header-02.svg)
 
 **WatchYourLAN** es una herramienta ligera de escaneo de IPs en red que permite monitorear en tiempo real los dispositivos conectados a tu red local. Proporciona información detallada sobre el estado y la actividad de cada dispositivo, ayudándote a mantener un control sobre tu red.
 

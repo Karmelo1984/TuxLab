@@ -1,0 +1,11 @@
+[Unit]
+Description=Reintentar montaje SSHFS de Raspberry Pi
+
+[Timer]
+OnStartupSec=20s
+OnUnitInactiveSec=60s
+AccuracySec=15s
+Unit=raspberrypi-sshfs.service
+
+[Install]
+WantedBy=timers.target

@@ -8,6 +8,8 @@ version: 1.0.0
 
 # file_rename
 
+![File Rename](img/img-file_rename-header-01.svg)
+
 ## Descripción
 Este script permite renombrar archivos dentro de un directorio específico utilizando un archivo de texto que contiene los nuevos nombres. Cada línea del archivo de nombres debe seguir el formato `<cabecera> - <nombre>`, donde `cabecera` se usará para identificar el archivo a renombrar.
 

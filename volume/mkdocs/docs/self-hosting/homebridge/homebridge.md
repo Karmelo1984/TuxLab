@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Homebridge
 
-![Homebridge](img/img-homebridge-header-01.png)
+![Homebridge](img/img-homebridge-header-02.svg)
 
 **Homebridge** es un software de código abierto que permite **hacer compatibles dispositivos inteligentes no compatibles con Apple HomeKit**. Actúa como un puente entre dispositivos que no tienen soporte nativo para HomeKit y la app **Casa** de Apple.  
 

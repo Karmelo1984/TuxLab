@@ -8,6 +8,8 @@ version: 1.0.0
 
 # Reducir imagen de MicroSD
 
+![MicroSD](img/img-microsd-header-01.svg)
+
 **Descripción**:
 
 Este documento explica cómo reducir el tamaño de una imagen de MicroSD en una Raspberry Pi usando la herramienta **PiShrink**.

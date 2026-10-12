@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Guía de DHCP
 
-![Header](img/img-dhcp-header-01.png)  
+![DHCP](img/img-dhcp-header-02.svg)  
 
 **Descripción**:  
 DHCP (Dynamic Host Configuration Protocol) es un protocolo de red utilizado para asignar automáticamente direcciones IP y otros parámetros de configuración de red a dispositivos. Su uso simplifica la administración de redes al evitar configuraciones manuales y errores humanos.

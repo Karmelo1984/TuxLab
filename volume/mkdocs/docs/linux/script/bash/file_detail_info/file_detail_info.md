@@ -8,6 +8,8 @@ version: 1.0.0
 
 # file_detail_info
 
+![File Detail Info](img/img-file_detail_info-header-01.svg)
+
 ## Descripción
 Este script analiza los archivos de video en un directorio dado y proporciona información detallada sobre cada archivo. Extrae información como el tamaño del archivo, el códec de video, la resolución, el número de pistas de audio y subtítulos, y más. Utiliza la herramienta `ffprobe` para obtener los detalles de los streams de video, audio y subtítulos. El tamaño de los archivos se muestra en una unidad legible (B, KB, MB, GB).
 

@@ -8,6 +8,8 @@ version: 1.0.0
 
 # Flashear EEPROM
 
+![EEPROM](img/img-eeprom-header-01.svg)
+
 **Descripción**:
 
 Este documento describe el proceso de flasheo de la EEPROM en una Raspberry Pi para actualizar el firmware del sistema.

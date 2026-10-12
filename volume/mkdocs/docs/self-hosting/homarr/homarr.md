@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Homarr
 
-![Homarr](img/img-homarr-header-01.png)
+![Homarr](img/img-homarr-header-02.svg)
 
 **Homarr** es un **dashboard personalizable** y de código abierto diseñado para administrar y acceder fácilmente a aplicaciones autoalojadas. Se usa principalmente en servidores personales o domésticos para tener un **panel centralizado** donde gestionar aplicaciones como Jellyfin, Sonarr, Radarr, Home Assistant, etc.  
 

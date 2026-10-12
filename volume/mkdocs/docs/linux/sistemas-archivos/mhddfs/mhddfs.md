@@ -8,7 +8,7 @@ version: 1.0.0
 
 # MHDDFS
 
-![mhddfs](img/img-mhddfs-header-01.png)
+![MHDDFS](img/img-mhddfs-header-02.svg)
 
 [MHDDFS (Multi-HDD filesystem)](https://romanrm.net/mhddfs) es un sistema de archivos que permite combinar múltiples dispositivos de almacenamiento en uno solo. Es especialmente útil en situaciones donde tienes varios discos duros o particiones y deseas agruparlos en un único punto de montaje para simplificar la gestión del almacenamiento.
 

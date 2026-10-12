@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Failover Wi-Fi/Ethernet en Linux
 
-![Failover Wi-Fi/Ethernet](img/img-fwe-header-01.png)
+![Failover Wi-Fi / Ethernet](img/img-fwe-header-02.svg)
 
 **Descripción**:  
 Guía técnica completa para configurar dos equipos Linux con comunicación local a través de Ethernet (LAN 192.168.50.0/24) y Wi-Fi como ruta principal hacia Internet.  

@@ -60,6 +60,6 @@ tags: [documentación]
 ---
 
 ## 📚 **Épicas**  
-- [Épica 1](epic/epica1.md)  
-- [Épica 2](epic/epica2.md)  
-- [Épica 3](epic/epica3.md)  
+- Épica 1  
+- Épica 2  
+- Épica 3  

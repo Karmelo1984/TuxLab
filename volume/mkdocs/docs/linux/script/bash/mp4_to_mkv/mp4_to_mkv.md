@@ -8,6 +8,8 @@ version: 1.0.0
 
 # mp4_to_mkv
 
+![MP4 to MKV](img/img-mp4_to_mkv-header-01.svg)
+
 ## Descripción
 Este script convierte archivos de video en formato `.mp4` a `.mkv` utilizando la herramienta `mkvmerge`. Es útil para cambiar el contenedor de video sin perder calidad.
 

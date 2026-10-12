@@ -17,7 +17,7 @@ tags: [historia técnica]
 
 ## 🏗 **Historias de Usuario Relacionadas**  
 📌 **Soporta:**  
-- [HU - Recuperación de contraseña](../hu/hu_recuperacion.md)  
+- HU - Recuperación de contraseña  
 
 ---
 

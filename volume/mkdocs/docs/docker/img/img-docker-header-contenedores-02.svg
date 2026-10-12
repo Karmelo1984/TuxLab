@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#031b2e"/>
+      <stop offset="55%" stop-color="#073a5c"/>
+      <stop offset="100%" stop-color="#0db7ed"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="400" fill="url(#bg)"/>
+  <g opacity="0.06"><line x1="900" y1="0" x2="900" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="960" y1="0" x2="960" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1020" y1="0" x2="1020" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1080" y1="0" x2="1080" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1140" y1="0" x2="1140" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1200" y1="0" x2="1200" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1260" y1="0" x2="1260" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1320" y1="0" x2="1320" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1380" y1="0" x2="1380" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1440" y1="0" x2="1440" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1500" y1="0" x2="1500" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="1560" y1="0" x2="1560" y2="400" stroke="#ffffff" stroke-width="1"/><line x1="900" y1="0" x2="1600" y2="0" stroke="#ffffff" stroke-width="1"/><line x1="900" y1="60" x2="1600" y2="60" stroke="#ffffff" stroke-width="1"/><line x1="900" y1="120" x2="1600" y2="120" stroke="#ffffff" stroke-width="1"/><line x1="900" y1="180" x2="1600" y2="180" stroke="#ffffff" stroke-width="1"/><line x1="900" y1="240" x2="1600" y2="240" stroke="#ffffff" stroke-width="1"/><line x1="900" y1="300" x2="1600" y2="300" stroke="#ffffff" stroke-width="1"/><line x1="900" y1="360" x2="1600" y2="360" stroke="#ffffff" stroke-width="1"/></g>
+
+  <text x="1440" y="290.0" text-anchor="middle" font-size="340" opacity="0.10">📦</text>
+
+  <g filter="url(#soft)">
+    <rect x="80" y="130.0" width="140" height="140" rx="28" fill="#38d1f9" opacity="0.9"/>
+  </g>
+  <text x="150" y="228.0" text-anchor="middle" font-size="76">📦</text>
+
+  <text x="260" y="194.0" fill="#ffffff" font-size="46" font-weight="700">Contenedores Docker</text>
+  <text x="262" y="230.0" fill="#cffafe" font-size="17" letter-spacing="2.5">CICLO DE VIDA Y GESTIÓN</text>
+
+  <rect x="1400" y="28" width="170" height="34" rx="17" fill="#000000" opacity="0.25" stroke="#cffafe" stroke-width="1"/>
+  <text x="1485" y="51" text-anchor="middle" fill="#cffafe" font-size="13" font-weight="600" letter-spacing="2">DOCKER</text>
+
+  <rect x="0" y="394" width="1600" height="6" fill="#38d1f9"/>
+</svg>

@@ -8,7 +8,7 @@ version: 1.0.0
 
 # OpenMediaVault
 
-![Header](img/img-raspberrypi-omv-header-01.png)
+![Servidor NAS](img/img-raspberrypi-omv-header-02.svg)
 
 **Descripción**:  
 OpenMediaVault (OMV) es un sistema operativo de red de código abierto basado en Debian, diseñado para gestionar y compartir archivos en una red doméstica o empresarial. Ofrece una interfaz web sencilla para administrar almacenamiento, compartir archivos y configurar servicios de red.

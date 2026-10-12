@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Nextcloud
 
-![Nextcloud](img/img-nextcloud-header-01.jpg)
+![Nextcloud](img/img-nextcloud-header-02.svg)
 
 **Nextcloud** es una plataforma de almacenamiento en la nube de código abierto que te permite crear tu propio servicio similar a **Google Drive, Dropbox o OneDrive**, pero alojado en tu propio servidor.
 

@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Samba
 
-![Samba](img/img-samba-header-01.png)
+![Samba](img/img-samba-header-02.svg)
 
 **Samba** es un software de código abierto que permite compartir archivos e impresoras en una red entre sistemas **Linux, Windows y macOS**. Funciona implementando el protocolo **SMB (Server Message Block)**, que es el estándar en redes Windows.  
 

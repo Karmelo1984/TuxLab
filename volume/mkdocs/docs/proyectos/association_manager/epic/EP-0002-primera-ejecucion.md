@@ -32,10 +32,10 @@ Permitir al usuario activar el sistema, ingresar datos esenciales y dejarlo list
 ---
 
 ## 🏗 Historias de usuario relacionadas  
-- [HU-0005 - Verificar archivo de licencia](../hu/HU-0005.md)  
-- [HU-0006 - Activar la licencia del programa](../hu/HU-0006.md)  
-- [HU-0007 - Confirmar activación exitosa de la licencia](../hu/HU-0007.md)  
-- [HU-0008 - Iniciar la aplicación](../hu/HU-0008.md)
+- HU-0005 - Verificar archivo de licencia _(pendiente)_  
+- HU-0006 - Activar la licencia del programa _(pendiente)_  
+- HU-0007 - Confirmar activación exitosa de la licencia _(pendiente)_  
+- HU-0008 - Iniciar la aplicación _(pendiente)_
 
 ---
 
@@ -43,7 +43,7 @@ Permitir al usuario activar el sistema, ingresar datos esenciales y dejarlo list
 - Se verifica la presencia y validez de una licencia
 - El sistema se activa correctamente y guarda estado
 - Se muestra un primer mensaje de bienvenida o configuración inicial
-- El sistema queda listo para registrar los primeros datos (ver [EP-0003](./EP-0003.md))
+- El sistema queda listo para registrar los primeros datos (ver EP-0003 _(pendiente)_)
 
 ---
 

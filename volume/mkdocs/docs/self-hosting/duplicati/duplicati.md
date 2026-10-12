@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Duplicati
 
-![Duplicati](img/img-duplicati-header-01.jpg)
+![Duplicati](img/img-duplicati-header-02.svg)
 
 **Duplicati** es un software de **copia de seguridad (backup)** gratuito y de código abierto que permite hacer **respaldos cifrados y comprimidos** en diversas ubicaciones, incluyendo:  
 

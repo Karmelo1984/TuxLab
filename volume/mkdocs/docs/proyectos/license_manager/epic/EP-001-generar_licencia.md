@@ -22,8 +22,8 @@ El objetivo de esta épica es permitir la creación de nuevas licencias para emp
 📌 **Parte del proyecto:** [License Manager](../index.md)
 
 ## 🏗 Historias de usuario relacionadas  
-- [HU-001 - Crear Licencia](../hu/HU-001-example.md)  
-- [HU-002 - Asignar Funcionalidades a Licencia](../hu/HU-002-example.md)  
+- HU-001 - Crear Licencia _(pendiente)_  
+- HU-002 - Asignar Funcionalidades a Licencia _(pendiente)_  
 
 ## ✅ Criterios de finalización  
 - El sistema debe generar una licencia con todos los parámetros necesarios: empresa asociada, fecha de activación, expiración, máximo de socios, precio y funcionalidades.  

@@ -20,9 +20,9 @@ tags: [épica]
 📌 **Parte del proyecto:** [Nombre del proyecto](../index.md)
 
 ## 🏗 Historias de usuario relacionadas  
-- [Historia 1 - Nombre de la historia](../hu/historia1.md)  
-- [Historia 2 - Nombre de la historia](../hu/historia2.md)  
-- [Historia 3 - Nombre de la historia](../hu/historia3.md)  
+- Historia 1 - Nombre de la historia  
+- Historia 2 - Nombre de la historia  
+- Historia 3 - Nombre de la historia  
 
 ## ✅ Criterios de finalización  
 [Condiciones que indican que esta épica se considera completada, como implementación de todas las historias, validaciones de usuario, pruebas exitosas, etc.]

@@ -10,7 +10,7 @@ tags: [test funcional, test manual]
 # 🛠 Test Manual - [NOMBRE DE LA HISTORIA]
 
 ## 📜 **Historia de Usuario Relacionada**  
-📌 **HU:** [📜 Nombre de la historia](../hu/historia1.md)  
+📌 **HU:** 📜 Nombre de la historia  
 
 ## 🎯 **Objetivo del Test**  
 ✅ **Propósito:** Verificar que la funcionalidad descrita en la HU cumple con los criterios de aceptación y funciona correctamente en el entorno real.  

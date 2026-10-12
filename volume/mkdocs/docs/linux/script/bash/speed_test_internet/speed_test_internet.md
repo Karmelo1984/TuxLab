@@ -8,6 +8,8 @@ version: 1.0.0
 
 # speedtest_monitor
 
+![Speed Test Internet](img/img-speed_test_internet-header-01.svg)
+
 ## Descripción
 Este script realiza una prueba de velocidad de Internet utilizando `speedtest.net`.  
 Obtiene la velocidad de descarga, subida y latencia (ping) desde un servidor de Speedtest y muestra los resultados en la terminal.

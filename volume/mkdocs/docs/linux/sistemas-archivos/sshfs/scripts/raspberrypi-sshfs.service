@@ -1,0 +1,6 @@
+[Unit]
+Description=Montaje condicional de Raspberry Pi por SSHFS
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/montar-raspberrypi-sshfs.sh

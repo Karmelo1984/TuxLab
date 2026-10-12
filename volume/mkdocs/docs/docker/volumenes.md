@@ -6,7 +6,7 @@ date: 2025-03-19
 
 # Volúmenes en Docker
 
-![volumenes](img/img-docker-header-volume-01.png)
+![Volúmenes Docker](img/img-docker-header-volumenes-02.svg)
 
 Los volúmenes en Docker son un mecanismo para persistir datos generados por contenedores, permitiendo que estos datos sobrevivan a la terminación o eliminación de los contenedores que los crearon. También facilitan el intercambio de datos entre contenedores o entre el host y los contenedores de Docker.
 

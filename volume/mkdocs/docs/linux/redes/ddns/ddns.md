@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Guía de DDNS
 
-![Header](img/img-ddns-header-01.png)
+![DDNS](img/img-ddns-header-02.svg)
 
 **Descripción**:  
 El Dynamic Domain Name System (DDNS) es un servicio que permite actualizar automáticamente los registros DNS para dominios en tiempo real. Esto es útil cuando se tiene una dirección IP dinámica (como las proporcionadas por la mayoría de los proveedores de Internet) y se quiere acceder a una red o servicio utilizando un nombre de dominio constante.  

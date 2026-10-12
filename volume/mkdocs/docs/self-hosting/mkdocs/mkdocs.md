@@ -8,7 +8,7 @@ version: 1.0.0
 
 # MkDocs
 
-![MkDocs](./img/img-mkdocs-header-01.png)
+![MkDocs](./img/img-mkdocs-header-02.svg)
 
 **MkDocs** es una herramienta estática de documentación escrita en Python que permite generar sitios web bien estructurados y fáciles de navegar a partir de archivos en formato Markdown. Es ampliamente utilizada para documentar proyectos de software, ya que permite organizar la información de manera clara y profesional sin necesidad de conocimientos avanzados en diseño web.  
 

@@ -2,13 +2,13 @@
 title: "Raspberry Pi"
 authors:
   - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+date: 2026-10-12
+version: 1.2.0
 ---
 
 # Raspberry Pi
 
-![Header](img/img-raspberrypi-header-01.png)
+![Raspberry Pi](img/img-raspberrypi-header-02.svg)
 
 ## Introducción
 Raspberry Pi es una serie de computadoras de placa única (SBC) desarrolladas por la Raspberry Pi Foundation en el Reino Unido. Su bajo costo, consumo eficiente de energía y tamaño compacto las hacen ideales para una amplia gama de proyectos de electrónica y programación.
@@ -106,3 +106,34 @@ Al igual que el Equipo 1, se utiliza `pishrink` para generar una imagen optimiza
 - **Plex:** Servidor multimedia. [`Configuración`](../self-hosting/plex/plex.md).
 - **Portainer:** Gestión visual de contenedores Docker. [`Configuración`](../self-hosting/portainer/portainer.md).
 - **Samba:** Compartición de archivos en red. [`Configuración`](../self-hosting/samba/samba.md).
+---
+
+## Raspberry Pi 4: laboratorio de cámara NoIR (octubre de 2026)
+
+Se documentó otra instalación en **Raspberry Pi 4 Model B Rev. 1.4, 2 GiB, Debian 13 (Trixie) ARM64**, con cámara IMX708 Wide NoIR y administración desde Linux Mint. La documentación está dividida en guías reutilizables según su función:
+
+| Área | Procedimiento | Estado |
+|---|---|---|
+| Acceso remoto | [SSH y recuperación](utilidades/ssh/acceso-recuperacion.md) | Probado |
+| Red inalámbrica | [NetworkManager e IP fija](utilidades/red/wifi-ip-estatica.md) | Probado |
+| Paquetes y sistema | [Mantenimiento y diagnóstico](utilidades/sistema/mantenimiento-diagnostico.md) | Probado |
+| Contenedores | [Docker y Compose](utilidades/docker/docker.md) | Probado |
+| HDD USB | [Añadir un HDD](utilidades/pi-hdd/pi-hdd.md) y [alimentación/USB](utilidades/pi-hdd/diagnostico-usb.md) | Pruebas cortas, pendiente de supervisión prolongada |
+| Cámara | [IMX708, fotos y vídeo](camara/camara-video.md) | Probado |
+| Procesado de imagen | [HDR, nocturnas y reflejos](camara/calibracion-reflejos.md) | CLAHE probado; corrección automática pendiente |
+| Capturas periódicas | [Timelapse y MP4](camara/timelapse.md) | Prueba de 676 JPEG y MP4 |
+| Acceso a archivos desde el NUC | [SSHFS en Linux Mint](../linux/sistemas-archivos/sshfs/sshfs.md) | Montaje manual probado, automontaje pendiente |
+
+!!! important "Estado del disco externo"
+    El HDD Toshiba de 1 TB quedó **desmontado intencionadamente** al terminar la sesión. Comprobar `findmnt /mnt/capturas` y el UUID correcto antes de grabar capturas.
+
+
+## Criterio de mantenimiento de esta documentación
+
+Los procedimientos de **SSH, red, Docker, discos y SSHFS** pertenecen a guías reutilizables, no a un proyecto de cámara aislado. Las incidencias de una instalación concreta aparecen como recuadros de compatibilidad, tablas de errores o casos prácticos en el mismo lugar donde se resuelve el problema.
+
+- Antes de copiar una orden, comprobar distribución, versión, arquitectura y gestor de red.
+- Conservar los ejemplos históricos solo si se identifican como pertenecientes a otros sistemas.
+- Mantener un registro de **probado / pendiente / propuesto** para no convertir hipótesis en instrucciones obligatorias.
+- Contrastar operaciones destructivas (`mkfs`, `fsck`, borrado de volúmenes Docker) con una copia de seguridad y el dispositivo correcto.
+- Revisar la [tabla de incidencias y las pruebas verificadas](utilidades/sistema/mantenimiento-diagnostico.md) tras modificaciones relevantes.

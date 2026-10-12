@@ -8,7 +8,7 @@ version: 1.0.0
 
 # NGINX
 
-![NGINX](img/img-nginx-header-01.png)
+![NGINX](img/img-nginx-header-02.svg)
 
 **NGINX** es un servidor web de alto rendimiento, también utilizado como proxy inverso, equilibrador de carga y caché HTTP. Es conocido por su eficiencia, bajo consumo de recursos y su capacidad para manejar miles de conexiones simultáneas.
 

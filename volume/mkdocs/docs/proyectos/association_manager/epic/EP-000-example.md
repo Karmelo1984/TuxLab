@@ -31,9 +31,9 @@ tags: [épica]
 ---
 
 ## 🏗 Historias de usuario relacionadas  
-- [Historia 1 - Nombre de la historia](../hu/historia1.md)  
-- [Historia 2 - Nombre de la historia](../hu/historia2.md)  
-- [Historia 3 - Nombre de la historia](../hu/historia3.md)  
+- Historia 1 - Nombre de la historia  
+- Historia 2 - Nombre de la historia  
+- Historia 3 - Nombre de la historia  
 
 ---
 

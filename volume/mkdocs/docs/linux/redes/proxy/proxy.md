@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Proxy vs Proxy Inverso
 
-![Header](img/img-proxy-header.webp)
+![Proxy](img/img-proxy-header-02.svg)
 
 **Descripción**:  
 Los proxies son herramientas que actúan como intermediarios entre dispositivos en una red. Existen dos tipos principales: el **proxy directo** (o simplemente “proxy”) y el **proxy inverso**. Aunque su función principal es intermediar entre peticiones y respuestas, se usan en contextos muy distintos.

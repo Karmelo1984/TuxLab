@@ -8,7 +8,7 @@ version: 1.0.0
 
 # OpenProject
 
-![OpenProject](./img/img-open_project-header-01.jpg)
+![OpenProject](./img/img-open_project-header-02.svg)
 
 **OpenProject** es una plataforma de gestión de proyectos de código abierto que permite a los usuarios planificar, coordinar, realizar seguimiento y colaborar en proyectos complejos.
 

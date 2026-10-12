@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Stirling-PDF
 
-![Stirling-PDF](img/img-stirlingpdf-header-01.png)
+![Stirling-PDF](img/img-stirlingpdf-header-02.svg)
 
 Stirling-PDF es una herramienta web de código abierto que permite manipular archivos PDF de manera eficiente y segura. Funciona como una aplicación web alojada localmente, lo que garantiza que tus documentos no salgan de tu red y que tu información permanezca privada.
 

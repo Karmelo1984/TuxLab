@@ -14,7 +14,7 @@ tags: [historia de usuario]
 [Breve descripción de la historia de usuario, explicando el propósito y el valor que aporta.]
 
 ## 🏗 **Épica Relacionada**  
-📌 **Parte de la épica:** [🏗 Nombre de la épica](../epicas/epica1.md)
+📌 **Parte de la épica:** 🏗 Nombre de la épica
 
 ## 🎯 **Criterios de Aceptación**  
 ```gherkin

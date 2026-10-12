@@ -1,12 +1,20 @@
 ---
-site_name: Carmelo-Proyect
+site_name: TuxLab
 site_author: Carmelo Molero Castillo
 
 markdown_extensions:
+  # --- Extensiones nativas de MkDocs ---
+  - admonition                     # Bloques tipo "Nota", "Advertencia", etc.
+  - codehilite                     # Resaltado de código (Pygments)
+  - footnotes                      # Permite referencias al pie en markdown
+  - meta                           # Lee metadatos YAML de cada archivo .md
+  - toc:
+      permalink: true              # Añade un icono de enlace en cada título
+      title: "Contenido"           # Título del índice lateral
+
+  # --- Extensiones de PymdownX (avanzadas) ---
   - markdown.extensions.extra  # Soporte para tablas y listas anidadas
   - markdown.extensions.nl2br  # Convierte saltos de línea en <br>
-  - admonition                 # Bloques de advertencia y notas
-  - codehilite                 # Resaltado de sintaxis en código
   - pymdownx.extra             # Extensiones avanzadas de Markdown
   - pymdownx.tabbed            # Pestañas dentro del contenido
   - pymdownx.superfences:      # Mejora bloques de código
@@ -16,8 +24,6 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.betterem          # Corrige problemas con negritas y cursivas
   - pymdownx.emoji             # Soporte para emojis
-  - toc:
-      permalink: true          # Enlaces permanentes en la tabla de contenido
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -80,9 +86,11 @@ nav:
             - "speed_test_internet": linux/script/bash/speed_test_internet/speed_test_internet.md
          - Python:
             - "file_detail_info": linux/script/python/file_detail_info/file_detail_info.md
+            - "banner_generator": linux/script/python/banner_generator/banner_generator.md
       - Sistemas de archivos:
          - Guía Rsync: linux/sistemas-archivos/rsync/rsync.md
          - Guía MHDDFS: linux/sistemas-archivos/mhddfs/mhddfs.md
+         - Guía SSHFS: linux/sistemas-archivos/sshfs/sshfs.md
          - Restaurar particiones Clonezilla: linux/sistemas-archivos/particiones/restaurar_particiones_clonezilla/restaurar_particiones_clonezilla.md
       - Redes:
          - Guía Proxy: linux/redes/proxy/proxy.md
@@ -94,15 +102,27 @@ nav:
    - Raspberry Pi:
       - Introducción: raspberrypi/raspberrypi.md
       - Instalación básica: raspberrypi/instalacion-basica/instalacion-basica.md
+      - Acceso y conectividad:
+         - Recuperar acceso SSH: raspberrypi/utilidades/ssh/acceso-recuperacion.md
+         - Wi-Fi e IP estática: raspberrypi/utilidades/red/wifi-ip-estatica.md
       - Utilidades: 
          - Añadir HDD externo: raspberrypi/utilidades/pi-hdd/pi-hdd.md
+         - Diagnosticar HDD y USB: raspberrypi/utilidades/pi-hdd/diagnostico-usb.md
          - Flashear EEPROM: raspberrypi/utilidades/eeprom/eeprom.md
          - Instalar Docker: raspberrypi/utilidades/docker/docker.md
          - Reducir imagen MicroSD: raspberrypi/utilidades/microsd/microsd.md
+         - Mantenimiento y diagnóstico: raspberrypi/utilidades/sistema/mantenimiento-diagnostico.md
+      - Cámara:
+         - Cámara NoIR y vídeo H.264: raspberrypi/camara/camara-video.md
+         - Calibración y reflejos: raspberrypi/camara/calibracion-reflejos.md
+         - Timelapse y MP4: raspberrypi/camara/timelapse.md
       - Servidor NAS: raspberrypi/servidor-nas/servidor-nas.md
    - Proyectos de Programación:
       - licence_manager: proyectos/license_manager/index.md
       - association_manager: proyectos/association_manager/index.md
       - hdd_manager: proyectos/hdd_manager/index.md
    - Desarrollo:
-      - Git: dev/git/git.md
+      - Git:
+         - Fundamentos y comandos: dev/git/git.md
+         - Git para QA: dev/git/qa.md
+         - Publicación de versiones: dev/git/releases.md

@@ -6,7 +6,7 @@ date: 2025-03-19
 
 # Gestión de imágenes en Docker
 
-![imagenes](img/img-docker-header-container-01.png)
+![Imágenes Docker](img/img-docker-header-imagenes-02.svg)
 
 Las imágenes en Docker son plantillas inmutables utilizadas para crear contenedores. Se pueden construir, etiquetar y compartir con facilidad. Las imágenes son esenciales en el proceso de creación y distribución de aplicaciones basadas en contenedores, permitiendo que el entorno de ejecución se mantenga consistente en diferentes sistemas.
 

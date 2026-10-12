@@ -6,7 +6,7 @@ date: 2025-03-19
 
 # Comandos esenciales de Docker
 
-![comandos-esenciales](img/img-docker-header-volume-01.png)
+![Comandos Docker](img/img-docker-header-comandos-02.svg)
 
 Estos son algunos de los comandos más utilizados en Docker:
 

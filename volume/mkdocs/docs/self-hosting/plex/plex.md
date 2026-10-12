@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Plex
 
-![Plex](img/img-plex-header-01.png)
+![Plex](img/img-plex-header-02.svg)
 
 **Plex** es un **servidor multimedia** que te permite organizar, transmitir y reproducir tu contenido (películas, series, música, fotos, etc.) en diferentes dispositivos, tanto dentro de tu red local como de forma remota.  
 

@@ -22,8 +22,8 @@ El objetivo de esta épica es implementar un sistema que permita verificar la va
 📌 **Parte del proyecto:** [License Manager](../index.md)
 
 ## 🏗 Historias de usuario relacionadas  
-- [HU-003 - Comprobar Licencia Válida](../hu/HU-003-example.md)  
-- [HU-004 - Verificar Fecha de Expiración de Licencia](../hu/HU-004-example.md)  
+- HU-003 - Comprobar Licencia Válida _(pendiente)_  
+- HU-004 - Verificar Fecha de Expiración de Licencia _(pendiente)_  
 
 ## ✅ Criterios de finalización  
 - El sistema debe ser capaz de verificar la validez de una licencia encriptada sin necesidad de desencriptarla manualmente.  

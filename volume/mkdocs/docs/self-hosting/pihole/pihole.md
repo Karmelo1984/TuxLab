@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Pi-Hole
 
-![Pi-Hole](img/img--pihole-header-01.png)
+![Pi-hole](img/img-pihole-header-02.svg)
 **Pi-hole** es un bloqueador de anuncios y rastreadores a nivel de red. Se instala en un servidor o una Raspberry Pi y actúa como un **servidor DNS** que filtra solicitudes de dominios de publicidad y rastreo, bloqueándolos antes de que lleguen a los dispositivos de la red. 
 
 ### 🌟 **¿Por qué usar Pi-hole?**  

@@ -8,6 +8,8 @@ version: 1.0.0
 
 # file_detail_info
 
+![File Detail Info](img/img-file_detail_info-header-01.svg)
+
 ## Descripción
 
 Este script permite analizar de forma detallada archivos de vídeo dentro de un directorio específico, proporcionando información como tamaño, duración, resolución, códecs, pistas de audio y subtítulos. También genera estadísticas globales sobre el total de archivos procesados.

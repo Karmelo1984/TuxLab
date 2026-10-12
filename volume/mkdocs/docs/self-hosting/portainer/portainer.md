@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Portainer
 
-![Portainer](img/img-portainer-header-01.png)
+![Portainer](img/img-portainer-header-02.svg)
 
 **Portainer** es una interfaz web que facilita la administración de **Docker, Docker Swarm y Kubernetes** sin necesidad de usar comandos en la terminal. Es ideal para gestionar contenedores, imágenes, volúmenes y redes de forma visual e intuitiva.  
 

@@ -8,7 +8,7 @@ version: 1.0.0
 
 # SpeedTest Tracker
 
-![SpeedTest Tracker](img/img-speedtesttracker-header-01.png)
+![SpeedTest Tracker](img/img-speedtesttracker-header-02.svg)
 
 
 **Speedtest Tracker** es una aplicación autoalojada para el seguimiento del rendimiento de internet que ejecuta pruebas de velocidad utilizando el servicio de Speedtest de Ookla.

@@ -1,14 +1,14 @@
 ---
 title: "Media Stack + Monitoring + Portainer"
 authors:
-  - Tu Nombre
-date: 2025-08-06
+  - Carmelo Molero Castillo
+date: 2026-10-12
 version: 1.0.0
 ---
 
 # Media Stack + Monitoring + Portainer
 
-![Media Stack](./img/media-stack-header.png)
+![Media Stack](./img/media-stack-header.svg)
 
 **Media Stack + Monitoring + Portainer** es una plataforma **autohospedada** que permite a los usuarios descargar, organizar, visualizar y administrar contenido multimedia, todo desde una misma infraestructura Docker.
 

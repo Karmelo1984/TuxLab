@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Guía de Rsync
 
-![Rsync](img/img-rsync-header-01.webp)
+![Rsync](img/img-rsync-header-02.svg)
 
 **Descripción**:  
 `rsync` es una herramienta para sincronizar y transferir archivos de manera eficiente entre directorios locales o remotos. Se utiliza en copias de seguridad, sincronización de datos y migración de archivos, ofreciendo opciones avanzadas como compresión, eliminación de archivos no sincronizados y ejecución en modo prueba.

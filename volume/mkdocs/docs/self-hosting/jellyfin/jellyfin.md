@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Jellyfin
 
-![Jellyfin](./img/img-jellyfin-header-01.png)
+![Jellyfin](./img/img-jellyfin-header-02.svg)
 
 **Jellyfin** es una plataforma de código abierto para la gestión y transmisión de medios digitales, como películas, series, música y programas de televisión, que permite a los usuarios organizar, acceder y compartir su contenido multimedia desde cualquier dispositivo. 
 

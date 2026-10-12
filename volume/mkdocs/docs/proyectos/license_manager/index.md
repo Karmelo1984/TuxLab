@@ -9,6 +9,8 @@ tags: [documentación]
 
 # 🚀 License Manager - Generador y Gestor de Licencias
 
+![License Manager](img/img-license_manager-header-01.svg)
+
 ---
 
 ## 📖 **Descripción General**  

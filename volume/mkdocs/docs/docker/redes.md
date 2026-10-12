@@ -6,7 +6,7 @@ date: 2025-03-19
 
 # Redes en Docker
 
-![redes](img/img-docker-header-network-01.png)
+![Redes Docker](img/img-docker-header-redes-02.svg)
 
 Las redes en Docker permiten la comunicación entre contenedores y entre los contenedores y el host. Proporcionan un entorno flexible para conectar servicios y gestionar su interacción de manera segura y eficiente.
 

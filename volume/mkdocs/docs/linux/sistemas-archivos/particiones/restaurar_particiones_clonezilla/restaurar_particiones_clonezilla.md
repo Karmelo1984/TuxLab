@@ -8,6 +8,8 @@ version: 1.0.0
 
 # Restauración de Particiones desde Imágenes de Clonezilla
 
+![Restaurar con Clonezilla](img/img-restaurar-clonezilla-header-01.svg)
+
 **Descripción**:  
 Detalle del proceso de restauración de particiones desde imágenes creadas con Clonezilla. Sirve para recuperar la estructura original de un disco con particiones del sistema y datos, facilitando la restauración de sistemas operativos o entornos de trabajo.
 

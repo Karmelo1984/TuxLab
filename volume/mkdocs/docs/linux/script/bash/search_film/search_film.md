@@ -8,6 +8,8 @@ version: 1.0.0
 
 # search_film
 
+![Search Film](img/img-search_film-header-01.svg)
+
 ## Descripción
 Este script busca archivos en un directorio específico y verifica su existencia en un archivo de registro.  
 Elimina la extensión de los archivos y cualquier contenido entre corchetes, dejando solo el nombre y el año.  

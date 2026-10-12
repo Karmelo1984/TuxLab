@@ -1,0 +1,748 @@
+# Manifiesto de banners de cabecera de TuxLab.
+# Cada entrada genera un SVG de 1600x400 (o el tamaño indicado) con banner_generator.py.
+#
+# Campos:
+#   md            ruta del .md asociado, relativa a docs/ (solo informativa)
+#   out           ruta de salida del .svg, relativa a docs/
+#   title         texto grande del banner
+#   subtitle      texto pequeño en mayúsculas bajo el título
+#   icon          un emoji
+#   tag           etiqueta de categoría (arriba a la derecha)
+#   bg_from/bg_mid/bg_to   degradado de fondo (hex)
+#   accent/accent_light    color de insignia/acentos (hex)
+#   motif         dots | grid | circuit | scan | raspi | none
+#   width/height  opcionales, por defecto 1600x400
+
+banners:
+- md: self-hosting/duplicati/duplicati.md
+  out: self-hosting/duplicati/img/img-duplicati-header-02.svg
+  title: Duplicati
+  subtitle: COPIAS DE SEGURIDAD CIFRADAS Y VERSIONADAS
+  icon: 💾
+  tag: Self-Hosting
+  bg_from: '#0f172a'
+  bg_mid: '#163a4a'
+  bg_to: '#0c5c5c'
+  accent: '#14b8a6'
+  accent_light: '#5eead4'
+  motif: dots
+- md: self-hosting/homarr/homarr.md
+  out: self-hosting/homarr/img/img-homarr-header-02.svg
+  title: Homarr
+  subtitle: DASHBOARD UNIFICADO PARA TUS SERVICIOS
+  icon: 🧩
+  tag: Self-Hosting
+  bg_from: '#0f172a'
+  bg_mid: '#164452'
+  bg_to: '#0e7490'
+  accent: '#22d3ee'
+  accent_light: '#a5f3fc'
+  motif: dots
+- md: self-hosting/homebridge/homebridge.md
+  out: self-hosting/homebridge/img/img-homebridge-header-02.svg
+  title: Homebridge
+  subtitle: PUENTE HOMEKIT PARA DISPOSITIVOS NO COMPATIBLES
+  icon: 🏠
+  tag: Self-Hosting
+  bg_from: '#1a1033'
+  bg_mid: '#2d1b4e'
+  bg_to: '#4c2a85'
+  accent: '#a78bfa'
+  accent_light: '#ddd6fe'
+  motif: dots
+- md: self-hosting/jellyfin/jellyfin.md
+  out: self-hosting/jellyfin/img/img-jellyfin-header-02.svg
+  title: Jellyfin
+  subtitle: STREAMING MULTIMEDIA 100% LIBRE
+  icon: 🎬
+  tag: Self-Hosting
+  bg_from: '#1a0f2e'
+  bg_mid: '#3a1d5c'
+  bg_to: '#5b2a86'
+  accent: '#aa5cc3'
+  accent_light: '#e9d5ff'
+  motif: dots
+- md: self-hosting/mkdocs/mkdocs.md
+  out: self-hosting/mkdocs/img/img-mkdocs-header-02.svg
+  title: MkDocs
+  subtitle: GENERADOR DEL SITIO DE DOCUMENTACIÓN
+  icon: 📘
+  tag: Self-Hosting
+  bg_from: '#0f172a'
+  bg_mid: '#1e2a5e'
+  bg_to: '#3449a6'
+  accent: '#6b86ff'
+  accent_light: '#c7d2fe'
+  motif: dots
+- md: self-hosting/nextcloud/nextcloud.md
+  out: self-hosting/nextcloud/img/img-nextcloud-header-02.svg
+  title: Nextcloud
+  subtitle: ALMACENAMIENTO EN LA NUBE PRIVADO
+  icon: ☁️
+  tag: Self-Hosting
+  bg_from: '#0b1f33'
+  bg_mid: '#0e3a5c'
+  bg_to: '#0082c9'
+  accent: '#38bdf8'
+  accent_light: '#bae6fd'
+  motif: dots
+- md: self-hosting/nginx/nginx.md
+  out: self-hosting/nginx/img/img-nginx-header-02.svg
+  title: NGINX
+  subtitle: PROXY INVERSO Y SERVIDOR WEB
+  icon: 🌐
+  tag: Self-Hosting
+  bg_from: '#0b1f14'
+  bg_mid: '#0f3d22'
+  bg_to: '#1a7a37'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: dots
+- md: self-hosting/open_project/open_project.md
+  out: self-hosting/open_project/img/img-open_project-header-02.svg
+  title: OpenProject
+  subtitle: GESTIÓN DE PROYECTOS Y TAREAS
+  icon: 📋
+  tag: Self-Hosting
+  bg_from: '#0b1930'
+  bg_mid: '#123a63'
+  bg_to: '#0770b8'
+  accent: '#60a5fa'
+  accent_light: '#dbeafe'
+  motif: dots
+- md: self-hosting/pihole/pihole.md
+  out: self-hosting/pihole/img/img-pihole-header-02.svg
+  title: Pi-hole
+  subtitle: BLOQUEO DE ANUNCIOS A NIVEL DE RED
+  icon: 🛡️
+  tag: Self-Hosting
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d0f10'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: dots
+- md: self-hosting/plex/plex.md
+  out: self-hosting/plex/img/img-plex-header-02.svg
+  title: Plex
+  subtitle: SERVIDOR MULTIMEDIA Y STREAMING
+  icon: 🎞️
+  tag: Self-Hosting
+  bg_from: '#141414'
+  bg_mid: '#2a2410'
+  bg_to: '#8a6d0d'
+  accent: '#e5a00d'
+  accent_light: '#fde68a'
+  motif: dots
+- md: self-hosting/portainer/portainer.md
+  out: self-hosting/portainer/img/img-portainer-header-02.svg
+  title: Portainer
+  subtitle: GESTIÓN VISUAL DE CONTENEDORES DOCKER
+  icon: ⚙️
+  tag: Self-Hosting
+  bg_from: '#0b1930'
+  bg_mid: '#123a63'
+  bg_to: '#0e8fc9'
+  accent: '#38d1f9'
+  accent_light: '#cffafe'
+  motif: dots
+- md: self-hosting/samba/samba.md
+  out: self-hosting/samba/img/img-samba-header-02.svg
+  title: Samba
+  subtitle: COMPARTICIÓN DE ARCHIVOS EN RED LOCAL
+  icon: 📁
+  tag: Self-Hosting
+  bg_from: '#0b1930'
+  bg_mid: '#123a63'
+  bg_to: '#1d5ea5'
+  accent: '#60a5fa'
+  accent_light: '#dbeafe'
+  motif: dots
+- md: self-hosting/speedtest/speedtest.md
+  out: self-hosting/speedtest/img/img-speedtesttracker-header-02.svg
+  title: SpeedTest Tracker
+  subtitle: MONITORIZACIÓN PERIÓDICA DE VELOCIDAD DE RED
+  icon: 📶
+  tag: Self-Hosting
+  bg_from: '#0c1320'
+  bg_mid: '#17233d'
+  bg_to: '#1f3b57'
+  accent: '#60a5fa'
+  accent_light: '#dbeafe'
+  motif: dots
+- md: self-hosting/stirling_pdf/stirlingpdf.md
+  out: self-hosting/stirling_pdf/img/img-stirlingpdf-header-02.svg
+  title: Stirling-PDF
+  subtitle: HERRAMIENTAS LOCALES PARA MANIPULAR PDF
+  icon: 📄
+  tag: Self-Hosting
+  bg_from: '#0a1a1a'
+  bg_mid: '#0f3030'
+  bg_to: '#0e7a7a'
+  accent: '#2dd4bf'
+  accent_light: '#99f6e4'
+  motif: dots
+- md: self-hosting/watchtower/watchtower.md
+  out: self-hosting/watchtower/img/img-watchtower-header-02.svg
+  title: Watchtower
+  subtitle: ACTUALIZACIÓN AUTOMÁTICA DE CONTENEDORES
+  icon: 🗼
+  tag: Self-Hosting
+  bg_from: '#0b1930'
+  bg_mid: '#122a4a'
+  bg_to: '#1f3b57'
+  accent: '#7aa2d1'
+  accent_light: '#cfe0f5'
+  motif: dots
+- md: self-hosting/watchyourlan/watchyourlan.md
+  out: self-hosting/watchyourlan/img/img-watchyourlan-header-02.svg
+  title: WatchYourLAN
+  subtitle: INVENTARIO Y MONITORIZACIÓN DE DISPOSITIVOS LAN
+  icon: 📡
+  tag: Self-Hosting
+  bg_from: '#0a1f14'
+  bg_mid: '#123d24'
+  bg_to: '#1d6b3f'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: dots
+- md: docker/introduccion.md
+  out: docker/img/img-docker-header-02.svg
+  title: Docker
+  subtitle: INTRODUCCIÓN A CONTENEDORES
+  icon: 🐳
+  tag: Docker
+  bg_from: '#031b2e'
+  bg_mid: '#073a5c'
+  bg_to: '#0db7ed'
+  accent: '#38d1f9'
+  accent_light: '#cffafe'
+  motif: grid
+- md: docker/imagenes.md
+  out: docker/img/img-docker-header-imagenes-02.svg
+  title: Imágenes Docker
+  subtitle: CONSTRUCCIÓN Y GESTIÓN DE IMÁGENES
+  icon: 📦
+  tag: Docker
+  bg_from: '#031b2e'
+  bg_mid: '#073a5c'
+  bg_to: '#0db7ed'
+  accent: '#38d1f9'
+  accent_light: '#cffafe'
+  motif: grid
+- md: docker/contenedores.md
+  out: docker/img/img-docker-header-contenedores-02.svg
+  title: Contenedores Docker
+  subtitle: CICLO DE VIDA Y GESTIÓN
+  icon: 📦
+  tag: Docker
+  bg_from: '#031b2e'
+  bg_mid: '#073a5c'
+  bg_to: '#0db7ed'
+  accent: '#38d1f9'
+  accent_light: '#cffafe'
+  motif: grid
+- md: docker/volumenes.md
+  out: docker/img/img-docker-header-volumenes-02.svg
+  title: Volúmenes Docker
+  subtitle: PERSISTENCIA DE DATOS
+  icon: 🗄️
+  tag: Docker
+  bg_from: '#031b2e'
+  bg_mid: '#073a5c'
+  bg_to: '#0db7ed'
+  accent: '#38d1f9'
+  accent_light: '#cffafe'
+  motif: grid
+- md: docker/redes.md
+  out: docker/img/img-docker-header-redes-02.svg
+  title: Redes Docker
+  subtitle: CONECTIVIDAD ENTRE CONTENEDORES
+  icon: 🌐
+  tag: Docker
+  bg_from: '#031b2e'
+  bg_mid: '#073a5c'
+  bg_to: '#0db7ed'
+  accent: '#38d1f9'
+  accent_light: '#cffafe'
+  motif: grid
+- md: docker/comandos.md
+  out: docker/img/img-docker-header-comandos-02.svg
+  title: Comandos Docker
+  subtitle: REFERENCIA RÁPIDA DE CLI
+  icon: ⌨️
+  tag: Docker
+  bg_from: '#031b2e'
+  bg_mid: '#073a5c'
+  bg_to: '#0db7ed'
+  accent: '#38d1f9'
+  accent_light: '#cffafe'
+  motif: grid
+- md: docker/troubleshooting.md
+  out: docker/img/img-docker-header-troubleshooting-02.svg
+  title: Docker Troubleshooting
+  subtitle: OPTIMIZACIÓN Y RESOLUCIÓN DE PROBLEMAS
+  icon: 🛠️
+  tag: Docker
+  bg_from: '#031b2e'
+  bg_mid: '#073a5c'
+  bg_to: '#0db7ed'
+  accent: '#38d1f9'
+  accent_light: '#cffafe'
+  motif: grid
+- md: linux/redes/ddns/ddns.md
+  out: linux/redes/ddns/img/img-ddns-header-02.svg
+  title: DDNS
+  subtitle: DNS DINÁMICO PARA ACCESO REMOTO
+  icon: 🌐
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/redes/dhcp/dhcp.md
+  out: linux/redes/dhcp/img/img-dhcp-header-02.svg
+  title: DHCP
+  subtitle: ASIGNACIÓN DINÁMICA DE DIRECCIONES IP
+  icon: 🔀
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/redes/failover_wifi_ethernet/failover_wifi_ethernet.md
+  out: linux/redes/failover_wifi_ethernet/img/img-fwe-header-02.svg
+  title: Failover Wi-Fi / Ethernet
+  subtitle: CONMUTACIÓN AUTOMÁTICA DE RED
+  icon: 🔁
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/redes/proxy/proxy.md
+  out: linux/redes/proxy/img/img-proxy-header-02.svg
+  title: Proxy
+  subtitle: INTERMEDIARIO DE RED Y CONTROL DE TRÁFICO
+  icon: 🛰️
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/redes/ssh/ssh.md
+  out: linux/redes/ssh/img/img-ssh-header-02.svg
+  title: SSH
+  subtitle: ACCESO REMOTO SEGURO
+  icon: 🔐
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/sistemas-archivos/mhddfs/mhddfs.md
+  out: linux/sistemas-archivos/mhddfs/img/img-mhddfs-header-02.svg
+  title: MHDDFS
+  subtitle: UNIFICACIÓN DE DISCOS EN UN SOLO PUNTO DE MONTAJE
+  icon: 🗃️
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/sistemas-archivos/rsync/rsync.md
+  out: linux/sistemas-archivos/rsync/img/img-rsync-header-02.svg
+  title: Rsync
+  subtitle: SINCRONIZACIÓN EFICIENTE DE ARCHIVOS
+  icon: 🔄
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/cositas/proxmark3/proxmark3.md
+  out: linux/cositas/proxmark3/img/img-proxmark3-header-02.svg
+  title: Proxmark3
+  subtitle: 'RFID / NFC: LECTURA, ANÁLISIS Y CLONADO'
+  icon: 📡
+  tag: Linux
+  bg_from: '#120a1f'
+  bg_mid: '#241040'
+  bg_to: '#3d1a6b'
+  accent: '#a78bfa'
+  accent_light: '#ddd6fe'
+  motif: scan
+- md: raspberrypi/raspberrypi.md
+  out: raspberrypi/img/img-raspberrypi-header-02.svg
+  title: Raspberry Pi
+  subtitle: GUÍAS Y CONFIGURACIÓN GENERAL
+  icon: 🍓
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/instalacion-basica/instalacion-basica.md
+  out: raspberrypi/instalacion-basica/img/img-raspberrypi-instbas-header-02.svg
+  title: Instalación básica
+  subtitle: PRIMEROS PASOS CON RASPBERRY PI OS
+  icon: 💽
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/servidor-nas/servidor-nas.md
+  out: raspberrypi/servidor-nas/img/img-raspberrypi-omv-header-02.svg
+  title: Servidor NAS
+  subtitle: RASPBERRY PI COMO NAS CON OPENMEDIAVAULT
+  icon: 🗄️
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/utilidades/docker/docker.md
+  out: raspberrypi/utilidades/docker/img/img-raspberrypi-docker-header-02.svg
+  title: Docker en Raspberry Pi
+  subtitle: INSTALACIÓN Y USO EN ARM
+  icon: 🐳
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: index.md
+  out: img/img-home-header-02.svg
+  title: TuxLab
+  subtitle: SELF-HOSTING · DOCKER · LINUX · RASPBERRY PI
+  icon: 🐧
+  tag: Inicio
+  bg_from: '#0f172a'
+  bg_mid: '#3b2f72'
+  bg_to: '#7a1115'
+  accent: '#a78bfa'
+  accent_light: '#fecaca'
+  motif: dots
+- md: linux/script/bash/file_detail_info/file_detail_info.md
+  out: linux/script/bash/file_detail_info/img/img-file_detail_info-header-01.svg
+  title: File Detail Info
+  subtitle: SCRIPT BASH · INFORMACIÓN DETALLADA DE ARCHIVOS
+  icon: 🗂️
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/script/bash/file_rename/file_rename.md
+  out: linux/script/bash/file_rename/img/img-file_rename-header-01.svg
+  title: File Rename
+  subtitle: SCRIPT BASH · RENOMBRADO MASIVO DE ARCHIVOS
+  icon: 🏷️
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/script/bash/mp4_to_mkv/mp4_to_mkv.md
+  out: linux/script/bash/mp4_to_mkv/img/img-mp4_to_mkv-header-01.svg
+  title: MP4 to MKV
+  subtitle: SCRIPT BASH · CONVERSIÓN DE VÍDEO
+  icon: 🎞️
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/script/bash/resize_convert_images/resize_convert_images.md
+  out: linux/script/bash/resize_convert_images/img/img-resize_convert_images-header-01.svg
+  title: Resize & Convert Images
+  subtitle: SCRIPT BASH · REDIMENSIONADO Y CONVERSIÓN DE IMÁGENES
+  icon: 🖼️
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/script/bash/search_film/search_film.md
+  out: linux/script/bash/search_film/img/img-search_film-header-01.svg
+  title: Search Film
+  subtitle: SCRIPT BASH · BÚSQUEDA DE PELÍCULAS
+  icon: 🔎
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/script/bash/smart_monitor/smart_monitor.md
+  out: linux/script/bash/smart_monitor/img/img-smart_monitor-header-01.svg
+  title: Smart Monitor
+  subtitle: SCRIPT BASH · MONITORIZACIÓN S.M.A.R.T. DE DISCOS
+  icon: 🩺
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/script/bash/speed_test_internet/speed_test_internet.md
+  out: linux/script/bash/speed_test_internet/img/img-speed_test_internet-header-01.svg
+  title: Speed Test Internet
+  subtitle: SCRIPT BASH · MEDICIÓN DE VELOCIDAD DE RED
+  icon: 📶
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/script/python/file_detail_info/file_detail_info.md
+  out: linux/script/python/file_detail_info/img/img-file_detail_info-header-01.svg
+  title: File Detail Info
+  subtitle: SCRIPT PYTHON · INFORMACIÓN DETALLADA DE ARCHIVOS
+  icon: 🐍
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/sistemas-archivos/sshfs/sshfs.md
+  out: linux/sistemas-archivos/sshfs/img/img-sshfs-header-01.svg
+  title: SSHFS
+  subtitle: MONTAR CARPETAS REMOTAS POR SSH
+  icon: 📂
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: linux/sistemas-archivos/particiones/restaurar_particiones_clonezilla/restaurar_particiones_clonezilla.md
+  out: linux/sistemas-archivos/particiones/restaurar_particiones_clonezilla/img/img-restaurar-clonezilla-header-01.svg
+  title: Restaurar con Clonezilla
+  subtitle: RECUPERACIÓN DE PARTICIONES DESDE IMAGEN
+  icon: 🧱
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan
+- md: raspberrypi/utilidades/ssh/acceso-recuperacion.md
+  out: raspberrypi/utilidades/ssh/img/img-acceso-recuperacion-header-01.svg
+  title: Acceso y Recuperación SSH
+  subtitle: PRIMER ACCESO Y RECUPERACIÓN EN RASPBERRY PI
+  icon: 🔑
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/utilidades/red/wifi-ip-estatica.md
+  out: raspberrypi/utilidades/red/img/img-wifi-ip-estatica-header-01.svg
+  title: Wi-Fi e IP Estática
+  subtitle: RED Y CONECTIVIDAD EN RASPBERRY PI
+  icon: 📶
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/utilidades/pi-hdd/pi-hdd.md
+  out: raspberrypi/utilidades/pi-hdd/img/img-pi-hdd-header-01.svg
+  title: Disco Duro Externo
+  subtitle: AÑADIR Y MONTAR UN HDD EN RASPBERRY PI
+  icon: 💽
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/utilidades/pi-hdd/diagnostico-usb.md
+  out: raspberrypi/utilidades/pi-hdd/img/img-diagnostico-usb-header-01.svg
+  title: Diagnóstico HDD y USB
+  subtitle: ALIMENTACIÓN, MONTAJE Y SEGURIDAD
+  icon: 🔌
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/utilidades/eeprom/eeprom.md
+  out: raspberrypi/utilidades/eeprom/img/img-eeprom-header-01.svg
+  title: EEPROM
+  subtitle: FLASHEAR EEPROM EN RASPBERRY PI
+  icon: 🧰
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/utilidades/microsd/microsd.md
+  out: raspberrypi/utilidades/microsd/img/img-microsd-header-01.svg
+  title: MicroSD
+  subtitle: REDUCIR IMAGEN DE TARJETA MICROSD
+  icon: 💾
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/utilidades/sistema/mantenimiento-diagnostico.md
+  out: raspberrypi/utilidades/sistema/img/img-mantenimiento-diagnostico-header-01.svg
+  title: Mantenimiento y Diagnóstico
+  subtitle: ACTUALIZACIÓN Y LOCALIZACIÓN DE FALLOS
+  icon: 🧪
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: raspberrypi/camara/timelapse.md
+  out: raspberrypi/camara/img/img-timelapse-header-01.svg
+  title: Timelapse
+  subtitle: CAPTURA PERIÓDICA Y GENERACIÓN DE MP4
+  icon: 📸
+  tag: Raspberry Pi
+  bg_from: '#1a0a0a'
+  bg_mid: '#3d1015'
+  bg_to: '#7a1115'
+  accent: '#f87171'
+  accent_light: '#fecaca'
+  motif: raspi
+- md: proyectos/license_manager/index.md
+  out: proyectos/license_manager/img/img-license_manager-header-01.svg
+  title: License Manager
+  subtitle: GENERADOR Y GESTOR DE LICENCIAS
+  icon: 🔐
+  tag: Proyectos
+  bg_from: '#0b0f24'
+  bg_mid: '#1b2456'
+  bg_to: '#3730a3'
+  accent: '#818cf8'
+  accent_light: '#e0e7ff'
+  motif: circuit
+- md: proyectos/association_manager/index.md
+  out: proyectos/association_manager/img/img-association_manager-header-01.svg
+  title: Gestor de Asociaciones
+  subtitle: GESTIÓN DE SOCIOS, CUOTAS Y EVENTOS
+  icon: 🤝
+  tag: Proyectos
+  bg_from: '#0b0f24'
+  bg_mid: '#1b2456'
+  bg_to: '#3730a3'
+  accent: '#818cf8'
+  accent_light: '#e0e7ff'
+  motif: circuit
+- md: proyectos/hdd_manager/index.md
+  out: proyectos/hdd_manager/img/img-hdd_manager-header-01.svg
+  title: HDD Manager
+  subtitle: PROYECTO EN DEFINICIÓN · GESTIÓN DE DISCOS
+  icon: 💽
+  tag: Proyectos
+  bg_from: '#0b0f24'
+  bg_mid: '#1b2456'
+  bg_to: '#3730a3'
+  accent: '#818cf8'
+  accent_light: '#e0e7ff'
+  motif: circuit
+- md: dev/git/git.md
+  out: dev/git/img/img-git-header-02.svg
+  title: Git
+  subtitle: FUNDAMENTOS Y FLUJO DE TRABAJO
+  icon: 🌿
+  tag: Desarrollo
+  bg_from: '#2b0f05'
+  bg_mid: '#5c1f0a'
+  bg_to: '#c2410c'
+  accent: '#fb923c'
+  accent_light: '#fed7aa'
+  motif: circuit
+- md: dev/git/qa.md
+  out: dev/git/img/img-git-qa-header-01.svg
+  title: Git para QA
+  subtitle: SINCRONIZACIÓN Y CONTRIBUCIONES
+  icon: 🔄
+  tag: Desarrollo
+  bg_from: '#2b0f05'
+  bg_mid: '#5c1f0a'
+  bg_to: '#c2410c'
+  accent: '#fb923c'
+  accent_light: '#fed7aa'
+  motif: circuit
+- md: dev/git/releases.md
+  out: dev/git/img/img-git-releases-header-01.svg
+  title: Publicación de Versiones
+  subtitle: INTEGRAR DEV EN MAIN CON HISTORIAL COMPACTO
+  icon: 🚀
+  tag: Desarrollo
+  bg_from: '#2b0f05'
+  bg_mid: '#5c1f0a'
+  bg_to: '#c2410c'
+  accent: '#fb923c'
+  accent_light: '#fed7aa'
+  motif: circuit
+- md: linux/script/python/banner_generator/banner_generator.md
+  out: linux/script/python/banner_generator/img/img-banner_generator-header-01.svg
+  title: Banner Generator
+  subtitle: SCRIPT PYTHON · GENERADOR DE BANNERS SVG
+  icon: 🎨
+  tag: Linux
+  bg_from: '#0a0f0a'
+  bg_mid: '#15231a'
+  bg_to: '#1f3d2b'
+  accent: '#4ade80'
+  accent_light: '#bbf7d0'
+  motif: scan

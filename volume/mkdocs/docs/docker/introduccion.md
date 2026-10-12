@@ -6,7 +6,7 @@ date: 2025-03-19
 
 # Introducción a Docker
 
-![introduccion](img/img-docker-header-01.png)
+![Docker](img/img-docker-header-02.svg)
 
 Docker es una plataforma de código abierto que facilita la creación, despliegue y gestión de aplicaciones mediante contenedores, los cuales empaquetan la aplicación junto con sus dependencias para asegurar su ejecución uniforme en cualquier entorno. Además, Docker resuelve problemas de compatibilidad de sistemas operativos al proporcionar entornos virtualizados ligeros para administrar estas aplicaciones.
 

@@ -8,6 +8,8 @@ version: 1.0.0
 
 # smart_monitor
 
+![Smart Monitor](img/img-smart_monitor-header-01.svg)
+
 ## Descripción
 Este script monitorea el estado SMART de los discos conectados al sistema, evaluando métricas críticas como sectores reasignados, temperatura y errores de lectura.  
 Si se superan ciertos umbrales predefinidos, se genera una alerta en la salida estándar.  

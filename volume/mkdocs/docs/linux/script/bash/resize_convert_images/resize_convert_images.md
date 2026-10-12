@@ -8,6 +8,8 @@ version: 1.0.0
 
 # image_resize_convert
 
+![Resize & Convert Images](img/img-resize_convert_images-header-01.svg)
+
 ## Descripción
 Este script redimensiona y convierte imágenes en formato JPG a PNG, asegurando que todas tengan un tamaño uniforme de `1200x400` píxeles. Además, mantiene una copia de las imágenes originales en una carpeta separada dentro del directorio de entrada.
 

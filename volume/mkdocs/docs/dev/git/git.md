@@ -1,358 +1,223 @@
 ---
-title: "Guía de Git"
+title: "Git: fundamentos y flujo de trabajo"
 authors:
   - Carmelo Molero Castillo
-date: 2025-03-30
-version: 1.0.0
+date: 2026-10-12
+version: 2.0.0
 ---
 
 # Guía de Git
 
-![Git Header](img/img-git-header-01.png)
+![Git](img/img-git-header-02.svg)
 
-**Descripción**:  
-Git es un sistema de control de versiones distribuido que permite gestionar el historial de cambios en un proyecto de software. Facilita la colaboración entre desarrolladores, permitiendo realizar seguimientos, fusionar cambios y revertir versiones si es necesario.
+**Descripción**: Git es un sistema distribuido de control de versiones. Registra cambios mediante commits, permite trabajar en ramas independientes y facilita la colaboración sin perder la trazabilidad del código.
 
----
+Esta guía reúne los conceptos y comandos comunes. Los procedimientos específicos se documentan por separado para evitar duplicidades:
 
-## Instalación
+- [Trabajo de QA: actualización, limpieza y contribuciones](qa.md).
+- [Publicación de versiones: integración de `dev` en `main`](releases.md).
 
-Antes de usar Git, asegúrate de cumplir con los **requisitos previos**.
-
-### Requisitos previos
-- 📌 **Sistema operativo compatible**: Linux, macOS y Windows.  
-- 📌 **Acceso a terminal o consola de comandos**.  
-- 📌 **Conexión a Internet** (para operaciones remotas).  
-
-### Instalación en Linux
-```bash
-# En distribuciones basadas en Debian/Ubuntu
-sudo apt update && sudo apt install git -y
-
-# En distribuciones basadas en Red Hat/Fedora
-sudo dnf install git -y
-```
-
-### Instalación en macOS
-```bash
-brew install git
-```
-
-### Instalación en Windows
-Descarga el instalador desde [git-scm.com](https://git-scm.com/) y sigue las instrucciones.
+!!! note "Convención de ramas"
+    `main` representa las versiones publicadas. En los ejemplos de releases se usa `dev` para desarrollo y en los de QA, `develop`. **`dev` y `develop` no son nombres equivalentes**: utiliza el que exista realmente en el repositorio.
 
 ---
 
-## Uso de Git
+## Instalación y configuración
 
-### Configurar Git
-Tras instalar Git, es importante configurarlo con tu identidad:
+### Instalar Git
+
+=== "Debian / Ubuntu"
+    ```bash
+    sudo apt update
+    sudo apt install git -y
+    ```
+
+=== "Fedora"
+    ```bash
+    sudo dnf install git -y
+    ```
+
+=== "macOS"
+    ```bash
+    brew install git
+    ```
+
+=== "Windows"
+    Instala Git desde [git-scm.com](https://git-scm.com/downloads/win).
+
+Comprueba la instalación y configura la identidad de los commits:
 
 ```bash
+git --version
 git config --global user.name "Tu Nombre"
-git config --global user.email "tuemail@example.com"
+git config --global user.email "correo@example.com"
+git config --global --list
 ```
 
-Verifica la configuración:
-```bash
-git config --list
-```
+La identidad del commit **no equivale a la autenticación** para hacer `push` a GitHub o GitLab.
 
-### Inicializar un repositorio
-```bash
-git init
-```
+### Conceptos esenciales
 
-### Clonar un repositorio existente
-```bash
-git clone URL_DEL_REPO
-```
-
-### Ver estado del repositorio
-```bash
-git status
-```
-
-### Agregar cambios al área de preparación (staging)
-```bash
-git add archivo.txt  # Agregar un archivo
-
-git add .  # Agregar todos los archivos modificados
-```
-
-### Confirmar cambios (commit)
-```bash
-git commit -m "Mensaje del commit"
-```
-
-### Ver historial de commits
-```bash
-git log --oneline --graph
-```
-
-### Enviar cambios al repositorio remoto
-```bash
-git push origin main  # Enviar cambios a la rama principal
-```
-
-### Obtener cambios del repositorio remoto
-```bash
-git pull origin main
-```
+| Concepto | Significado |
+|---|---|
+| Repositorio local | Historial Git y archivos de trabajo en el equipo. |
+| Remoto (`origin`) | Nombre habitual del repositorio remoto; no es obligatorio. |
+| `HEAD` | Referencia al commit actualmente extraído. |
+| *Working tree* | Archivos presentes en el directorio de trabajo. |
+| Índice (*staging*) | Cambios preparados para el siguiente commit. |
+| Commit | Instantánea versionada, con identificador y padre o padres. |
+| Rama | Referencia móvil a un commit. |
+| Tag | Referencia a un punto concreto del historial, habitualmente una versión. |
 
 ---
 
-## Configuración Básica
+## Operaciones habituales
 
-Para mejorar el uso de Git, puedes definir alias para comandos frecuentes:
+### Iniciar o clonar un repositorio
 
 ```bash
-git config --global alias.st "status"
-git config --global alias.co "checkout"
-git config --global alias.br "branch"
-git config --global alias.cm "commit -m"
+git init                         # Inicializar un repositorio local
+git clone URL_DEL_REPOSITORIO    # Clonar uno existente
 ```
+
+### Consultar y preparar cambios
+
+```bash
+git status                       # Estado de archivos y rama
+git diff                         # Cambios no preparados
+git add ruta/archivo             # Preparar un archivo concreto
+git diff --cached                # Revisar los cambios preparados
+git commit -m "docs: actualizar guía"
+```
+
+Es preferible indicar archivos concretos en `git add` cuando se quieren evitar cambios accidentales. `git add .` prepara todos los cambios elegibles bajo el directorio actual.
+
+### Consultar el historial
+
+```bash
+git log --oneline --graph --decorate --all
+git log --oneline -5
+git show HEAD
+```
+
+### Trabajar con el remoto
+
+```bash
+git remote -v                    # Identificar los remotos
+git fetch --prune origin          # Actualizar referencias remotas
+git pull --ff-only origin main    # Avanzar main solo si es fast-forward
+git push origin main              # Publicar commits locales
+```
+
+`fetch` **no modifica** la rama actual. `pull` integra cambios remotos; la opción `--ff-only` evita crear un merge implícito y falla si las historias han divergido. No resuelvas un rechazo de `push` con un `pull` indiscriminado: comprueba antes las diferencias de historial.
 
 ---
 
-## Configuración Avanzada
+## Ramas y colaboración
 
-### Trabajar con ramas
+### Gestión de ramas
 
-Crear una nueva rama:
 ```bash
-git branch nueva-rama
+git branch                              # Ramas locales
+git branch -a                           # Locales y remotas conocidas
+git switch main                         # Cambiar a una rama local
+git switch -c feature/nueva-funcion     # Crear rama y cambiar a ella
+git switch -c develop --track origin/develop  # Seguir una rama remota
+git branch -d feature/nueva-funcion     # Borrar una rama ya integrada
+git merge feature/nueva-funcion         # Fusión convencional
 ```
 
-Cambiar a otra rama:
-```bash
-git checkout nueva-rama
-```
-
-Fusionar ramas:
-```bash
-git merge otra-rama
-```
-
-Eliminar una rama:
-```bash
-git branch -d nombre-rama
-```
-
-#### Crear una rama basada en `main` sin cambiarte de rama
-Si estás trabajando en otra rama y necesitas crear una nueva rama a partir de `main`, puedes hacerlo así:
+Para crear una rama desde el estado remoto de `main` sin cambiar la rama activa:
 
 ```bash
 git fetch origin main
 git branch nueva-rama origin/main
 ```
 
-Esto crea una nueva rama local `nueva-rama` basada en el estado remoto actual de `main` sin necesidad de salir de tu rama actual.
+### Convención de nombres
 
-#### Crear una etiqueta (tag) del estado actual de `main`
-Para marcar el estado actual de la rama `main` con una etiqueta, por ejemplo `v1.0.0`:
+| Prefijo | Finalidad | Ejemplo |
+|---|---|---|
+| `feature/` | Nueva funcionalidad. | `feature/export-csv` |
+| `fix/` | Corrección de un defecto. | `fix/null-pointer` |
+| `chore/` | Mantenimiento o ajuste técnico. | `chore/improve-log-traceability` |
+| `refactor/` | Reestructuración sin cambiar el comportamiento esperado. | `refactor/log-service` |
+
+Son convenciones de equipo, no reglas impuestas por Git.
+
+### Modelos de colaboración
+
+| Modelo | Esquema | Aplicación habitual |
+|---|---|---|
+| Centralizado | Todos integran en una rama compartida. | Proyectos sencillos y equipos pequeños. |
+| Ramas de trabajo (*feature branches*) | Cada cambio se desarrolla en una rama y se revisa mediante Merge Request o Pull Request. | Desarrollo colaborativo y trazable. |
+| Gitflow | Ramas `develop`, `feature/*`, `release/*` y `hotfix/*`, además de la principal. | Proyectos con ciclos de publicación diferenciados. |
+| Fork y Merge Request | Se proponen cambios desde una copia propia del repositorio. | Colaboradores sin escritura en el repositorio original. |
+
+La integración continua (CI) es **complementaria** a estos modelos: ejecuta validaciones automáticas, pero no constituye por sí misma una estrategia de ramas.
+
+---
+
+## Convención de commits
+
+[Conventional Commits](https://www.conventionalcommits.org/es/v1.0.0/) propone mensajes con una estructura predecible:
+
+```text
+<tipo>(<ámbito opcional>): <descripción breve>
+```
+
+| Tipo | Uso |
+|---|---|
+| `feat` | Funcionalidad nueva. |
+| `fix` | Corrección de error. |
+| `docs` | Documentación. |
+| `test` | Pruebas. |
+| `refactor` | Refactorización. |
+| `perf` | Rendimiento. |
+| `style` | Formato sin cambios funcionales. |
+| `build` | Construcción o dependencias. |
+| `ci` | Integración continua. |
+| `chore` | Mantenimiento. |
+| `revert` | Reversión de un cambio. |
+
+Ejemplos:
+
+```text
+feat(auth): añadir autenticación con JWT
+fix(api): corregir la validación de usuarios
+docs(git): documentar el proceso de release
+```
+
+Esta convención es opcional salvo que el proyecto la establezca. En el [procedimiento de publicación](releases.md) se usa excepcionalmente un mensaje de commit con el número de versión (`v2.0.0`) para identificar la release.
+
+---
+
+## Deshacer cambios y recuperar información
+
+| Necesidad | Comando | Efecto |
+|---|---|---|
+| Descartar un cambio no preparado | `git restore -- ruta/archivo` | Restaura el archivo desde el índice. |
+| Retirar un archivo de staging | `git restore --staged -- ruta/archivo` | Conserva el cambio en el directorio de trabajo. |
+| Revertir un commit publicado | `git revert HASH` | Crea otro commit que deshace el cambio. |
+| Rehacer el último commit local sin perder cambios | `git reset --soft HEAD~1` | Retrocede un commit conservando el índice. |
+| Descartar el último commit y sus cambios locales | `git reset --hard HEAD~1` | Operación destructiva: cambia rama, índice y archivos versionados. |
+
+!!! warning "Operaciones destructivas"
+    `git reset --hard` puede eliminar modificaciones locales. La limpieza adicional de archivos no versionados se explica, con precauciones para IntelliJ y Spring Boot, en [Git para QA](qa.md).
+
+Para investigar problemas de historial:
 
 ```bash
-git tag v1.0.0 origin/main
-git push origin v1.0.0
-```
-
-Esto es útil para versionar hitos importantes en el proyecto.
-
-### Restablecer cambios
-Revertir cambios no confirmados:
-```bash
-git checkout -- archivo.txt
-```
-
-Deshacer un commit:
-```bash
-git reset --soft HEAD~1  # Mantiene cambios en staging
-
-git reset --hard HEAD~1  # Borra cambios por completo
+git reflog                       # Movimientos recientes de HEAD
+git diff main dev               # Diferencia entre árboles versionados
+git branch -vv                  # Ramas y seguimiento remoto
+git status --short --branch
 ```
 
 ---
 
-## Estándar de Commits
-Para mantener un historial de cambios claro, es recomendable seguir el estándar **Conventional Commits**:
+## Referencias
 
-### **Estructura de un Commit**
-```plaintext
-<tipo>(<área>): <breve descripción>
-
-[opcional] Descripción más detallada en párrafos adicionales.
-
-[opcional] Closes #[número de issue] | Relates to #[número de issue]
-```
-
-### **Tipos de Commit**
-| Tipo       | Descripción |
-|------------|------------|
-| `feat`     | Nueva funcionalidad |
-| `fix`      | Corrección de error |
-| `docs`     | Cambios en la documentación |
-| `style`    | Cambios de formato (sin afectar código funcional) |
-| `refactor` | Refactorización del código (sin cambios en funcionalidad) |
-| `test`     | Agregar o modificar pruebas |
-| `chore`    | Tareas de mantenimiento (sin afectar código fuente) |
-| `perf`     | Mejoras de rendimiento |
-| `ci`       | Cambios en configuración de integración continua |
-| `build`    | Cambios en el sistema de compilación o dependencias |
-| `revert`   | Revertir un commit previo |
-
-Ejemplo de commit correcto:
-```plaintext
-feat(auth): agregar autenticación con JWT
-fix(api): corregir error en la validación de usuarios
-docs(readme): añadir instrucciones para configuración local
-```
-
----
-
-## Solución de Problemas
-
-**Error: "fatal: Not a git repository"**  
-🔹 Solución: Asegúrate de estar dentro de un repositorio Git o ejecuta `git init` si deseas inicializar uno.
-
-**Error: "failed to push some refs"**  
-🔹 Solución: Tu rama local está desactualizada. Ejecuta `git pull origin main` antes de hacer `git push`.
-
-**Error: "conflict in merge"**  
-🔹 Solución: Edita los archivos conflictivos, resuelve los conflictos y ejecuta:
-```bash
-git add archivo_resuelto.txt
-git commit -m "Resolver conflicto de merge"
-```
-
----
-
-## Flujos de trabajo con GIT
-
-### 1. **Flujo de trabajo centralizado (Centralized Workflow)**
-Este es un flujo básico, donde todos los desarrolladores trabajan en una sola rama, generalmente `master` o `main`. Los cambios se suben al repositorio central de forma secuencial.
-
-#### **Cómo aplicarlo:**
-1. Clonar el repositorio central.
-2. Trabajar directamente en la rama principal (`master` o `main`).
-3. Realizar los commits localmente.
-4. Subir los cambios al repositorio central con `git push`.
-
-#### **Ventajas:**
-- **Simplicidad**: Fácil de entender y utilizar para pequeños equipos.
-- **Rapidez**: No se requiere una gestión compleja de ramas, lo que acelera la integración.
-
-#### **Inconvenientes:**
-- **Confusión en equipos grandes**: Sin una separación clara de tareas y sin ramificación, puede ser difícil para varios desarrolladores trabajar en paralelo sin sobrescribir cambios.
-- **Riesgo de errores**: Los desarrolladores pueden sobrescribir el trabajo de otros si no hay una gestión adecuada de los commits y las actualizaciones.
-
----
-
-### 2. **Flujo de trabajo de características (Feature Branch Workflow)**
-En este flujo, cada nueva funcionalidad se desarrolla en una rama separada (`feature/xxx`), que se fusiona de nuevo con la rama principal cuando se completa.
-
-#### **Cómo aplicarlo:**
-1. Crear una nueva rama para cada nueva funcionalidad:
-   ```bash
-   git checkout -b feature/nueva-funcionalidad
-   ```
-2. Trabajar en la rama `feature` hasta completar el trabajo.
-3. Hacer commit y push de los cambios.
-4. Realizar una **Pull Request** o una **Merge Request** cuando la funcionalidad esté lista, para integrarla en `main` o `develop`.
-
-#### **Ventajas:**
-- **Aislación de características**: Cada nueva funcionalidad se desarrolla de forma aislada, lo que facilita la integración sin interferir en el trabajo de otros.
-- **Mejor control de versiones**: Puedes fácilmente revisar, probar y realizar revisiones de código antes de integrar el código en la rama principal.
-
-#### **Inconvenientes:**
-- **Riesgo de divergencia**: Si las ramas se mantienen demasiado tiempo sin integrarse, pueden volverse difíciles de fusionar debido a los conflictos.
-- **Manejo de ramas**: Se necesita gestionar múltiples ramas activas, lo que puede ser un desafío si el número de desarrolladores es grande.
-
----
-
-### 3. **Flujo de trabajo con Gitflow**
-**Gitflow** es un flujo de trabajo que define roles específicos para las ramas, siendo una estrategia robusta para proyectos de largo plazo o equipos grandes. Se basa en las siguientes ramas:
-- `master`: contiene el código en producción.
-- `develop`: para integrar las nuevas características.
-- `feature/*`: ramas para nuevas funcionalidades.
-- `release/*`: ramas para preparar el lanzamiento.
-- `hotfix/*`: ramas para corregir errores críticos en producción.
-
-#### **Cómo aplicarlo:**
-1. Crear ramas `feature` a partir de `develop`.
-2. Una vez que la funcionalidad esté terminada, hacer merge de `feature` a `develop`.
-3. Cuando el código en `develop` esté listo para una nueva versión, se crea una rama `release` para realizar pruebas y correcciones.
-4. Una vez aprobado, la rama `release` se fusiona en `master` y `develop`.
-5. Si se encuentra un error en producción, se crea una rama `hotfix` desde `master` para corregirlo rápidamente.
-
-#### **Ventajas:**
-- **Organización clara**: Cada tipo de trabajo tiene su propia rama, lo que permite a los equipos trabajar de manera ordenada.
-- **Mejor control de versiones**: Permite lanzamientos controlados y mantenimiento de producción sin afectar el desarrollo de nuevas características.
-
-#### **Inconvenientes:**
-- **Complejidad**: Gitflow es bastante estructurado, lo que puede ser excesivo para proyectos pequeños o equipos pequeños.
-- **Ciclos largos de desarrollo**: Las ramas pueden quedarse mucho tiempo sin fusionarse, lo que puede generar conflictos si no se gestionan bien.
-
----
-
-### 4. **Flujo de trabajo de fork/pull request (Fork and Pull Request Workflow)**
-Este flujo es comúnmente utilizado en proyectos de código abierto. En lugar de tener acceso directo al repositorio central, los desarrolladores hacen un fork del repositorio y luego envían una **pull request** para que se revise y se fusionen sus cambios.
-
-#### **Cómo aplicarlo:**
-1. Hacer un fork del repositorio principal.
-2. Clonar el repositorio forkeado.
-3. Crear una rama para el trabajo a realizar y realizar commits.
-4. Enviar una pull request al repositorio principal para que los mantenedores revisen y fusionen los cambios.
-
-#### **Ventajas:**
-- **Control sobre el repositorio principal**: El equipo principal tiene control total sobre las contribuciones externas, ya que deben ser revisadas antes de fusionarse.
-- **Ideal para proyectos de código abierto**: Permite contribuciones externas sin comprometer la estabilidad del proyecto principal.
-
-#### **Inconvenientes:**
-- **Proceso de integración más lento**: Cada contribución debe ser revisada antes de ser integrada, lo que puede ser más lento en proyectos grandes.
-- **Más pasos para desarrolladores**: Los colaboradores externos deben aprender a trabajar con forks y pull requests, lo que puede ser un proceso algo complejo para principiantes.
-
----
-
-### 5. **Flujo de trabajo de ramas de integración continua (CI Workflow)**
-En este flujo, las ramas de desarrollo están configuradas para disparar procesos automáticos de **integración continua** (CI) cada vez que se realiza un commit o un merge.
-
-#### **Cómo aplicarlo:**
-1. Trabajar en ramas de características o `develop`.
-2. Configurar una herramienta CI (como Jenkins, GitHub Actions, CircleCI, etc.) para ejecutar pruebas automáticas y validaciones con cada nuevo commit.
-3. Los cambios se integran después de pasar por todas las pruebas automáticas.
-
-#### **Ventajas:**
-- **Automatización de pruebas**: Cada commit dispara pruebas automáticas, lo que asegura que el código se mantiene en un estado funcional en todo momento.
-- **Integración más rápida**: Los problemas se detectan rápidamente gracias a la CI, lo que permite una integración continua más eficiente.
-
-#### **Inconvenientes:**
-- **Configuración de CI compleja**: Requiere tiempo y esfuerzo para configurar el entorno de CI correctamente.
-- **Dependencia de herramientas externas**: El flujo depende de herramientas de CI, lo que puede agregar complejidad al proceso.
-
----
-
-### Conclusión:  
-
-| **Flujo de Trabajo**       | **Ventajas**        | **Inconvenientes**        | **Usos Recomendados**                    |
-|----------------------------|---------------------|---------------------------|------------------------------------------|
-| **Centralizado**           | - Fácil de entender y utilizar para equipos pequeños. | - Difícil de gestionar en equipos grandes.             | - Equipos pequeños con pocos desarrolladores. |
-|                            | - Rápido para proyectos con pocos colaboradores.      | - Riesgo de sobrescribir cambios de otros sin control. | - Proyectos sencillos o temporales.           |
-| **Feature Branch**         | - Aislación clara de cada funcionalidad.              | - Puede generar divergencias si no se integran las ramas rápidamente. | - Proyectos donde se desarrollan múltiples funcionalidades de manera simultánea.|
-|                            | - Permite integraciones controladas (pull requests).  | - Necesita una buena gestión de ramas.                                | - Equipos medianos a grandes que necesitan dividir tareas.                      |
-| **Gitflow**                | - Estructura clara y organizada para proyectos grandes. | - Es complejo de implementar y gestionar, especialmente en proyectos. | - Proyectos a largo plazo y equipos grandes que requieren un control riguroso.|
-|                            | - Buen control sobre las versiones de producción y desarrollo. | - Puede generar ciclos largos de desarrollo. | - Proyectos con ciclos de lanzamiento definidos. |
-| **Fork and Pull Request**  | - Control sobre el repositorio principal sin comprometerlo.    | - Proceso de integración más lento por las revisiones de código. | - Proyectos de código abierto o con colaboradores externos.|
-|                            | - Facilita la colaboración de desarrolladores externos sin acceso directo.| - Necesita una gestión eficiente de pull requests. | - Proyectos con contribuciones de múltiples colaboradores externos.|
-| **CI Workflow**            | - Automatización de pruebas, asegurando que el código está siempre funcional.| - Requiere herramientas de CI que deben configurarse correctamente.  | - Proyectos que necesitan integración continua y validaciones automáticas.|
-|                            | - Facilita la integración continua con procesos automáticos. | - Depende de las herramientas de CI y puede añadir complejidad. | - Proyectos grandes con un flujo de trabajo que depende de pruebas automáticas. |
-
----
-
-### **Conclusión**
-- **Flujo Centralizado**: Ideal para equipos pequeños con necesidades simples.
-- **Feature Branch**: Adecuado para equipos medianos a grandes que gestionan múltiples funcionalidades.
-- **Gitflow**: Perfecto para proyectos grandes o a largo plazo con lanzamientos y mantenimiento bien definidos.
-- **Fork and Pull Request**: La opción preferida para proyectos de código abierto o colaboraciones externas.
-- **CI Workflow**: Esencial para proyectos que requieren automatización de pruebas y una integración continua constante.
-
+- [Documentación oficial de Git](https://git-scm.com/docs).
+- [Git para QA](qa.md): sincronizar ramas, conservar el entorno local y gestionar permisos GitLab.
+- [Publicación de versiones](releases.md): commits de release, `squash`, tags y divergencia de historiales.

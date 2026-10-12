@@ -8,7 +8,7 @@ version: 1.0.0
 
 # WatchTower
 
-![WatchTower](img/img-watchtower-header-01.png)
+![Watchtower](img/img-watchtower-header-02.svg)
 
 **Watchtower** es una herramienta de código abierto que automatiza la actualización de contenedores Docker. Monitorea los contenedores en ejecución y, cuando detecta que hay nuevas versiones de las imágenes utilizadas, actualiza y reinicia los contenedores correspondientes para que utilicen las versiones más recientes.
 

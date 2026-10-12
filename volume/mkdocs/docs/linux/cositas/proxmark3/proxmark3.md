@@ -8,7 +8,7 @@ version: 1.0.0
 
 # Configuración e instalación de Proxmark3
 
-![Proxmark3](https://github.com/RfidResearchGroup/proxmark3/raw/master/docs/images/pm3-logo.png)
+![Proxmark3](img/img-proxmark3-header-02.svg)
 
 **Descripción**:  
 

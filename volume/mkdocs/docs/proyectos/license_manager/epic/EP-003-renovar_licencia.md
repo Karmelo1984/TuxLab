@@ -22,8 +22,8 @@ El objetivo de esta épica es permitir la renovación de licencias antes de que 
 📌 **Parte del proyecto:** [License Manager](../index.md)
 
 ## 🏗 Historias de usuario relacionadas  
-- [HU-005 - Renovar Licencia](../hu/HU-005-example.md)  
-- [HU-006 - Actualizar Fecha de Expiración de Licencia](../hu/HU-006-example.md)  
+- HU-005 - Renovar Licencia _(pendiente)_  
+- HU-006 - Actualizar Fecha de Expiración de Licencia _(pendiente)_  
 
 ## ✅ Criterios de finalización  
 - El sistema debe permitir la renovación de licencias de manera fácil para el administrador, permitiendo la modificación de parámetros clave como la fecha de expiración, el límite de socios activos y el precio.  

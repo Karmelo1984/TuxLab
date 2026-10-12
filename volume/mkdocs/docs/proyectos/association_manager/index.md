@@ -9,6 +9,8 @@ tags: [documentación]
 
 # 🚀 Gestor de Asociaciones
 
+![Gestor de Asociaciones](img/img-association_manager-header-01.svg)
+
 ---
 
 ## 📖 Descripción General  
@@ -64,7 +66,7 @@ Es una **aplicación auto instalable** desarrollada en **Python**, que requiere 
 ---
 
 ## 📚 **Épicas**  
-- [EP-0001 - Instalación de la Aplicación](../epic/EP-0001-instalacion.md)  
+- [EP-0001 - Instalación de la Aplicación](epic/EP-0001-instalacion.md)  
 - [EP-0002 - Primera Ejecución del Programa](epic/EP-0002-primera-ejecucion.md)  
 
 
