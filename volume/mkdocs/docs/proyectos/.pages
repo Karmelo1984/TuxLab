@@ -1,0 +1,4 @@
+nav:
+  - licence_manager: license_manager/index.md
+  - association_manager: association_manager/index.md
+  - hdd_manager: hdd_manager/index.md

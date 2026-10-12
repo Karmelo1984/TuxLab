@@ -1,0 +1,8 @@
+nav:
+  - index.md
+  - Self-Hosting: self-hosting
+  - Docker: docker
+  - Linux: linux
+  - Raspberry Pi: raspberrypi
+  - Proyectos de Programación: proyectos
+  - Desarrollo: dev

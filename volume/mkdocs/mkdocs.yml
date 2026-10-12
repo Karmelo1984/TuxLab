@@ -1,6 +1,16 @@
 ---
+# -----------------------------------------------------------------------------
+# 🧭 Identidad del sitio
+# -----------------------------------------------------------------------------
 site_name: TuxLab
+site_description: "Documentación técnica personal sobre Self-Hosting, Docker, Linux y Raspberry Pi"
 site_author: Carmelo Molero Castillo
+repo_url: https://github.com/Karmelo1984/info-linux
+repo_name: TuxLab en GitHub
+# site_url: "https://example.com"   # Rellenar si se publica (p.ej. GitHub Pages)
+
+docs_dir: docs
+site_dir: site
 
 markdown_extensions:
   # --- Extensiones nativas de MkDocs ---
@@ -16,7 +26,8 @@ markdown_extensions:
   - markdown.extensions.extra  # Soporte para tablas y listas anidadas
   - markdown.extensions.nl2br  # Convierte saltos de línea en <br>
   - pymdownx.extra             # Extensiones avanzadas de Markdown
-  - pymdownx.tabbed            # Pestañas dentro del contenido
+  - pymdownx.tabbed:
+      alternate_style: true    # Pestañas con estilo Material
   - pymdownx.superfences:      # Mejora bloques de código
       custom_fences:
         - name: mermaid
@@ -30,99 +41,70 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.details           # Admonitions colapsables
 
-# Tema y configuración
+# -----------------------------------------------------------------------------
+# 🎨 Tema visual y UX
+# -----------------------------------------------------------------------------
 theme:
-  name: "mkdocs"
-  language: "es"
-  color_mode: "dark"
-  include_sidebar: false
-  user_color_mode_toggle: true
-  prev_next_buttons_location: "bottom"
+  name: material
+  language: es
+
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+    - scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+
   features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
     - content.code.copy
-    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - search.highlight
+    - search.share
 
-# Navegación
-nav:
-   - Self-Hosting:
-      - Centro Multimedia: self-hosting/centro_multimedia/centro_multimedia.md
-      - Duplicati: self-hosting/duplicati/duplicati.md
-      - Homarr: self-hosting/homarr/homarr.md
-      - Homebridge: self-hosting/homebridge/homebridge.md
-      - Jellyfin: self-hosting/jellyfin/jellyfin.md
-      - MkDocs: self-hosting/mkdocs/mkdocs.md
-      - Nextcloud: self-hosting/nextcloud/nextcloud.md
-      - Nginx: self-hosting/nginx/nginx.md
-      - OpenProject: self-hosting/open_project/open_project.md
-      - PiHole: self-hosting/pihole/pihole.md
-      - Plex: self-hosting/plex/plex.md
-      - Portainer: self-hosting/portainer/portainer.md
-      - Samba: self-hosting/samba/samba.md
-      - Speedtest: self-hosting/speedtest/speedtest.md
-      - StirlingPDF: self-hosting/stirling_pdf/stirlingpdf.md
-      - Watchtower: self-hosting/watchtower/watchtower.md
-      - WatchYourLAN: self-hosting/watchyourlan/watchyourlan.md
-   - Docker:
-      - Introducción: docker/introduccion.md
-      - Imágenes: docker/imagenes.md
-      - Contenedores: docker/contenedores.md
-      - Volúmenes: docker/volumenes.md
-      - Redes: docker/redes.md
-      - Comandos útiles: docker/comandos.md
-      - Optimización y troubleshooting: docker/troubleshooting.md
-   - Linux:
-      - Cositas:
-         - Proxmark3: linux/cositas/proxmark3/proxmark3.md
-      - Script:
-         - Bash:
-            - "file_detail_info": linux/script/bash/file_detail_info/file_detail_info.md
-            - "file_rename": linux/script/bash/file_rename/file_rename.md
-            - "mp4_to_mkv": linux/script/bash/mp4_to_mkv/mp4_to_mkv.md
-            - "resize_convert_images": linux/script/bash/resize_convert_images/resize_convert_images.md
-            - "search_film": linux/script/bash/search_film/search_film.md
-            - "smart_monitor": linux/script/bash/smart_monitor/smart_monitor.md
-            - "speed_test_internet": linux/script/bash/speed_test_internet/speed_test_internet.md
-         - Python:
-            - "file_detail_info": linux/script/python/file_detail_info/file_detail_info.md
-            - "banner_generator": linux/script/python/banner_generator/banner_generator.md
-      - Sistemas de archivos:
-         - Guía Rsync: linux/sistemas-archivos/rsync/rsync.md
-         - Guía MHDDFS: linux/sistemas-archivos/mhddfs/mhddfs.md
-         - Guía SSHFS: linux/sistemas-archivos/sshfs/sshfs.md
-         - Restaurar particiones Clonezilla: linux/sistemas-archivos/particiones/restaurar_particiones_clonezilla/restaurar_particiones_clonezilla.md
-      - Redes:
-         - Guía Proxy: linux/redes/proxy/proxy.md
-         - Guía DDNS: linux/redes/ddns/ddns.md
-         - Guía DHCP: linux/redes/dhcp/dhcp.md
-         - Guía SSH: linux/redes/ssh/ssh.md
-         - Guía Ethernet en Linux: linux/redes/failover_wifi_ethernet/failover_wifi_ethernet.md
+  # Branding opcional
+  # logo: img/logo.png
+  # favicon: img/favicon.png
 
-   - Raspberry Pi:
-      - Introducción: raspberrypi/raspberrypi.md
-      - Instalación básica: raspberrypi/instalacion-basica/instalacion-basica.md
-      - Acceso y conectividad:
-         - Recuperar acceso SSH: raspberrypi/utilidades/ssh/acceso-recuperacion.md
-         - Wi-Fi e IP estática: raspberrypi/utilidades/red/wifi-ip-estatica.md
-      - Utilidades: 
-         - Añadir HDD externo: raspberrypi/utilidades/pi-hdd/pi-hdd.md
-         - Diagnosticar HDD y USB: raspberrypi/utilidades/pi-hdd/diagnostico-usb.md
-         - Flashear EEPROM: raspberrypi/utilidades/eeprom/eeprom.md
-         - Instalar Docker: raspberrypi/utilidades/docker/docker.md
-         - Reducir imagen MicroSD: raspberrypi/utilidades/microsd/microsd.md
-         - Mantenimiento y diagnóstico: raspberrypi/utilidades/sistema/mantenimiento-diagnostico.md
-      - Cámara:
-         - Cámara NoIR y vídeo H.264: raspberrypi/camara/camara-video.md
-         - Calibración y reflejos: raspberrypi/camara/calibracion-reflejos.md
-         - Timelapse y MP4: raspberrypi/camara/timelapse.md
-      - Servidor NAS: raspberrypi/servidor-nas/servidor-nas.md
-   - Proyectos de Programación:
-      - licence_manager: proyectos/license_manager/index.md
-      - association_manager: proyectos/association_manager/index.md
-      - hdd_manager: proyectos/hdd_manager/index.md
-   - Desarrollo:
-      - Git:
-         - Fundamentos y comandos: dev/git/git.md
-         - Git para QA: dev/git/qa.md
-         - Publicación de versiones: dev/git/releases.md
+# -----------------------------------------------------------------------------
+# 📦 Plugins
+# -----------------------------------------------------------------------------
+plugins:
+  - search
+  - awesome-pages
+  - mermaid2
+  #- git-revision-date-localized:
+  #    type: date
+
+# -----------------------------------------------------------------------------
+# 🌐 Extras
+# -----------------------------------------------------------------------------
+extra:
+  generator: false
+
+# -----------------------------------------------------------------------------
+# 💅 Estilos personales
+# -----------------------------------------------------------------------------
+extra_css:
+  - overrides/extra.css
+
+# ============================================
+# Navegación: gestionada mediante archivos `.pages`
+# (plugin mkdocs-awesome-pages-plugin) junto a cada sección en docs/
+# ============================================

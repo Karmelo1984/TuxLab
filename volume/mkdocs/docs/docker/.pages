@@ -1,0 +1,8 @@
+nav:
+  - Introducción: introduccion.md
+  - Imágenes: imagenes.md
+  - Contenedores: contenedores.md
+  - Volúmenes: volumenes.md
+  - Redes: redes.md
+  - Comandos útiles: comandos.md
+  - Optimización y troubleshooting: troubleshooting.md

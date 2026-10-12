@@ -1,0 +1,18 @@
+nav:
+  - Introducción: raspberrypi.md
+  - Instalación básica: instalacion-basica/instalacion-basica.md
+  - Acceso y conectividad:
+      - Recuperar acceso SSH: utilidades/ssh/acceso-recuperacion.md
+      - Wi-Fi e IP estática: utilidades/red/wifi-ip-estatica.md
+  - Utilidades:
+      - Añadir HDD externo: utilidades/pi-hdd/pi-hdd.md
+      - Diagnosticar HDD y USB: utilidades/pi-hdd/diagnostico-usb.md
+      - Flashear EEPROM: utilidades/eeprom/eeprom.md
+      - Instalar Docker: utilidades/docker/docker.md
+      - Reducir imagen MicroSD: utilidades/microsd/microsd.md
+      - Mantenimiento y diagnóstico: utilidades/sistema/mantenimiento-diagnostico.md
+  - Cámara:
+      - Cámara NoIR y vídeo H.264: camara/camara-video.md
+      - Calibración y reflejos: camara/calibracion-reflejos.md
+      - Timelapse y MP4: camara/timelapse.md
+  - Servidor NAS: servidor-nas/servidor-nas.md

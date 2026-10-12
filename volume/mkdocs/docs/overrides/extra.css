@@ -1,0 +1,136 @@
+/* ============================================================================
+   TuxLab — Tema personal MkDocs Material
+   Ámbito: documentación técnica, guías de self-hosting, Docker, Linux y RPi
+   ============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   1. Tokens de diseño
+   ---------------------------------------------------------------------------- */
+
+:root {
+  --tl-primary: #1a237e;
+  --tl-accent: #00acc1;
+  --tl-border: #d8dee9;
+  --tl-code-bg: #f3f5f9;
+
+  --md-primary-fg-color: var(--tl-primary);
+  --md-accent-fg-color: var(--tl-accent);
+}
+
+[data-md-color-scheme="slate"] {
+  --tl-border: #263244;
+  --tl-code-bg: #0b1220;
+
+  --md-default-bg-color: #0d1117;
+  --md-code-bg-color: var(--tl-code-bg);
+}
+
+/* ----------------------------------------------------------------------------
+   2. Lectura y layout
+   ---------------------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.md-typeset {
+  line-height: 1.65;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 700;
+  scroll-margin-top: 5rem;
+}
+
+.md-typeset h1 {
+  border-bottom: 1px solid var(--tl-border);
+  padding-bottom: 0.5rem;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid var(--tl-border);
+  margin-top: 1.75rem;
+  padding-bottom: 0.3rem;
+}
+
+/* ----------------------------------------------------------------------------
+   3. Tablas
+   ---------------------------------------------------------------------------- */
+
+.md-typeset__table {
+  display: block;
+  margin: 1.2rem 0;
+  overflow-x: auto;
+}
+
+.md-typeset table:not([class]) {
+  border-collapse: separate;
+  border-radius: 0.4rem;
+  border-spacing: 0;
+  display: table;
+  overflow: hidden;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  font-weight: 700;
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--md-default-fg-color) 4%, transparent);
+}
+
+/* ----------------------------------------------------------------------------
+   4. Admonitions
+   ---------------------------------------------------------------------------- */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 0.4rem;
+}
+
+/* ----------------------------------------------------------------------------
+   5. Código
+   ---------------------------------------------------------------------------- */
+
+.md-typeset pre {
+  border-radius: 0.4rem;
+}
+
+.md-typeset code:not(pre code) {
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.3rem;
+}
+
+/* ----------------------------------------------------------------------------
+   6. Mermaid
+   ---------------------------------------------------------------------------- */
+
+.md-typeset .mermaid {
+  display: block;
+  margin: 1.2rem 0;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.md-typeset .mermaid svg {
+  height: auto;
+  max-width: 100%;
+}
+
+/* ----------------------------------------------------------------------------
+   7. Accesibilidad y movimiento
+   ---------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
