@@ -175,8 +175,8 @@ ls -lh /tmp/camara-test.jpg
 
 ## Continuar según el problema
 
-- [Recuperar SSH y el usuario inicial](../ssh/acceso-recuperacion.md).
-- [Wi-Fi e IP fija con NetworkManager](../red/wifi-ip-estatica.md).
+- [Recuperar SSH y el usuario inicial](../../acceso-conectividad/ssh/acceso-recuperacion.md).
+- [Wi-Fi e IP fija con NetworkManager](../../acceso-conectividad/red/wifi-ip-estatica.md).
 - [Docker y Docker Compose](../docker/docker.md).
 - [Añadir un HDD](../pi-hdd/pi-hdd.md) y [fallos USB / alimentación](../pi-hdd/diagnostico-usb.md).
 - [Cámara IMX708 y H.264](../../camara/camara-video.md).

@@ -1,0 +1,4 @@
+nav:
+  - Fundamentos y comandos: git.md
+  - Git para QA: qa.md
+  - Publicación de versiones: releases.md

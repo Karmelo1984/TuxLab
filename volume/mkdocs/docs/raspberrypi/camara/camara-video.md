@@ -21,7 +21,7 @@ version: 1.2.0
 - Visualización desde un NUC con Linux Mint mediante `ffplay`.
 - Red local: Raspberry `192.168.1.20`, servidor de vídeo TCP 8888.
 
-Los comandos de esta página documentan pruebas verificadas en octubre de 2026. Para configurar un equipo desde cero consultar la [instalación básica](../instalacion-basica/instalacion-basica.md), la [red Wi-Fi](../utilidades/red/wifi-ip-estatica.md) y la [recuperación de SSH](../utilidades/ssh/acceso-recuperacion.md).
+Los comandos de esta página documentan pruebas verificadas en octubre de 2026. Para configurar un equipo desde cero consultar la [instalación básica](../instalacion-basica/instalacion-basica.md), la [red Wi-Fi](../acceso-conectividad/red/wifi-ip-estatica.md) y la [recuperación de SSH](../acceso-conectividad/ssh/acceso-recuperacion.md).
 
 ## Detectar el sensor y modos de captura
 

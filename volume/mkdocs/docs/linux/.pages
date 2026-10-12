@@ -1,26 +1,6 @@
 nav:
-  - Cositas:
-      - Proxmark3: cositas/proxmark3/proxmark3.md
-  - Script:
-      - Bash:
-          - "file_detail_info": script/bash/file_detail_info/file_detail_info.md
-          - "file_rename": script/bash/file_rename/file_rename.md
-          - "mp4_to_mkv": script/bash/mp4_to_mkv/mp4_to_mkv.md
-          - "resize_convert_images": script/bash/resize_convert_images/resize_convert_images.md
-          - "search_film": script/bash/search_film/search_film.md
-          - "smart_monitor": script/bash/smart_monitor/smart_monitor.md
-          - "speed_test_internet": script/bash/speed_test_internet/speed_test_internet.md
-      - Python:
-          - "file_detail_info": script/python/file_detail_info/file_detail_info.md
-          - "banner_generator": script/python/banner_generator/banner_generator.md
-  - Sistemas de archivos:
-      - Guía Rsync: sistemas-archivos/rsync/rsync.md
-      - Guía MHDDFS: sistemas-archivos/mhddfs/mhddfs.md
-      - Guía SSHFS: sistemas-archivos/sshfs/sshfs.md
-      - Restaurar particiones Clonezilla: sistemas-archivos/particiones/restaurar_particiones_clonezilla/restaurar_particiones_clonezilla.md
-  - Redes:
-      - Guía Proxy: redes/proxy/proxy.md
-      - Guía DDNS: redes/ddns/ddns.md
-      - Guía DHCP: redes/dhcp/dhcp.md
-      - Guía SSH: redes/ssh/ssh.md
-      - Guía Ethernet en Linux: redes/failover_wifi_ethernet/failover_wifi_ethernet.md
+  - index.md
+  - Cositas: cositas
+  - Script: script
+  - Sistemas de archivos: sistemas-archivos
+  - Redes: redes

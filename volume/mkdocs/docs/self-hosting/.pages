@@ -1,18 +1,19 @@
 nav:
-  - Centro Multimedia: centro_multimedia/centro_multimedia.md
-  - Duplicati: duplicati/duplicati.md
-  - Homarr: homarr/homarr.md
-  - Homebridge: homebridge/homebridge.md
-  - Jellyfin: jellyfin/jellyfin.md
-  - MkDocs: mkdocs/mkdocs.md
-  - Nextcloud: nextcloud/nextcloud.md
-  - Nginx: nginx/nginx.md
-  - OpenProject: open_project/open_project.md
-  - PiHole: pihole/pihole.md
-  - Plex: plex/plex.md
-  - Portainer: portainer/portainer.md
-  - Samba: samba/samba.md
-  - Speedtest: speedtest/speedtest.md
-  - StirlingPDF: stirling_pdf/stirlingpdf.md
-  - Watchtower: watchtower/watchtower.md
-  - WatchYourLAN: watchyourlan/watchyourlan.md
+  - index.md
+  - Centro Multimedia: centro_multimedia
+  - Duplicati: duplicati
+  - Homarr: homarr
+  - Homebridge: homebridge
+  - Jellyfin: jellyfin
+  - MkDocs: mkdocs
+  - Nextcloud: nextcloud
+  - Nginx: nginx
+  - OpenProject: open_project
+  - PiHole: pihole
+  - Plex: plex
+  - Portainer: portainer
+  - Samba: samba
+  - Speedtest: speedtest
+  - StirlingPDF: stirling_pdf
+  - Watchtower: watchtower
+  - WatchYourLAN: watchyourlan

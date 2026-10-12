@@ -1,5 +1,5 @@
 ---
-title: "Configuración e instalación de Proxmark3"
+title: "Proxmark3"
 authors:
   - Carmelo Molero Castillo
 date: 2025-08-09

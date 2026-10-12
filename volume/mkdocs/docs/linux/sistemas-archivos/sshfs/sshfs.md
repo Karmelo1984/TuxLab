@@ -20,7 +20,7 @@ version: 1.2.0
 - Servidor remoto con SSH y un usuario con permisos.
 - Clave de anfitrión SSH verificada antes de automatizar.
 
-Para preparar el servidor de ejemplo: [acceso SSH en Raspberry Pi](../../../raspberrypi/utilidades/ssh/acceso-recuperacion.md) y [guía SSH genérica](../../redes/ssh/ssh.md).
+Para preparar el servidor de ejemplo: [acceso SSH en Raspberry Pi](../../../raspberrypi/acceso-conectividad/ssh/acceso-recuperacion.md) y [guía SSH genérica](../../redes/ssh/ssh.md).
 
 ## Sintaxis reutilizable para otros equipos
 
@@ -226,7 +226,7 @@ findmnt ~/RaspberryPi/raiz
 ## Guías relacionadas
 
 - [Guía general de SSH](../../redes/ssh/ssh.md).
-- [Recuperación de acceso SSH en Raspberry Pi](../../../raspberrypi/utilidades/ssh/acceso-recuperacion.md).
+- [Recuperación de acceso SSH en Raspberry Pi](../../../raspberrypi/acceso-conectividad/ssh/acceso-recuperacion.md).
 - [HDD externo y montajes persistentes en Raspberry Pi](../../../raspberrypi/utilidades/pi-hdd/pi-hdd.md).
 
 ## Referencias

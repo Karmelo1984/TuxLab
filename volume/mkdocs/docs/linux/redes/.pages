@@ -1,0 +1,6 @@
+nav:
+  - Guía Proxy: proxy
+  - Guía DDNS: ddns
+  - Guía DHCP: dhcp
+  - Guía SSH: ssh
+  - Guía Ethernet en Linux: failover_wifi_ethernet

@@ -114,8 +114,8 @@ Se documentó otra instalación en **Raspberry Pi 4 Model B Rev. 1.4, 2 GiB, Deb
 
 | Área | Procedimiento | Estado |
 |---|---|---|
-| Acceso remoto | [SSH y recuperación](utilidades/ssh/acceso-recuperacion.md) | Probado |
-| Red inalámbrica | [NetworkManager e IP fija](utilidades/red/wifi-ip-estatica.md) | Probado |
+| Acceso remoto | [SSH y recuperación](acceso-conectividad/ssh/acceso-recuperacion.md) | Probado |
+| Red inalámbrica | [NetworkManager e IP fija](acceso-conectividad/red/wifi-ip-estatica.md) | Probado |
 | Paquetes y sistema | [Mantenimiento y diagnóstico](utilidades/sistema/mantenimiento-diagnostico.md) | Probado |
 | Contenedores | [Docker y Compose](utilidades/docker/docker.md) | Probado |
 | HDD USB | [Añadir un HDD](utilidades/pi-hdd/pi-hdd.md) y [alimentación/USB](utilidades/pi-hdd/diagnostico-usb.md) | Pruebas cortas, pendiente de supervisión prolongada |

@@ -1,0 +1,8 @@
+nav:
+  - "file_detail_info": file_detail_info
+  - "file_rename": file_rename
+  - "mp4_to_mkv": mp4_to_mkv
+  - "resize_convert_images": resize_convert_images
+  - "search_film": search_film
+  - "smart_monitor": smart_monitor
+  - "speed_test_internet": speed_test_internet

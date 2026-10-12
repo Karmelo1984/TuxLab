@@ -181,7 +181,7 @@ Si necesitas acceder a archivos de un servidor como si fueran locales, puedes us
 ## Otras guías sobre SSH
 
 - [SSHFS: montar sistemas de archivos remotos desde Linux Mint](../../sistemas-archivos/sshfs/sshfs.md).
-- [Primer acceso y recuperación SSH en Raspberry Pi](../../../raspberrypi/utilidades/ssh/acceso-recuperacion.md).
+- [Primer acceso y recuperación SSH en Raspberry Pi](../../../raspberrypi/acceso-conectividad/ssh/acceso-recuperacion.md).
 
 !!! note "Autenticación por clave en un equipo de pruebas"
     En la Raspberry Pi 4 se reutilizó una clave pública RSA existente (`~/.ssh/id_rsa.pub`) mediante `ssh-copy-id`. No es necesario regenerar claves si se dispone de una válida. Nunca publicar la clave privada en una documentación.

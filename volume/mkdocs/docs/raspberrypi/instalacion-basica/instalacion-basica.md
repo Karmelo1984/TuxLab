@@ -67,8 +67,8 @@ Guía de primeros pasos de una Raspberry Pi con Raspberry Pi OS Lite de 64 bits.
 !!! warning "Diferencia respecto a la guía histórica"
     Los comandos `dhcpcd` y `systemd-networkd` que aparecen más abajo documentan escenarios anteriores. En la instalación Raspberry Pi OS / Debian 13 analizada se configuró la red con **NetworkManager**. No configurar varios gestores para `wlan0` simultáneamente.
 
-- [Primer acceso y recuperación de SSH sin monitor](../utilidades/ssh/acceso-recuperacion.md).
-- [Configurar Wi-Fi e IP fija con NetworkManager](../utilidades/red/wifi-ip-estatica.md).
+- [Primer acceso y recuperación de SSH sin monitor](../acceso-conectividad/ssh/acceso-recuperacion.md).
+- [Configurar Wi-Fi e IP fija con NetworkManager](../acceso-conectividad/red/wifi-ip-estatica.md).
 - [Actualizar y diagnosticar Raspberry Pi](../utilidades/sistema/mantenimiento-diagnostico.md).
 - [Instalar Docker y Compose en Debian ARM64](../utilidades/docker/docker.md).
 
@@ -89,7 +89,7 @@ ip route
 ```
 
 !!! warning "No mezclar gestores de red"
-    En Raspberry Pi OS / Debian moderno con **NetworkManager**, seguir la [guía de IP fija con `nmcli`](../utilidades/red/wifi-ip-estatica.md). Las alternativas siguientes se conservan para equipos que **realmente usan** `dhcpcd` o `systemd-networkd`; no habilitarlas encima de NetworkManager.
+    En Raspberry Pi OS / Debian moderno con **NetworkManager**, seguir la [guía de IP fija con `nmcli`](../acceso-conectividad/red/wifi-ip-estatica.md). Las alternativas siguientes se conservan para equipos que **realmente usan** `dhcpcd` o `systemd-networkd`; no habilitarlas encima de NetworkManager.
 
 #### Opción histórica 1: `dhcpcd` (solo si gobierna la interfaz)
 
@@ -188,10 +188,10 @@ $ sudo systemctl status systemd-networkd
 
 | Síntoma | Qué se comprobó | Referencia |
 |---|---|---|
-| No responde `raspberrypi.local` | mDNS puede no resolver aunque el equipo esté encendido; localizar la IP mediante router o ARP | [SSH inicial](../utilidades/ssh/acceso-recuperacion.md) |
-| `Connection refused` en puerto 22 | SSH no estaba habilitado/inicializado; crear `ssh` en la partición de arranque y comprobar usuario | [Recuperar SSH](../utilidades/ssh/acceso-recuperacion.md) |
-| Usuario `pi` con shell `nologin` | Inicialización incompleta; se utilizó `userconf.txt` durante primer arranque | [Usuario inicial](../utilidades/ssh/acceso-recuperacion.md) |
-| `wlan0 unavailable` | Wi-Fi desactivada por software aunque el hardware estuviera habilitado | [Wi-Fi con NetworkManager](../utilidades/red/wifi-ip-estatica.md) |
+| No responde `raspberrypi.local` | mDNS puede no resolver aunque el equipo esté encendido; localizar la IP mediante router o ARP | [SSH inicial](../acceso-conectividad/ssh/acceso-recuperacion.md) |
+| `Connection refused` en puerto 22 | SSH no estaba habilitado/inicializado; crear `ssh` en la partición de arranque y comprobar usuario | [Recuperar SSH](../acceso-conectividad/ssh/acceso-recuperacion.md) |
+| Usuario `pi` con shell `nologin` | Inicialización incompleta; se utilizó `userconf.txt` durante primer arranque | [Usuario inicial](../acceso-conectividad/ssh/acceso-recuperacion.md) |
+| `wlan0 unavailable` | Wi-Fi desactivada por software aunque el hardware estuviera habilitado | [Wi-Fi con NetworkManager](../acceso-conectividad/red/wifi-ip-estatica.md) |
 | `vcgencmd get_throttled=0x50005` | Subtensión y limitación de frecuencia | [HDD y alimentación](../utilidades/pi-hdd/diagnostico-usb.md) |
 
 ### Lista de comprobación posterior al primer arranque

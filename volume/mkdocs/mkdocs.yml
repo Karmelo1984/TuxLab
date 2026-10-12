@@ -70,6 +70,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - navigation.footer
     - content.code.copy
@@ -87,7 +88,8 @@ theme:
 # -----------------------------------------------------------------------------
 plugins:
   - search
-  - awesome-pages
+  - awesome-pages:
+      collapse_single_pages: true
   - mermaid2
   #- git-revision-date-localized:
   #    type: date

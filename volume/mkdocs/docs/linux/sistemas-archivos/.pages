@@ -1,0 +1,5 @@
+nav:
+  - Guía Rsync: rsync
+  - Guía MHDDFS: mhddfs
+  - Guía SSHFS: sshfs
+  - Restaurar particiones Clonezilla: restaurar_particiones_clonezilla

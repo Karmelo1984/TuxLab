@@ -1,0 +1,6 @@
+nav:
+  - Almacenamiento HDD/USB: pi-hdd
+  - Flashear EEPROM: eeprom
+  - Instalar Docker: docker
+  - Reducir imagen MicroSD: microsd
+  - Mantenimiento y diagnóstico: sistema
