@@ -104,5 +104,4 @@ extra:
 
 extra_css:
   - overrides/extra.css
-
 # Navegación controlada por los archivos .pages dentro de docs/.

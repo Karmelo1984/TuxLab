@@ -5,11 +5,11 @@ description: "Qué es un modelo de lenguaje, cómo se basa en la arquitectura Tr
 
 # Modelos de lenguaje (LLM)
 
-Un modelo de lenguaje de gran tamaño (LLM, *Large Language Model*) es una red neuronal entrenada para predecir el siguiente token de una secuencia de texto. Esa única tarea, aplicada a enormes cantidades de texto, produce modelos capaces de redactar, resumir, traducir, clasificar o escribir código.
+Un modelo de lenguaje de gran tamaño (LLM, _Large Language Model_) es una red neuronal entrenada para predecir el siguiente token de una secuencia de texto. Esa única tarea, aplicada a enormes cantidades de texto, produce modelos capaces de redactar, resumir, traducir, clasificar o escribir código.
 
 ## Arquitectura Transformer
 
-Los LLM actuales se basan en la arquitectura Transformer, presentada en el artículo *Attention Is All You Need* (Vaswani et al., 2017). Su componente central es el mecanismo de atención, que permite al modelo ponderar la relevancia de cada token de la entrada al procesar cada uno de los demás, sin recorrer el texto de forma estrictamente secuencial.
+Los LLM actuales se basan en la arquitectura Transformer, presentada en el artículo _Attention Is All You Need_ (Vaswani et al., 2017). Su componente central es el mecanismo de atención, que permite al modelo ponderar la relevancia de cada token de la entrada al procesar cada uno de los demás, sin recorrer el texto de forma estrictamente secuencial.
 
 Los modelos generativos de texto suelen usar la variante de solo decodificador: leen los tokens anteriores y calculan una distribución de probabilidad sobre el siguiente.
 

@@ -11,7 +11,7 @@ Un embedding es un vector numérico que representa el significado de un texto. T
 
 ## RAG
 
-La generación aumentada por recuperación (RAG, *Retrieval-Augmented Generation*) añade al prompt información recuperada de una fuente externa antes de que el modelo responda.
+La generación aumentada por recuperación (RAG, _Retrieval-Augmented Generation_) añade al prompt información recuperada de una fuente externa antes de que el modelo responda.
 
 1. Los documentos se dividen en fragmentos y se calculan sus embeddings.
 2. Ante una consulta, se buscan los fragmentos más cercanos.

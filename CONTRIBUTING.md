@@ -9,6 +9,7 @@ Este documento reúne los procedimientos técnicos para **desarrollar, editar, v
 - Git y un clon del repositorio (no solo el ZIP de GitHub).
 - Docker Engine o Docker Desktop, Docker Compose v2 y BuildKit.
 - Puerto TCP `8000` libre para desarrollo; `8080` para previsualizar producción.
+- Python 3.12 o superior con `venv`, solo para las comprobaciones previas al commit (sección 5).
 
 El entorno de desarrollo está basado en Python 3.12 **dentro del contenedor**: no es necesario instalar Python ni MkDocs en el equipo anfitrión. Las imágenes base permiten construir en `linux/amd64` y `linux/arm64`, incluido Apple Silicon.
 
@@ -155,12 +156,31 @@ docker compose run --rm --no-deps mkdocs \
   --site-dir /tmp/tuxlab-check
 ```
 
+### Entorno virtual de Python
+
+Crea el entorno una sola vez, en la raíz del repositorio (`.venv/` está en `.gitignore`):
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-mkdocs.txt pre-commit
+pre-commit install
+```
+
+En cada sesión nueva, activa el entorno con `source .venv/bin/activate` antes de hacer `git commit` o `git push`; los hooks usan `mkdocs` y `pre-commit` del entorno activo.
+
 ### Comprobaciones con pre-commit
 
-El repositorio incluye `.pre-commit-config.yaml` con verificaciones de formato, Markdown, YAML y Python. Si dispones de Python local o `pipx`, instala `pre-commit` y ejecuta:
+El repositorio incluye `.pre-commit-config.yaml` con verificaciones de formato, Markdown, YAML y Python. `pre-commit install` registra dos hooks de Git:
+
+- `pre-commit`: linters y formateadores en cada `git commit`.
+- `pre-push`: `mkdocs build`, igual que el workflow de Pages, en cada `git push`.
+
+Para ejecutarlos a mano:
 
 ```bash
 pre-commit run --all-files --show-diff-on-failure
+pre-commit run --all-files --hook-stage pre-push
 ```
 
 Algunos hooks pueden **modificar archivos automáticamente**. Revisa `git diff` y vuelve a ejecutar las comprobaciones antes de confirmar los cambios.
@@ -169,7 +189,7 @@ Algunos hooks pueden **modificar archivos automáticamente**. Revisa `git diff` 
 
 ### GitHub Actions
 
-- `.github/workflows/lint.yml` valida los *pushes* a `dev` y las *pull requests*. También construye el sitio con las dependencias de `requirements-mkdocs.txt`.
+- `.github/workflows/lint.yml` valida los _pushes_ a `dev` y las _pull requests_. También construye el sitio con las dependencias de `requirements-mkdocs.txt`.
 - `.github/workflows/pages.yml` genera y publica el HTML únicamente desde `main`, incluida la ejecución manual del workflow.
 
 Antes de integrar en `main`, comprueba que el workflow de lint ha terminado correctamente y que el resultado local conserva la navegación y el aspecto esperado.
@@ -180,7 +200,7 @@ Antes de integrar en `main`, comprueba que el workflow de lint ha terminado corr
 2. Revisa los archivos afectados mediante `git status` y `git diff`.
 3. Comprueba la compilación y los linters.
 4. Envía los cambios y revisa el workflow **Lint**.
-5. Integra los cambios validados en `main`, preferiblemente mediante una *pull request* con revisión de diferencias.
+5. Integra los cambios validados en `main`, preferiblemente mediante una _pull request_ con revisión de diferencias.
 6. Comprueba la ejecución de **Publicar TuxLab** y el sitio en GitHub Pages.
 
 Ejemplo para cambios ya revisados en `dev`:
@@ -257,7 +277,7 @@ No expongas el puerto `8000` de desarrollo al exterior.
 ## 9. Actualización de dependencias e imágenes
 
 - Mantén las dependencias directas en `requirements-mkdocs.txt`, compartido por Docker y GitHub Actions. No uses instalaciones dinámicas mediante `ADD_MODULES` en el arranque.
-- Las versiones directas están fijadas, pero las dependencias transitivas todavía no están bloqueadas mediante hashes: para reproducibilidad completa se requiere un lock y fijar el *digest* de las imágenes base.
+- Las versiones directas están fijadas, pero las dependencias transitivas todavía no están bloqueadas mediante hashes: para reproducibilidad completa se requiere un lock y fijar el _digest_ de las imágenes base.
 - Actualiza el Dockerfile, prueba la documentación en `dev` y revisa posibles incompatibilidades de Material, Mermaid y Awesome Pages antes de publicar.
 - Reconstruye periódicamente las imágenes para incorporar correcciones de seguridad, sin considerar que el multistage por sí solo las garantiza.
 - No subas `.env`, credenciales ni ficheros locales de configuración. El `.gitignore` es una ayuda, no sustituye la revisión de los archivos añadidos.
@@ -283,4 +303,4 @@ No expongas el puerto `8000` de desarrollo al exterior.
 - [ ] No se han añadido secretos, cachés, archivos del sistema ni artefactos generados.
 - [ ] Se han revisado los cambios de formato introducidos por pre-commit.
 - [ ] El workflow **Lint** de GitHub Actions pasa correctamente.
-- [ ] Se ha revisado la *pull request* antes de integrar el cambio en `main`.
+- [ ] Se ha revisado la _pull request_ antes de integrar el cambio en `main`.

@@ -65,4 +65,3 @@ COPY deploy/Caddyfile /etc/caddy/Caddyfile
 COPY --from=site-builder --chown=10001:10001 /site/ /usr/share/caddy/
 USER 10001:10001
 EXPOSE 8080
-

@@ -5,7 +5,7 @@ description: "Cómo conectar servidores MCP a Claude Code: comandos, transportes
 
 # MCP: herramientas externas
 
-MCP (*Model Context Protocol*) es un protocolo abierto para conectar un modelo con herramientas y fuentes de datos externas. En Claude Code, un servidor MCP añade herramientas nombradas `mcp__<servidor>__<herramienta>`.
+MCP (_Model Context Protocol_) es un protocolo abierto para conectar un modelo con herramientas y fuentes de datos externas. En Claude Code, un servidor MCP añade herramientas nombradas `mcp__<servidor>__<herramienta>`.
 
 ## Añadir un servidor
 
@@ -44,7 +44,7 @@ Los servidores de `.mcp.json` requieren aprobación antes de usarse.
 ## Riesgos
 
 - Un servidor MCP ejecuta código o accede a datos con tus credenciales: instala solo servidores de confianza.
-- Su contenido puede incluir instrucciones maliciosas (*prompt injection*); ver [Seguridad y limitaciones](../../fundamentos/seguridad.md).
+- Su contenido puede incluir instrucciones maliciosas (_prompt injection_); ver [Seguridad y limitaciones](../../fundamentos/seguridad.md).
 - No guardes secretos en `.mcp.json`; usa variables de entorno.
 - Cada servidor añade descripciones de herramientas al contexto; desactiva los que no uses con `/mcp`.
 
