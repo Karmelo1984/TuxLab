@@ -5,13 +5,28 @@ on:
   push:
     branches: [dev]
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-mkdocs.txt
       - run: python -m pip install pre-commit
       - run: pre-commit run --all-files --show-diff-on-failure
+      - name: Instalar dependencias MkDocs
+        run: python -m pip install -r requirements-mkdocs.txt
+      - name: Comprobar compilación del sitio
+        run: |
+          mkdocs build --clean \
+            --config-file mkdocs/mkdocs.yml \
+            --site-dir "$RUNNER_TEMP/tuxlab-site"

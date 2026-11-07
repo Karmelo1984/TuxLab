@@ -1,0 +1,15 @@
+# Enviar solo los ficheros necesarios para construir las imágenes.
+**
+!Dockerfile
+!requirements-mkdocs.txt
+!mkdocs/
+!mkdocs/**
+!deploy/
+!deploy/Caddyfile
+!.git/
+!.git/**
+# Excluir archivos temporales y metadatos Git no necesarios para el build.
+mkdocs/site/
+mkdocs/.cache/
+.git/hooks/
+.git/logs/

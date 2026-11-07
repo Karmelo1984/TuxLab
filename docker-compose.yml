@@ -1,18 +1,28 @@
+# Uso local: docker compose up --build -d
 services:
-  # ================== MKDocs
   mkdocs:
-    container_name: mkdocs
-    image: polinux/mkdocs
+    image: tuxlab-mkdocs:dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    init: true
     restart: unless-stopped
-
-    environment:
-      LIVE_RELOAD_SUPPORT: "true"
-      ADD_MODULES: "fontawesome-markdown mkdocs-git-revision-date-localized-plugin mkdocs-material mkdocs-mermaid2-plugin mkdocs-awesome-pages-plugin"
-      FAST_MODE: "true"
-      DOCS_DIRECTORY: "/mkdocs"
-
+    user: "10001:10001"
     ports:
-      - "8000:8000"
-
+      - "127.0.0.1:8000:8000"
     volumes:
-      - ./mkdocs:/mkdocs
+      - type: bind
+        source: ./mkdocs
+        target: /mkdocs
+        read_only: true
+        bind:
+          create_host_path: false
+    read_only: true
+    tmpfs:
+      - /tmp:rw,nosuid,nodev,noexec,size=256m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 128

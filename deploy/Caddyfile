@@ -1,0 +1,14 @@
+# Tráfico HTTP interno. Para publicar en Internet, colocar un proxy HTTPS delante.
+:8080 {
+    root * /usr/share/caddy
+    encode zstd gzip
+
+    header {
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        X-Frame-Options "SAMEORIGIN"
+    }
+
+    respond /healthz "ok" 200
+    file_server
+}

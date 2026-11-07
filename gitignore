@@ -1,0 +1,150 @@
+# =============================================================================
+# TuxLab - .gitignore
+# Ramas: dev (desarrollo) / main (GitHub Pages)
+# Mantener versionados: mkdocs/docs/**, archivos .pages, Dockerfile,
+# docker-compose*.yml, deploy/Caddyfile, .github/** y .vscode/{settings,extensions}.json
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Sistemas operativos: macOS
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+Icon?
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.TemporaryItems/
+.DocumentRevisions-V100/
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.apdisk
+__MACOSX/
+
+# Sistemas operativos: Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.stackdump
+
+# Sistemas operativos: Linux / administradores de archivos
+.directory
+.Trash-*/
+.nfs*
+
+# -----------------------------------------------------------------------------
+# Editores e IDE (conservar .vscode/settings.json y extensions.json versionados)
+# -----------------------------------------------------------------------------
+.idea/
+*.iml
+*.sublime-workspace
+*.code-workspace
+.fleet/
+.history/
+.vscode/.history/
+.vscode/*.log
+*.swp
+*.swo
+*~
+
+# Configuración local de Claude Code (no ignorar .claude/ entera)
+.claude/settings.local.json
+.claude/cache/
+.claude/todos/
+.claude/sessions/
+
+# -----------------------------------------------------------------------------
+# Python / MkDocs
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Entornos virtuales y cachés
+.venv/
+venv/
+env/
+ENV/
+.pip-cache/
+.cache/
+
+# Sitios generados por MkDocs (solo las rutas conocidas del proyecto)
+/site/
+/mkdocs/site/
+/volume/mkdocs/site/
+
+# -----------------------------------------------------------------------------
+# Node.js / herramientas de lint y formato
+# -----------------------------------------------------------------------------
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.eslintcache
+.prettiercache
+.stylelintcache
+.markdownlintcache
+*.tsbuildinfo
+
+# -----------------------------------------------------------------------------
+# Secretos y configuración específica del equipo
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+/secrets/
+/deploy/secrets/
+
+# Overrides de Docker Compose exclusivos del entorno local
+/docker-compose.override.yml
+/docker-compose.override.yaml
+/compose.override.yml
+/compose.override.yaml
+
+# -----------------------------------------------------------------------------
+# Logs, temporales y archivos de respaldo
+# -----------------------------------------------------------------------------
+*.log
+*.log.*
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.pid
+*.pid.lock
+*.swn
+
+# No ignorar de forma general carpetas build/, dist/, ficheros ZIP, imágenes,
+# SVG, Markdown ni archivos .pages: pueden ser contenido legítimo de TuxLab.

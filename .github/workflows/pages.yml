@@ -17,33 +17,37 @@ concurrency:
 
 jobs:
   deploy:
+    # Evita publicar dev incluso si se lanza workflow_dispatch sobre esa rama.
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Obtener repositorio
+      - name: Obtener repositorio e historial completo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
 
       - name: Preparar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-mkdocs.txt
 
-      - name: Instalar MkDocs
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install mkdocs-material mkdocs-awesome-pages-plugin mkdocs-mermaid2-plugin pymdown-extensions
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements-mkdocs.txt
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
 
       - name: Generar documentación
         run: |
-          mkdocs build \
-            --config-file volume/mkdocs/mkdocs.yml \
+          mkdocs build --clean \
+            --config-file mkdocs/mkdocs.yml \
             --site-dir "$GITHUB_WORKSPACE/site"
 
       - name: Subir documentación
