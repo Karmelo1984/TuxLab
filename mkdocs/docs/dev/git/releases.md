@@ -1,9 +1,6 @@
 ---
 title: "Git: publicación de versiones con historial compacto"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.0.0
+description: "Procedimiento para publicar en main el estado final de dev con un único commit por versión, conservando el historial en dev."
 ---
 
 # Publicación de versiones: `dev` → `main`

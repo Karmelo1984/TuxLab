@@ -1,9 +1,6 @@
 ---
 title: "MkDocs"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Despliegue de MkDocs con Docker Compose: estructura de directorios, docker-compose.yml y acceso al sitio de documentación."
 ---
 
 # MkDocs

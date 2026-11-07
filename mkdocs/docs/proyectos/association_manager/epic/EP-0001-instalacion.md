@@ -1,10 +1,6 @@
 ---
 title: "Instalación de la Aplicación"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-04-13
-version: 1.0.0
-tags: [épica, instalación]
+description: "Épica de Gestor de Asociaciones: Instalación de la Aplicación."
 ---
 
 # 🏗 EP-0001 - Instalación de la Aplicación

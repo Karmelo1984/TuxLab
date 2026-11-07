@@ -1,9 +1,6 @@
 ---
 title: "file_rename.sh"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Script Bash que renombra los archivos de un directorio a partir de un fichero de texto con los nuevos nombres."
 ---
 
 # file_rename

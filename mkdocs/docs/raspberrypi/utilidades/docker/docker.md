@@ -1,9 +1,6 @@
 ---
 title: "Instalación de Docker y Docker Compose en Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Instalación de Docker Engine y Docker Compose en Raspberry Pi con Debian 13 ARM64, comprobaciones y uso básico."
 ---
 
 # Instalación de Docker y Docker Compose

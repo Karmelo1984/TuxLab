@@ -1,9 +1,6 @@
 ---
 title: "Plex"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Despliegue de Plex con Docker para organizar y reproducir contenido multimedia en la red local y fuera de ella."
 ---
 
 # Plex

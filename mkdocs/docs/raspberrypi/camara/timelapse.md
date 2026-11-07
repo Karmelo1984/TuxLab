@@ -1,9 +1,6 @@
 ---
 title: "Timelapse con cámara IMX708 y generación de MP4"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.0.0
+description: "Timelapse con rpicam-still en segundo plano y generación del vídeo MP4 desde Linux Mint."
 ---
 
 # Timelapse con cámara IMX708 y generación de MP4

@@ -1,10 +1,6 @@
 ---
 title: "EP-003 - Renovar Licencia"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
-tags: [épica]
+description: "Épica de License Manager: EP-003 - Renovar Licencia."
 ---
 
 # 🏗 EP-003 - Renovar Licencia

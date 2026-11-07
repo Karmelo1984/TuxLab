@@ -746,3 +746,15 @@ banners:
     accent: "#4ade80"
     accent_light: "#bbf7d0"
     motif: scan
+  - md: ia/index.md
+    out: ia/img/img-ia-header-02.svg
+    title: Inteligencia artificial
+    subtitle: FUNDAMENTOS, CHATGPT Y CLAUDE CODE
+    icon: 🤖
+    tag: IA
+    bg_from: "#0f172a"
+    bg_mid: "#1e2a5a"
+    bg_to: "#3b2f8f"
+    accent: "#818cf8"
+    accent_light: "#c7d2fe"
+    motif: circuit

@@ -36,7 +36,7 @@ TuxLab/
 └── CONTRIBUTING.md              # Este documento
 ```
 
-Las plantillas `example-self-hosting.md`, `example.generico.md` y `example.script.md` se encuentran también en la raíz del repositorio.
+Las plantillas `technical-guide.md`, `self-hosting.md`, `script.md` y `prompt.md` se encuentran en `templates/`. La cabecera YAML de cada artículo contiene solo `title` y `description`; `scripts/check_frontmatter.py` lo valida en pre-commit.
 
 ## 3. Desarrollo local con Docker
 
@@ -94,7 +94,7 @@ La configuración incluida en `docker-compose.yml` utiliza:
 ## 4. Crear o modificar documentación
 
 1. Selecciona una sección existente de `mkdocs/docs/` o crea un directorio temático cuando corresponda.
-2. Parte, cuando sea útil, de una plantilla de la raíz: `example-self-hosting.md`, `example.generico.md` o `example.script.md`.
+2. Parte, cuando sea útil, de una plantilla de `templates/`: `technical-guide.md`, `self-hosting.md`, `script.md` o `prompt.md`.
 3. Escribe el contenido en Markdown y guarda los recursos asociados en el directorio de la sección correspondiente.
 4. Actualiza el archivo `.pages` de la sección si hace falta modificar el orden, los títulos o la jerarquía de la navegación.
 5. Revisa localmente el resultado, incluidos enlaces, iconos, imágenes, tablas y diagramas Mermaid.

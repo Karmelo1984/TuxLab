@@ -1,10 +1,6 @@
 ---
 title: "Primera Ejecución del Programa"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-04-13
-version: 1.0.0
-tags: [épica, configuración inicial]
+description: "Épica de Gestor de Asociaciones: Primera Ejecución del Programa."
 ---
 
 # 🏗 EP-0002 - Primera Ejecución del Programa

@@ -1,9 +1,6 @@
 ---
 title: "mp4_to_mkv.sh"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Script Bash que convierte vídeos MP4 a MKV con mkvmerge cambiando el contenedor sin recodificar ni perder calidad."
 ---
 
 # mp4_to_mkv

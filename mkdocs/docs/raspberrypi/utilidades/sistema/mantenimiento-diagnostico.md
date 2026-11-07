@@ -1,9 +1,6 @@
 ---
 title: "Mantenimiento y diagnóstico de Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Actualización de Raspberry Pi OS, herramientas de administración y localización de fallos de red, cámara, USB y Docker."
 ---
 
 # Mantenimiento y diagnóstico de Raspberry Pi

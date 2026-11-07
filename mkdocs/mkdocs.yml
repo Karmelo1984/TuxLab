@@ -96,6 +96,8 @@ plugins:
       type: date
       enable_creation_date: true
       fallback_to_build_date: false
+      # Commits de formato masivo que no deben alterar las fechas de las páginas.
+      ignored_commits_file: ../.git-blame-ignore-revs
 
 extra:
   generator: false

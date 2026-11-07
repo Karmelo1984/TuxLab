@@ -1,7 +1,6 @@
 ---
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-19
+title: "Administración de Contenedores"
+description: "Página reservada para la administración de contenedores Docker; el contenido avanzado está pendiente de documentar."
 ---
 
 # Administración de Contenedores

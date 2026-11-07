@@ -1,9 +1,6 @@
 ---
 title: "SSHFS: montar carpetas remotas en Linux Mint"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Cómo montar por SSH un directorio remoto, con una Raspberry Pi como ejemplo, para usarlo desde el explorador de Linux Mint."
 ---
 
 # SSHFS: montar carpetas remotas en Linux Mint

@@ -1,10 +1,6 @@
 ---
 title: "Desinstalar la aplicación"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-02-09
-version: 1.0.0
-tags: [historia de usuario, feat, install]
+description: "Historia de usuario de Gestor de Asociaciones: Desinstalar la aplicación."
 ---
 
 # 📜 Desinstalar la aplicación

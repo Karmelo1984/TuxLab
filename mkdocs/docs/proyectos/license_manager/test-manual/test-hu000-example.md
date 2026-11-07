@@ -1,10 +1,6 @@
 ---
 title: "🛠 Test Manual - [NOMBRE DE LA HISTORIA]"
-authors:
-  - 📝 Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
-tags: [test funcional, test manual]
+description: "Plantilla de test manual de License Manager con marcadores de posición."
 ---
 
 # 🛠 Test Manual - [NOMBRE DE LA HISTORIA]

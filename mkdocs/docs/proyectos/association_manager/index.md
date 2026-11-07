@@ -1,10 +1,6 @@
 ---
 title: "Gestor de Asociaciones"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
-tags: [documentación]
+description: "Gestor de Asociaciones: aplicación de escritorio en Python con licencia para gestionar socios, cuotas y eventos."
 ---
 
 # 🚀 Gestor de Asociaciones

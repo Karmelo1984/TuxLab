@@ -1,9 +1,6 @@
 ---
 title: "OpenProject"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-05-24
-version: 1.0.0
+description: "Despliegue de OpenProject con Docker para planificar y seguir proyectos de forma colaborativa."
 ---
 
 # OpenProject

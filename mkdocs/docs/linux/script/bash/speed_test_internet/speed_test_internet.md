@@ -1,9 +1,6 @@
 ---
 title: "speedtest_monitor.sh"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Script Bash que mide la velocidad de Internet con speedtest.net y registra los resultados."
 ---
 
 # speedtest_monitor

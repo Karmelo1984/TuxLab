@@ -1,9 +1,6 @@
 ---
 title: "Duplicati"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Despliegue de Duplicati con Docker para realizar copias de seguridad cifradas y comprimidas en distintos destinos."
 ---
 
 # Duplicati

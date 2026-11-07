@@ -1,9 +1,6 @@
 ---
 title: "smart_monitor.sh"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Script Bash que monitoriza el estado SMART de los discos: sectores reasignados, temperatura y errores de lectura."
 ---
 
 # smart_monitor

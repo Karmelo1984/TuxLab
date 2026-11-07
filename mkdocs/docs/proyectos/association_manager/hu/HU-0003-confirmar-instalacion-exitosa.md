@@ -1,10 +1,6 @@
 ---
 title: "Confirmar instalación exitosa"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-02-09
-version: 1.0.0
-tags: [historia de usuario, feat, install]
+description: "Historia de usuario de Gestor de Asociaciones: Confirmar instalación exitosa."
 ---
 
 # 📜 Confirmar instalación exitosa

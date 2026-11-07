@@ -1,9 +1,6 @@
 ---
 title: "Añadir un Disco Duro Externo a una Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Comprobar, montar de forma temporal o permanente y dar permisos a un disco duro externo en una Raspberry Pi."
 ---
 
 # Añadir un Disco Duro Externo

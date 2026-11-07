@@ -1,9 +1,6 @@
 ---
 title: "Samba"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Configuración de Samba para compartir archivos e impresoras mediante SMB entre Linux, Windows y macOS."
 ---
 
 # Samba

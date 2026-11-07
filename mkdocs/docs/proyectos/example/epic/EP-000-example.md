@@ -1,10 +1,6 @@
 ---
 title: "[NOMBRE DE LA ÉPICA]"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
-tags: [épica]
+description: "Plantilla de épica de el proyecto de ejemplo con marcadores de posición."
 ---
 
 # 🏗 [NOMBRE DE LA ÉPICA]---

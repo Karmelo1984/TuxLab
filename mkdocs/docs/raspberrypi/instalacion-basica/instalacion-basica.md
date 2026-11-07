@@ -1,9 +1,6 @@
 ---
 title: "Inicialización Básica de Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Instalación de Raspberry Pi OS Lite de 64 bits, configuración de red e IP estática, raspi-config y montaje con mhddfs."
 ---
 
 # Inicialización Básica de Raspberry Pi

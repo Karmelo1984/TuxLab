@@ -1,9 +1,6 @@
 ---
 title: "NextCloud"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Despliegue de Nextcloud con Docker como alternativa autoalojada a Google Drive, Dropbox u OneDrive."
 ---
 
 # Nextcloud

@@ -1,9 +1,6 @@
 ---
 title: "Guía de Rsync"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-31
-version: 1.0.0
+description: "Guía de Rsync: instalación, sintaxis y opciones habituales, sincronización entre carpetas y modo de prueba --dry-run."
 ---
 
 # Guía de Rsync

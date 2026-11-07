@@ -1,9 +1,6 @@
 ---
 title: "Media Stack + Monitoring + Portainer"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.0.0
+description: "Stack autohospedado con Docker para descargar, organizar y ver contenido multimedia, con monitorización y Portainer."
 ---
 
 # Media Stack + Monitoring + Portainer

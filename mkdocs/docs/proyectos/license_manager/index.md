@@ -1,10 +1,6 @@
 ---
 title: "License Manager - Generador y Gestor de Licencias"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-25
-version: 1.0.0
-tags: [documentación]
+description: "License Manager: aplicación de escritorio en Python para generar, renovar y gestionar licencias cifradas con SQLite."
 ---
 
 # 🚀 License Manager - Generador y Gestor de Licencias

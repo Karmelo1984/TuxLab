@@ -1,9 +1,6 @@
 ---
 title: "Guía de MHDDFS"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Guía de MHDDFS: sistema de archivos que combina varios dispositivos de almacenamiento en un único punto de montaje."
 ---
 
 # MHDDFS

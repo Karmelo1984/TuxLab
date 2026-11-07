@@ -1,9 +1,6 @@
 ---
 title: "Calibración de cámara NoIR y reflejos en doble acristalamiento"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Limitaciones de una cámara NoIR tras doble acristalamiento, ensayos de HDR y CLAHE y propuesta de detección de reflejos."
 ---
 
 # Calibración de cámara NoIR y reflejos en doble acristalamiento

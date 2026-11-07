@@ -1,7 +1,6 @@
 ---
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-19
+title: "Redes en Docker"
+description: "Tipos de red de Docker (bridge, host, none, overlay y macvlan) con ejemplos de creación y conexión de contenedores."
 ---
 
 # Redes en Docker

@@ -1,9 +1,6 @@
 ---
 title: "HDD Toshiba de 1 TB: alimentación, montaje y seguridad"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Diagnóstico de baja tensión y sobrecorriente USB en un HDD externo, montaje ext4 por UUID y protección de la microSD."
 ---
 
 # HDD Toshiba de 1 TB: alimentación, montaje y seguridad

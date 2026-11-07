@@ -1,9 +1,6 @@
 ---
 title: "Reducir imagen de MicroSD en Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Reducir el tamaño de la imagen de una microSD de Raspberry Pi con PiShrink."
 ---
 
 # Reducir imagen de MicroSD

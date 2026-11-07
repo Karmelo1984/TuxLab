@@ -1,10 +1,6 @@
 ---
 title: "Actores del Sistema"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
-tags: [actores, roles]
+description: "Actores que interactúan con el proyecto de ejemplo. Contenido de ejemplo con marcadores de posición."
 ---
 
 # 👥 Actores del Sistema  

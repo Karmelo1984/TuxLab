@@ -1,9 +1,6 @@
 ---
 title: "Desarrollo"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.0.0
+description: "Índice de la sección Desarrollo con las guías de Git: fundamentos, flujo para QA y publicación de versiones."
 ---
 
 # Desarrollo

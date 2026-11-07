@@ -1,9 +1,6 @@
 ---
 title: "Guía de SSH"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.2.0
+description: "Guía de SSH: instalación en Linux, macOS y Windows, conexión remota, acceso con clave pública y solución de problemas."
 ---
 
 # Guía de SSH

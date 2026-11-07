@@ -1,9 +1,6 @@
 ---
 title: "file_detail_info"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-04-05
-version: 1.0.0
+description: "Script Python que analiza los vídeos de un directorio: tamaño, duración, resolución, códecs, pistas de audio y subtítulos."
 ---
 
 # file_detail_info

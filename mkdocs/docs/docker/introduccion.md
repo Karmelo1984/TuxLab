@@ -1,7 +1,6 @@
 ---
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-19
+title: "Introducción a Docker"
+description: "Introducción a Docker: qué es la plataforma de contenedores, para qué sirve y cuáles son sus componentes principales."
 ---
 
 # Introducción a Docker

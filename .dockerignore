@@ -6,6 +6,7 @@
 !mkdocs/**
 !deploy/
 !deploy/Caddyfile
+!.git-blame-ignore-revs
 !.git/
 !.git/**
 # Excluir archivos temporales y metadatos Git no necesarios para el build.

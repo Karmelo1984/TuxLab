@@ -1,9 +1,6 @@
 ---
 title: "Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Introducción a Raspberry Pi: qué son estas computadoras de placa única, sus características principales y usos habituales."
 ---
 
 # Raspberry Pi

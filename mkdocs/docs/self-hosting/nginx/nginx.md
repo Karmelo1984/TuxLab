@@ -1,9 +1,6 @@
 ---
 title: "NGINX"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-04-05
-version: 1.0.0
+description: "Despliegue de NGINX con Docker como servidor web, proxy inverso, equilibrador de carga y caché HTTP."
 ---
 
 # NGINX

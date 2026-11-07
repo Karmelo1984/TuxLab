@@ -1,9 +1,6 @@
 ---
 title: "Cámara IMX708 NoIR y vídeo en directo desde Linux Mint"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Cámara IMX708 NoIR: fotografías, transmisión H.264 por TCP a Linux Mint y perfiles de imagen de día y de noche."
 ---
 
 # Cámara IMX708 NoIR y vídeo en directo desde Linux Mint

@@ -1,9 +1,6 @@
 ---
 title: "Git para QA: sincronización y contribuciones"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.0.0
+description: "Cómo sincronizar un proyecto Java/Spring Boot desde IntelliJ IDEA, descartar cambios locales y contribuir con ajustes pequeños."
 ---
 
 # Git para QA

@@ -1,9 +1,6 @@
 ---
 title: "Homarr"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Despliegue de Homarr con Docker: panel personalizable para acceder a las aplicaciones autoalojadas."
 ---
 
 # Homarr

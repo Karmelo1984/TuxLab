@@ -1,9 +1,6 @@
 ---
 title: "banner_generator"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.0.0
+description: "Script Python que genera los banners SVG de cabecera de TuxLab a partir de un manifiesto YAML o de parámetros sueltos."
 ---
 
 # banner_generator

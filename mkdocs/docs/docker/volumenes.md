@@ -1,7 +1,6 @@
 ---
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-19
+title: "Volúmenes en Docker"
+description: "Volúmenes de Docker para persistir datos de contenedores, con ejemplos de copia de seguridad y restauración mediante scripts."
 ---
 
 # Volúmenes en Docker

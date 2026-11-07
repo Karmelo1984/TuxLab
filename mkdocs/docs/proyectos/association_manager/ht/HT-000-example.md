@@ -1,10 +1,6 @@
 ---
 title: "[NOMBRE DE LA HISTORIA TÉCNICA]"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-25
-version: 1.0.0
-tags: [historia técnica]
+description: "Plantilla de historia técnica de Gestor de Asociaciones con marcadores de posición."
 ---
 
 # 🔧 [NOMBRE DE LA HISTORIA TÉCNICA]

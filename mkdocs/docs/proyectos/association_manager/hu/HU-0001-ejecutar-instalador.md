@@ -1,10 +1,6 @@
 ---
 title: "Ejecutar el instalador"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-02-09
-version: 1.0.0
-tags: [historia de usuario, feat, install]
+description: "Historia de usuario de Gestor de Asociaciones: Ejecutar el instalador."
 ---
 
 # 📜 Ejecutar el instalador

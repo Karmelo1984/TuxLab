@@ -1,7 +1,6 @@
 ---
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-19
+title: "Gestión de imágenes en Docker"
+description: "Gestión de imágenes de Docker: construcción con Dockerfile, etiquetado, compartición y comandos de uso habitual."
 ---
 
 # Gestión de imágenes en Docker

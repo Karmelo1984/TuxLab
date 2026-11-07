@@ -1,9 +1,6 @@
 ---
 title: "Proxy vs Proxy Inverso"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-04-05
-version: 1.0.0
+description: "Diferencias entre un proxy y un proxy inverso: funcionamiento, casos de uso y cuándo conviene cada uno."
 ---
 
 # Proxy vs Proxy Inverso

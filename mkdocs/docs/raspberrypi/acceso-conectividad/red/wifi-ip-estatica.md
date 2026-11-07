@@ -1,9 +1,6 @@
 ---
 title: "Red Wi-Fi e IP estática en Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.2.0
+description: "Activar Wi-Fi con NetworkManager y configurar una IP fija en Raspberry Pi OS sin perder el acceso SSH."
 ---
 
 # Red Wi-Fi e IP estática en Raspberry Pi

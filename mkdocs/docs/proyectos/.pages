@@ -1,0 +1,5 @@
+nav:
+  - index.md
+  - Gestor de Asociaciones: association_manager
+  - HDD Manager: hdd_manager
+  - License Manager: license_manager

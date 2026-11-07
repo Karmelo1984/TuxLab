@@ -1,9 +1,6 @@
 ---
 title: "Proxmark3"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-08-09
-version: 1.0.0
+description: "Instalación de Proxmark3 en Linux, configuración básica y secuencia para analizar y clonar tarjetas Mifare Classic."
 ---
 
 # Configuración e instalación de Proxmark3

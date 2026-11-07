@@ -1,9 +1,6 @@
 ---
 title: "Portainer"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Despliegue de Portainer con Docker para administrar contenedores, imágenes, volúmenes y redes desde una interfaz web."
 ---
 
 # Portainer

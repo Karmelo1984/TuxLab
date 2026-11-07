@@ -1,9 +1,6 @@
 ---
 title: "Primer acceso y recuperación de SSH en Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.0.0
+description: "Instalación headless de Raspberry Pi, localización de su IP, conexión por Ethernet directa y recuperación del acceso SSH."
 ---
 
 # Primer acceso y recuperación de SSH en Raspberry Pi

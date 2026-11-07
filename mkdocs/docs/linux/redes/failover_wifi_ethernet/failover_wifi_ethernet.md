@@ -1,9 +1,6 @@
 ---
 title: "Failover Wi-Fi/Ethernet en Linux"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-11-29
-version: 1.0.0
+description: "Failover entre Wi-Fi y Ethernet en Linux Mint (NetworkManager) y Ubuntu Lite (Netplan y systemd-networkd), con pruebas de conectividad."
 ---
 
 # Failover Wi-Fi/Ethernet en Linux

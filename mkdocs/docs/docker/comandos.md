@@ -1,7 +1,6 @@
 ---
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-19
+title: "Comandos esenciales de Docker"
+description: "Referencia rápida de los comandos de Docker más utilizados para contenedores, imágenes, volúmenes y redes."
 ---
 
 # Comandos esenciales de Docker

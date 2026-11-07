@@ -1,10 +1,6 @@
 ---
 title: "Diagrama de Clases"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-25
-version: 1.0.0
-tags: [arquitectura, UML]
+description: "Diagrama de clases con la estructura y las relaciones de los componentes de HDD Manager."
 ---
 
 # 📌 Diagrama de Clases  

@@ -26,3 +26,12 @@ repos:
       - id: ruff-check
         args: [--fix]
       - id: ruff-format
+  - repo: local
+    hooks:
+      - id: check-frontmatter
+        name: Validar cabecera YAML (title y description)
+        entry: python3 scripts/check_frontmatter.py
+        language: python
+        additional_dependencies: [pyyaml]
+        pass_filenames: false
+        files: ^mkdocs/docs/.*\.md$

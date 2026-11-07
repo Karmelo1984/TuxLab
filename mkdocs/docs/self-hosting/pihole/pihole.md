@@ -1,9 +1,6 @@
 ---
 title: "Pi-Hole"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Despliegue de Pi-hole como servidor DNS que bloquea anuncios y rastreadores en toda la red local."
 ---
 
 # Pi-Hole

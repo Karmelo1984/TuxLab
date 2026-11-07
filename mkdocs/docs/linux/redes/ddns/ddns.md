@@ -1,9 +1,6 @@
 ---
 title: "Guía de DDNS"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Guía de DNS dinámico (DDNS): instalación, configuración en un router compatible, scripts de actualización manual y solución de problemas."
 ---
 
 # Guía de DDNS

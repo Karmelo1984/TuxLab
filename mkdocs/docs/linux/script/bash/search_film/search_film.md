@@ -1,9 +1,6 @@
 ---
 title: "search_film.sh"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Script Bash que busca archivos en un directorio y comprueba si ya figuran en un archivo de registro."
 ---
 
 # search_film

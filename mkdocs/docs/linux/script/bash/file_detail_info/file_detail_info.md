@@ -1,9 +1,6 @@
 ---
 title: "file_detail_info.sh"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Script Bash que analiza los vídeos de un directorio y muestra tamaño, códec, resolución y otros datos de cada archivo."
 ---
 
 # file_detail_info

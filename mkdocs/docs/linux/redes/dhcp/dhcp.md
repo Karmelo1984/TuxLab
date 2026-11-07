@@ -1,9 +1,6 @@
 ---
 title: "Guía de DHCP"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Guía de DHCP: requisitos, instalación en Linux, uso del servicio de asignación de direcciones IP y solución de problemas."
 ---
 
 # Guía de DHCP

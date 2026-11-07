@@ -1,9 +1,6 @@
 ---
 title: "JellyFin"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Despliegue de Jellyfin con Docker: servidor multimedia libre para organizar y transmitir películas, series y música."
 ---
 
 # Jellyfin

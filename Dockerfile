@@ -51,6 +51,7 @@ WORKDIR /src
 COPY mkdocs/ /src/mkdocs/
 # Requiere construir desde un clon Git local con historial completo.
 COPY .git/ /src/.git/
+COPY .git-blame-ignore-revs /src/.git-blame-ignore-revs
 ARG SITE_URL=https://karmelo1984.github.io/TuxLab/
 RUN git rev-parse --is-inside-work-tree \
     && sed -i "s|^site_url:.*|site_url: ${SITE_URL}|" /src/mkdocs/mkdocs.yml \

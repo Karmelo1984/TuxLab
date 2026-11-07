@@ -1,6 +1,6 @@
 # TuxLab
 
-**TuxLab** es un repositorio de documentación técnica personal sobre **self-hosting, Docker, Linux, Raspberry Pi y desarrollo de software**. Reúne procedimientos, configuraciones, scripts y notas de proyectos para poder consultarlos y mantenerlos en un único lugar.
+**TuxLab** es un repositorio de documentación técnica personal sobre **self-hosting, Docker, Linux, Raspberry Pi, desarrollo de software e IA**. Reúne procedimientos, configuraciones, scripts y notas de proyectos para poder consultarlos y mantenerlos en un único lugar.
 
 - **Sitio web:** <https://karmelo1984.github.io/TuxLab/>
 - **Código fuente:** <https://github.com/Karmelo1984/TuxLab>
@@ -17,6 +17,7 @@ La documentación se organiza por áreas temáticas:
 | `raspberrypi/`  | Instalación, configuración, cámara, utilidades y NAS.                              |
 | `dev/`          | Git y herramientas de desarrollo.                                                  |
 | `proyectos/`    | Proyectos y experimentos propios.                                                  |
+| `ia/`           | Fundamentos de IA, ChatGPT y Claude Code.                                          |
 
 Los artículos, recursos e imágenes están en [`mkdocs/docs/`](mkdocs/docs/). La navegación del sitio se ordena con los archivos `.pages` de cada sección.
 

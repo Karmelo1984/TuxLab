@@ -1,9 +1,6 @@
 ---
 title: "OpenMediaVault en Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Instalación de OpenMediaVault en una Raspberry Pi, configuración inicial y adición de discos duros para un NAS doméstico."
 ---
 
 # OpenMediaVault

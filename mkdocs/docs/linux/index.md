@@ -1,9 +1,6 @@
 ---
 title: "Linux"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.0.0
+description: "Índice de la sección Linux: redes, sistemas de archivos, scripts y utilidades sueltas para administración de sistemas."
 ---
 
 # Linux

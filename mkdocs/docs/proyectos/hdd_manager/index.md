@@ -1,10 +1,6 @@
 ---
 title: "HDD Manager"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 0.1.0
-tags: [documentación, borrador]
+description: "HDD Manager: propuesta de herramienta para identificar, formatear, montar y diagnosticar discos duros externos (borrador)."
 ---
 
 # 🚀 HDD Manager

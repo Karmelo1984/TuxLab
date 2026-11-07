@@ -1,9 +1,6 @@
 ---
 title: "Git: fundamentos y flujo de trabajo"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 2.0.0
+description: "Fundamentos de Git: control de versiones distribuido, commits, ramas y comandos habituales para trabajar con trazabilidad."
 ---
 
 # Guía de Git

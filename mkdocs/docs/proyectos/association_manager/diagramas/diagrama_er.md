@@ -1,10 +1,6 @@
 ---
 title: "Diagrama Entidad-Relación (DER)"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-25
-version: 1.0.0
-tags: [base de datos, ERD]
+description: "Diagrama entidad-relación con las entidades de la base de datos de Gestor de Asociaciones."
 ---
 
 # 📌 Diagrama Entidad-Relación (DER)

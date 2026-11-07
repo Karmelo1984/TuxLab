@@ -1,10 +1,6 @@
 ---
 title: "Secciones del Sistema"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
-tags: [módulos, estructura]
+description: "Secciones funcionales en las que se organiza License Manager."
 ---
 
 # 🗂 Secciones del Sistema  

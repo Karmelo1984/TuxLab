@@ -1,9 +1,6 @@
 ---
 title: "HomeBridge"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Despliegue de Homebridge con Docker para integrar en Apple HomeKit dispositivos que no son compatibles de forma nativa."
 ---
 
 # Homebridge

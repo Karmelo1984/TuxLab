@@ -1,7 +1,6 @@
 ---
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-19
+title: "Troubleshooting y Optimización"
+description: "Página reservada para la resolución de problemas y la optimización de Docker; el contenido está en desarrollo."
 ---
 
 # Troubleshooting y Optimización

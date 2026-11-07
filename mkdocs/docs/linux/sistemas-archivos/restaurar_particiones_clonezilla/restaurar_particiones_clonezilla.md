@@ -1,9 +1,6 @@
 ---
 title: "Restauración de Particiones desde Imágenes de Clonezilla"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Reconstruir una imagen de disco GPT a partir de las imágenes de partición de Clonezilla mediante dispositivos de bucle."
 ---
 
 # Restauración de Particiones desde Imágenes de Clonezilla

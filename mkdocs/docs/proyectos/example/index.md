@@ -1,10 +1,6 @@
 ---
 title: "[NOMBRE DEL PROYECTO]"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
-tags: [documentación]
+description: "Plantilla de índice de proyecto con marcadores de posición para descripción, objetivos, épicas y arquitectura."
 ---
 
 # 🚀 [NOMBRE DEL PROYECTO]

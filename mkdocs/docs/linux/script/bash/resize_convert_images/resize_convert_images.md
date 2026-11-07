@@ -1,9 +1,6 @@
 ---
 title: "image_resize_convert.sh"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Script Bash que redimensiona imágenes JPG a 1200x400 px, las convierte a PNG y conserva una copia de los originales."
 ---
 
 # image_resize_convert

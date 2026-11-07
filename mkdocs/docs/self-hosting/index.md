@@ -1,9 +1,6 @@
 ---
 title: "Self-Hosting"
-authors:
-  - Carmelo Molero Castillo
-date: 2026-10-12
-version: 1.0.0
+description: "Índice de aplicaciones autohospedadas con Docker: multimedia, copias de seguridad, redes, almacenamiento y monitorización."
 ---
 
 # Self-Hosting

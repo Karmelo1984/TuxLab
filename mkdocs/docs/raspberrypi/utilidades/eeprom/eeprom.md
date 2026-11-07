@@ -1,9 +1,6 @@
 ---
 title: "Flashear EEPROM en Raspberry Pi"
-authors:
-  - Carmelo Molero Castillo
-date: 2025-03-21
-version: 1.0.0
+description: "Actualizar el firmware de la EEPROM de arranque de una Raspberry Pi y verificar la versión instalada."
 ---
 
 # Flashear EEPROM
