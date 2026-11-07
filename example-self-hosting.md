@@ -10,7 +10,7 @@ version: {{ version }}
 
 ![{{ title }}](./img/{{ image_header }})
 
-**{{ title }}** es una plataforma {{ tipo_de_software }} que permite a los usuarios {{ descripcion_breve }}. 
+**{{ title }}** es una plataforma {{ tipo_de_software }} que permite a los usuarios {{ descripcion_breve }}.
 
 A diferencia de {{ alternativas }}, {{ title }} {{ diferencias_clave }}. Ofrece una interfaz {{ caracteristicas_principales }}.
 
@@ -33,7 +33,7 @@ Todos los ficheros relacionados con nuestra instalación de **{{ title }}** se a
 ### Paso 2: Crear el archivo `docker-compose.yml`
 
 ```bash
-$ vim {{ ruta_docker_compose }}
+vim {{ ruta_docker_compose }}
 ```
 
 ### Paso 3: Estructura de directorios esperada
@@ -49,9 +49,9 @@ $ tree ~
 ## Despliegue de `docker-compose.yml`
 
 ```bash
-$ docker-compose up -d
-$ docker-compose down
-$ docker logs -f <ID_CONTENEDOR>
+docker-compose up -d
+docker-compose down
+docker logs -f <ID_CONTENEDOR>
 ```
 
 ### Contenido del archivo `docker-compose.yml`

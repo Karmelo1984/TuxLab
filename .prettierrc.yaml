@@ -1,0 +1,2 @@
+# Prettier solo para YAML; Markdown lo formatea markdownlint (evita conflicto de estilo de listas).
+tabWidth: 2

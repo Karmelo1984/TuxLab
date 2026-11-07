@@ -9,6 +9,7 @@ version: 1.0.0
 # nombre
 
 ## Descripción
+
 Este script ....
 
 ---
@@ -18,12 +19,14 @@ Este script ....
 ---
 
 ## Dependencias
-- 
+
+-
 
 ---
 
 ## Requisitos
-- 
+
+-
 
 ---
 

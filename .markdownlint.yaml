@@ -1,0 +1,16 @@
+default: true
+MD004: { style: dash }
+MD007: { indent: 4 }
+MD013: false # longitud de línea
+MD033: false # HTML inline (Material)
+MD041: false
+MD046: false # admonitions indentados
+MD049: { style: underscore }
+MD050: { style: asterisk }
+MD025: false # título en front-matter + H1
+MD040: false # bloques de código sin lenguaje
+MD060: false # estilo de columnas en tablas
+MD001: false # saltos de nivel de título
+MD024: false # títulos duplicados
+MD036: false # negrita como título
+MD056: false # nº columnas tabla

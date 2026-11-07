@@ -1,5 +1,4 @@
 services:
-
   # ================== MKDocs
   mkdocs:
     container_name: mkdocs
@@ -7,13 +6,13 @@ services:
     restart: unless-stopped
 
     environment:
-      LIVE_RELOAD_SUPPORT: 'true'
-      ADD_MODULES: 'fontawesome-markdown mkdocs-git-revision-date-localized-plugin mkdocs-material mkdocs-mermaid2-plugin mkdocs-awesome-pages-plugin'
-      FAST_MODE: 'true'
-      DOCS_DIRECTORY: '/mkdocs'
+      LIVE_RELOAD_SUPPORT: "true"
+      ADD_MODULES: "fontawesome-markdown mkdocs-git-revision-date-localized-plugin mkdocs-material mkdocs-mermaid2-plugin mkdocs-awesome-pages-plugin"
+      FAST_MODE: "true"
+      DOCS_DIRECTORY: "/mkdocs"
 
     ports:
       - "8000:8000"
 
     volumes:
-      - ./volume/mkdocs:/mkdocs
+      - ./mkdocs:/mkdocs

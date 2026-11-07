@@ -12,16 +12,13 @@ version: 1.0.0
 
 **Descripción**:  
 
-
 ---
 
 ## Instalación
 
-
 ### Requisitos previos
 
-
-### Instalación en Linux 
+### Instalación en Linux
 
 ---
 
@@ -40,4 +37,4 @@ version: 1.0.0
 ## Solución de Problemas
 
 **Error: ""**  
-🔹 Solución: 
+🔹 Solución:
