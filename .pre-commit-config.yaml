@@ -39,7 +39,7 @@ repos:
         files: ^mkdocs/docs/.*\.md$
       - id: mkdocs-build
         name: mkdocs build (igual que Pages)
-        entry: mkdocs build --clean --config-file mkdocs/mkdocs.yml --site-dir /tmp/tuxlab-site
+        entry: .venv/bin/mkdocs build --clean --config-file mkdocs/mkdocs.yml --site-dir /tmp/tuxlab-site
         language: system
         pass_filenames: false
         always_run: true

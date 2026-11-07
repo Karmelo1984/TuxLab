@@ -167,7 +167,7 @@ pip install -r requirements-mkdocs.txt pre-commit
 pre-commit install
 ```
 
-En cada sesión nueva, activa el entorno con `source .venv/bin/activate` antes de hacer `git commit` o `git push`; los hooks usan `mkdocs` y `pre-commit` del entorno activo.
+Los hooks usan `.venv/bin/mkdocs` directamente, así que `git commit` y `git push` funcionan también desde VS Code sin activar el entorno. Actívalo (`source .venv/bin/activate`) solo para ejecutar `pre-commit` o `mkdocs` a mano.
 
 ### Comprobaciones con pre-commit
 
