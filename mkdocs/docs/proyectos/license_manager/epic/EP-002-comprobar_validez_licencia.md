@@ -3,29 +3,29 @@ title: "EP-002 - Comprobar Validez de una Licencia"
 description: "Épica de License Manager: EP-002 - Comprobar Validez de una Licencia."
 ---
 
-# 🏗 EP-002 - Comprobar Validez de una Licencia
+# EP-002 - Comprobar Validez de una Licencia
 
-## 📖 Descripción  
+## Descripción  
 
-🔍 **Propósito y valor:**  
+**Propósito y valor:**  
 Esta épica tiene como objetivo permitir al administrador verificar si una licencia es válida, es decir, si está dentro de su fecha de activación y no ha expirado. Aunque la licencia esté encriptada, el sistema debe ser capaz de comprobar su validez de forma transparente.
 
 **Valor:** Garantiza que solo las licencias válidas se utilicen, protegiendo el software y asegurando que las empresas no utilicen licencias caducadas o falsificadas.
 
-## 🎯 Objetivo  
+## Objetivo  
 
 El objetivo de esta épica es implementar un sistema que permita verificar la validez de una licencia encriptada de manera sencilla, comprobando fechas de activación y expiración, así como cualquier otra restricción asociada a la licencia.
 
-## 🏗 Proyecto relacionado  
+## Proyecto relacionado  
 
-📌 **Parte del proyecto:** [License Manager](../index.md)
+**Parte del proyecto:** [License Manager](../index.md)
 
-## 🏗 Historias de usuario relacionadas  
+## Historias de usuario relacionadas  
 
 - HU-003 - Comprobar Licencia Válida _(pendiente)_  
 - HU-004 - Verificar Fecha de Expiración de Licencia _(pendiente)_  
 
-## ✅ Criterios de finalización  
+## Criterios de finalización  
 
 - El sistema debe ser capaz de verificar la validez de una licencia encriptada sin necesidad de desencriptarla manualmente.  
 - El proceso de validación debe comprobar la fecha de activación y la fecha de expiración, y verificar que la licencia aún esté dentro del período válido.  

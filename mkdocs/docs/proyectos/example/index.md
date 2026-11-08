@@ -3,17 +3,17 @@ title: "[NOMBRE DEL PROYECTO]"
 description: "Plantilla de índice de proyecto con marcadores de posición para descripción, objetivos, épicas y arquitectura."
 ---
 
-# 🚀 [NOMBRE DEL PROYECTO]
+# [NOMBRE DEL PROYECTO]
 
 ---
 
-## 📖 **Descripción General**  
+## **Descripción General**  
 
 [Breve descripción del propósito del proyecto, su función principal y a quién va dirigido.]
 
 ---
 
-## 🎯 **Objetivos**  
+## **Objetivos**  
 
 - [Objetivo 1]  
 - [Objetivo 2]  
@@ -21,7 +21,7 @@ description: "Plantilla de índice de proyecto con marcadores de posición para 
 
 ---
 
-## 🛠 **Tecnologías Utilizadas**  
+## **Tecnologías Utilizadas**  
 
 - **Backend:** [Tecnología Backend]  
 - **Frontend:** [Tecnología Frontend]  
@@ -30,13 +30,13 @@ description: "Plantilla de índice de proyecto con marcadores de posición para 
 
 ---
 
-## 📦 **Repositorio del Código**  
+## **Repositorio del Código**  
 
 [Enlace al repositorio en GitHub/GitLab](https://github.com/usuario/repositorio)  
 
 ---
 
-## 🏛️ **Arquitectura del Sistema**  
+## **Arquitectura del Sistema**  
 
 ```mermaid
 
@@ -44,26 +44,26 @@ description: "Plantilla de índice de proyecto con marcadores de posición para 
 
 ---
 
-## 📊 **Diagramas del Sistema**  
+## **Diagramas del Sistema**  
 
 - [Diagrama de Clases](diagramas/diagrama_clases.md)
 - [Diagrama Entidad-Relación](diagramas/diagrama_er.md)
 
 ---
 
-## 👥 **Actores del Sistema**
+## **Actores del Sistema**
 
 - [Actores](actores.md)
 
 ---
 
-## 🗂️ **Secciones**
+## **Secciones**
 
 - [Secciones de la Aplicación](secciones.md)
 
 ---
 
-## 📚 **Épicas**  
+## **Épicas**  
 
 - Épica 1  
 - Épica 2  

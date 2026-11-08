@@ -55,6 +55,41 @@ Se invoca con `/nombre-de-la-skill` al inicio de un mensaje, y admite argumentos
 
 Úsala para un procedimiento que se repite y es demasiado largo para `CLAUDE.md`. Si la comprobación debe ejecutarse siempre y sin depender del criterio del modelo, usa un [hook](hooks.md).
 
+## Gestionar skills con Skills CLI
+
+[Skills CLI](https://skills.sh/) es un gestor externo para descubrir, instalar y mantener skills de distintos agentes. **No es el sistema de plugins de Claude Code**. Para usarlo con `npx`, necesitas Node.js 22.20 o posterior.
+
+```bash
+# Buscar por tema
+npx skills find
+npx skills find playwright
+
+# Instalar find-skills globalmente solo para Claude Code
+npx skills add vercel-labs/skills --skill find-skills -g -a claude-code -y
+
+# Consultar y mantener skills
+npx skills list -g
+npx skills check
+npx skills update
+```
+
+`find-skills` permite a Claude descubrir skills cuando solicitas capacidades nuevas. **No instala automáticamente todas las skills encontradas**; revisa el origen, los scripts y los permisos de cada una antes de instalar. Sin `-g`, la instalación de Skills CLI es local al proyecto por defecto.
+
+### Crear skills propias
+
+La skill oficial _Skill Creator_ ayuda a redactar, evaluar e iterar skills. Se distribuye como plugin de Claude Code:
+
+```bash
+claude plugin install skill-creator@claude-plugins-official --scope user
+claude plugin list
+```
+
+Si el marketplace oficial no está configurado, consulta primero `claude plugin marketplace list` y la documentación oficial de plugins. Para una plantilla básica también existe `npx skills init <nombre>`.
+
+**Diferencias:** una _skill_ aporta instrucciones y recursos; un _plugin_ puede agrupar skills, hooks y servidores MCP. Ninguno equivale a una validación determinista de arquitectura o seguridad.
+
+Fuentes: [Skills CLI](https://github.com/vercel-labs/skills), [find-skills](https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md) y [Skill Creator](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator).
+
 ## Referencias
 
 - [Skills de Claude Code](https://code.claude.com/docs/en/skills)

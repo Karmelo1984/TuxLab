@@ -33,6 +33,17 @@ En `CLAUDE.md` puedes añadir un apartado `# Compact instructions` para guiar qu
 
 El contenido repetido al inicio de la petición se lee de caché a una tarifa menor; `/usage` muestra la proporción de aciertos. La caché caduca tras un tiempo sin uso; la duración exacta no figura en la página de costes, consulta la documentación de caché de prompts.
 
+## Herramientas complementarias
+
+| Herramienta | Efecto principal | Consideración |
+|-------------|------------------|---------------|
+| [Caveman](plugins-optimizacion.md#caveman-extension-de-respuestas) | Respuestas más breves | No implica reducción de tokens de entrada |
+| [Ponytail](plugins-optimizacion.md#ponytail-evitar-el-overengineering) | Menos complejidad accidental | No sustituye las restricciones de arquitectura |
+| [CodeGraph](mcp.md#codegraph-grafos-del-repositorio) | Búsqueda y relaciones de código | Requiere un índice por repositorio |
+| [Skills CLI](skills.md#gestionar-skills-con-skills-cli) | Capacidades especializadas | Instala solo las necesarias |
+
+**Medición:** compara tareas equivalentes, incluyendo tokens de entrada, salida y herramientas. No interpretes como ahorros garantizados las métricas promocionales de terceros.
+
 ## Referencias
 
 - [Gestión de costes](https://code.claude.com/docs/en/costs)

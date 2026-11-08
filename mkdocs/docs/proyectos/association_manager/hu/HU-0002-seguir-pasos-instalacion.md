@@ -3,11 +3,11 @@ title: "Seguir los pasos de instalación"
 description: "Historia de usuario de Gestor de Asociaciones: Seguir los pasos de instalación."
 ---
 
-# 📜 Seguir los pasos de instalación
+# Seguir los pasos de instalación
 
 ---
 
-## 📖 Descripción  
+## Descripción  
 
 **`COMO`**  usuario en proceso de instalación
 **`QUIERO`** que el instalador me guíe paso a paso
@@ -15,13 +15,13 @@ description: "Historia de usuario de Gestor de Asociaciones: Seguir los pasos de
 
 ---
 
-## 🏗 **Épica Relacionada**  
+## **Épica Relacionada**  
 
 **Parte de la épica:** [EP-0001 - Instalación de la Aplicación](../epic/EP-0001-instalacion.md)
 
 ---
 
-## 🎯 **Criterios de Aceptación**  
+## **Criterios de Aceptación**  
 
 ```gherkin
 Feature: Seguir los pasos de instalación

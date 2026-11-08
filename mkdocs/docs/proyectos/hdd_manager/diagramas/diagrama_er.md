@@ -3,7 +3,7 @@ title: "Diagrama Entidad-Relación (DER)"
 description: "Diagrama entidad-relación con las entidades de la base de datos de HDD Manager."
 ---
 
-# 📌 Diagrama Entidad-Relación (DER)
+# Diagrama Entidad-Relación (DER)
 
 Este diagrama muestra la estructura de la base de datos y cómo las entidades están relacionadas.
 

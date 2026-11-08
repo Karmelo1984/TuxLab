@@ -3,27 +3,27 @@ title: "[NOMBRE DE LA HISTORIA TÉCNICA]"
 description: "Plantilla de historia técnica de HDD Manager con marcadores de posición."
 ---
 
-# 🔧 [NOMBRE DE LA HISTORIA TÉCNICA]
+# [NOMBRE DE LA HISTORIA TÉCNICA]
 
-## 📖 **Descripción**  
+## **Descripción**  
 
 [Explicación breve del propósito técnico de la HT y su impacto en el sistema.]  
 
-## 🎯 **Objetivo**  
+## **Objetivo**  
 
 [¿Por qué es necesaria esta HT? ¿Qué problema resuelve o qué mejora introduce?]  
 
-## 🏗 **Historias de Usuario Relacionadas**  
+## **Historias de Usuario Relacionadas**  
 
-📌 **Soporta:**  
+**Soporta:**  
 
 - HU - Recuperación de contraseña  
 
 ---
 
-## ✅ **Criterios de aceptación**  
+## **Criterios de aceptación**  
 
-### **📌 Casos de prueba funcionales**  
+### **Casos de prueba funcionales**  
 
 | Entrada | Acción | Resultado Esperado |
 | --------- | -------- | -------------------- |
@@ -34,13 +34,13 @@ description: "Plantilla de historia técnica de HDD Manager con marcadores de po
 
 ---
 
-### **📌 Especificación Técnica**  
+### **Especificación Técnica**  
 
-#### 🔹 **1. Endpoint para recuperar contraseña**  
+#### **1. Endpoint para recuperar contraseña**  
 
-📌 **Método:** `POST`  
-📌 **Ruta:** `/auth/recover-password`  
-📌 **Cuerpo de la solicitud:**  
+**Método:** `POST`  
+**Ruta:** `/auth/recover-password`  
+**Cuerpo de la solicitud:**  
 
 ```json
 {
@@ -48,7 +48,7 @@ description: "Plantilla de historia técnica de HDD Manager con marcadores de po
 }
 ```
 
-📌 **Respuesta esperada (`200 OK`):**  
+**Respuesta esperada (`200 OK`):**  
 
 ```json
 {
@@ -58,15 +58,15 @@ description: "Plantilla de historia técnica de HDD Manager con marcadores de po
 
 ---
 
-#### 🔹 **2. Generación y expiración del token**
+#### **2. Generación y expiración del token**
 
-📌 **Reglas del token:**  
+**Reglas del token:**  
 
 - Generado como UUID único.  
 - Expira en **30 minutos**.  
 - Guardado en la base de datos en la tabla `password_resets`.  
 
-📌 **Ejemplo de inserción en base de datos:**  
+**Ejemplo de inserción en base de datos:**  
 
 ```sql
 INSERT INTO password_resets (email, token, expires_at)
@@ -75,9 +75,9 @@ VALUES ('usuario@example.com', '550e8400-e29b-41d4-a716-446655440000', NOW() + I
 
 ---
 
-#### 🔹 **3. Manejo de errores**  
+#### **3. Manejo de errores**  
 
-📌 **Si el token ha expirado, devolver:**  
+**Si el token ha expirado, devolver:**  
 
 ```json
 {
@@ -85,7 +85,7 @@ VALUES ('usuario@example.com', '550e8400-e29b-41d4-a716-446655440000', NOW() + I
 }
 ```
 
-📌 **Si el email no existe, devolver:**  
+**Si el email no existe, devolver:**  
 
 ```json
 {
@@ -95,17 +95,17 @@ VALUES ('usuario@example.com', '550e8400-e29b-41d4-a716-446655440000', NOW() + I
 
 ---
 
-## 📌 **Impacto en el sistema**  
+## **Impacto en el sistema**  
 
-📌 **Afecta a:**  
+**Afecta a:**  
 
-- 📂 **Módulo de autenticación**  
-- 🗂 **Base de datos (tabla `password_resets`)**  
-- ✉️ **Servicio de correo**  
+- **Módulo de autenticación**  
+- **Base de datos (tabla `password_resets`)**  
+- **Servicio de correo**  
 
-## ✅ **Criterios de finalización**  
+## **Criterios de finalización**  
 
-✅ Endpoint implementado y probado.  
-✅ Token de recuperación funcional con expiración.  
-✅ Se han realizado pruebas unitarias y de integración.  
-✅ QA ha validado todos los casos de prueba.  
+Endpoint implementado y probado.  
+Token de recuperación funcional con expiración.  
+Se han realizado pruebas unitarias y de integración.  
+QA ha validado todos los casos de prueba.  

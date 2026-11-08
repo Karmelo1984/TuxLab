@@ -3,33 +3,33 @@ title: "[NOMBRE DE LA ÉPICA]"
 description: "Plantilla de épica de el proyecto de ejemplo con marcadores de posición."
 ---
 
-# 🏗 [NOMBRE DE LA ÉPICA]---
+# [NOMBRE DE LA ÉPICA]---
 
 ---
 
-[🔙 Volver al índice del proyecto](../index.md)
+[Volver al índice del proyecto](../index.md)
 
 ---
 
-## 📖 Descripción  
+## Descripción  
 
 [Breve descripción de la épica, explicando el objetivo y el valor que aporta al proyecto.]
 
 ---
 
-## 🎯 Objetivo  
+## Objetivo  
 
 [¿Qué se busca lograr con esta épica? ¿Por qué es importante?]
 
 ---
 
-## 🧱 Dependencias Técnicas  
+## Dependencias Técnicas  
 
 - [Listado de otras épicas o condiciones que deben ser operativas para el uso de esta épica]
 
 ---
 
-## 🏗 Historias de usuario relacionadas  
+## Historias de usuario relacionadas  
 
 - Historia 1 - Nombre de la historia  
 - Historia 2 - Nombre de la historia  
@@ -37,10 +37,10 @@ description: "Plantilla de épica de el proyecto de ejemplo con marcadores de po
 
 ---
 
-## ✅ Criterios de finalización  
+## Criterios de finalización  
 
 [Condiciones que indican que esta épica se considera completada, como implementación de todas las historias, validaciones de usuario, pruebas exitosas, etc.]
 
 ---
 
-[🔙 Volver al índice del proyecto](../index.md)
+[Volver al índice del proyecto](../index.md)

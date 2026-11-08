@@ -134,13 +134,11 @@ Las extensiones se configuran en `mkdocs/mkdocs.yml`. No dupliques extensiones n
 
 Usa un bloque Markdown con lenguaje `mermaid`:
 
-````markdown
 ```mermaid
 flowchart LR
     A[Editar documento] --> B[Validar]
     B --> C[Publicar]
 ```
-````
 
 ### Navegación
 
@@ -179,11 +177,12 @@ El repositorio incluye `.pre-commit-config.yaml` con verificaciones de formato, 
 Para ejecutarlos a mano:
 
 ```bash
-pre-commit run --all-files --show-diff-on-failure
-pre-commit run --all-files --hook-stage pre-push
+scripts/check.sh
 ```
 
-Algunos hooks pueden **modificar archivos automáticamente**. Revisa `git diff` y vuelve a ejecutar las comprobaciones antes de confirmar los cambios.
+El script indexa los cambios (`git add -A`), deja que los hooks con `--fix` corrijan los archivos, vuelve a indexar y verifica con las reglas de `pre-commit` y `pre-push`. Si termina con `OK`, `git commit` no volverá a fallar por correcciones automáticas.
+
+`git commit` comprueba solo lo **indexado**, no el árbol de trabajo. Por eso una ejecución manual puede pasar y el commit fallar si los hooks modifican archivos durante el commit.
 
 `mkdocs/mkdocs.yml` contiene tags de configuración específicos de MkDocs (como `!ENV` y `!!python/name`): su comprobación funcional se realiza con `mkdocs build`, no con el validador YAML genérico de pre-commit.
 

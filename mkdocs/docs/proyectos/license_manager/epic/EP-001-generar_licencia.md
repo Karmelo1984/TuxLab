@@ -3,29 +3,29 @@ title: "EP-001 - Generar Licencia"
 description: "Épica de License Manager: EP-001 - Generar Licencia."
 ---
 
-# 🏗 EP-001 - Generar Licencia
+# EP-001 - Generar Licencia
 
-## 📖 Descripción  
+## Descripción  
 
-🔍 **Propósito y valor:**  
+**Propósito y valor:**  
 Esta épica tiene como objetivo permitir al administrador generar nuevas licencias para las empresas. El proceso de generación incluirá la creación de un archivo JSON con los datos de la licencia, como la fecha de activación, expiración, límite de socios y funcionalidades, que luego será encriptado de manera transparente para el usuario.
 
 **Valor:** Asegura que el proceso de creación de licencias sea seguro y automatizado, protegiendo la información sensible mientras facilita la gestión de licencias.
 
-## 🎯 Objetivo  
+## Objetivo  
 
 El objetivo de esta épica es permitir la creación de nuevas licencias para empresas, asegurándose de que la información se almacene de manera segura en formato encriptado. Esto debe incluir la capacidad para asignar funcionalidades específicas a cada licencia y definir parámetros clave como la fecha de activación y expiración.
 
-## 🏗 Proyecto relacionado  
+## Proyecto relacionado  
 
-📌 **Parte del proyecto:** [License Manager](../index.md)
+**Parte del proyecto:** [License Manager](../index.md)
 
-## 🏗 Historias de usuario relacionadas  
+## Historias de usuario relacionadas  
 
 - HU-001 - Crear Licencia _(pendiente)_  
 - HU-002 - Asignar Funcionalidades a Licencia _(pendiente)_  
 
-## ✅ Criterios de finalización  
+## Criterios de finalización  
 
 - El sistema debe generar una licencia con todos los parámetros necesarios: empresa asociada, fecha de activación, expiración, máximo de socios, precio y funcionalidades.  
 - La licencia debe ser almacenada en formato JSON y encriptada con el sistema de claves públicas y privadas.  

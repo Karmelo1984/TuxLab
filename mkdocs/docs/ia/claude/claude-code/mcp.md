@@ -41,6 +41,53 @@ La opción `--scope` acepta `local` (por defecto), `project` y `user`. El ámbit
 
 Los servidores de `.mcp.json` requieren aprobación antes de usarse.
 
+## CodeGraph: grafos del repositorio
+
+[CodeGraph](https://github.com/colbymchenry/codegraph) analiza relaciones del código y expone herramientas a Claude Code mediante MCP. **Hay dos pasos independientes**:
+
+```bash
+# 1. Instalar el ejecutable y registrar el MCP en el usuario
+npm install -g @colbymchenry/codegraph
+codegraph install --target=claude --location=global --no-permissions --yes
+
+# 2. Indexar cada proyecto donde quieras usarlo
+cd /ruta/a/tu/repositorio
+codegraph init
+```
+
+`--no-permissions` evita añadir aprobaciones automáticas de herramientas MCP. La instalación global no crea índices automáticamente: `codegraph init` genera `.codegraph/` en cada repositorio. Valora excluir ese índice del control de versiones según la política del proyecto.
+
+```bash
+# Comprobar que el servidor MCP está registrado
+claude mcp list
+
+# Consultar la ayuda del ejecutable
+codegraph --help
+
+# Eliminar el índice del proyecto (desde su raíz)
+codegraph uninit
+
+# Retirar la integración global del agente (si procede)
+codegraph uninstall
+```
+
+Si `claude mcp list` ya incluye `codegraph`, **no repitas la integración**: basta con comprobar si el proyecto está indexado. `MCP conectado` no significa `grafo del proyecto listo`.
+
+### Alternativa: Graphify
+
+[Graphify](https://github.com/Graphify-Labs/graphify) genera un grafo consultable de código, documentos, configuraciones y esquemas SQL. Se instala como **skill**; no es necesario añadirlo si CodeGraph ya resuelve el caso de uso.
+
+```bash
+brew install uv
+uv tool install graphifyy
+# Registra la skill para los asistentes detectados
+graphify install
+```
+
+Desde Claude Code: `/graphify .`. El paquete oficial de PyPI es `graphifyy` (doble `y`). Compara cobertura y utilidad antes de mantener dos indexadores.
+
+**Fuente de CodeGraph:** [instalación oficial](https://colbymchenry.github.io/codegraph/getting-started/installation/). **Fuente de Graphify:** [guía oficial](https://github.com/Graphify-Labs/graphify).
+
 ## Riesgos
 
 - Un servidor MCP ejecuta código o accede a datos con tus credenciales: instala solo servidores de confianza.

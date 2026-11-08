@@ -19,6 +19,7 @@ La documentación oficial distingue varios mecanismos que no son intercambiables
 | Acceso a herramientas o datos externos | [MCP](mcp.md) | Según permisos |
 | Tarea aislada con contexto propio | [Subagente](subagentes.md) | Contexto independiente |
 | Límite técnico de lo que puede hacer | [Permisos y seguridad](seguridad.md) | Aplicada por el sistema |
+| Respuestas breves y menor complejidad | [Caveman y Ponytail](plugins-optimizacion.md) | Orientativa: requiere verificación |
 
 Una instrucción en `CLAUDE.md` no es un control de seguridad: el modelo puede no seguirla. Lo que debe cumplirse siempre se implementa con hooks o permisos.
 
@@ -31,6 +32,7 @@ Una instrucción en `CLAUDE.md` no es un control de seguridad: el modelo puede n
 - [Subagentes](subagentes.md)
 - [Seguridad y permisos](seguridad.md)
 - [Optimización de contexto y costes](optimizacion.md)
+- [Plugins de optimización: Caveman y Ponytail](plugins-optimizacion.md)
 
 ## Compatibilidad
 

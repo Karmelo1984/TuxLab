@@ -3,27 +3,27 @@ title: "[NOMBRE DE LA ÉPICA]"
 description: "Plantilla de épica de HDD Manager con marcadores de posición."
 ---
 
-# 🏗 [NOMBRE DE LA ÉPICA]
+# [NOMBRE DE LA ÉPICA]
 
-## 📖 Descripción  
+## Descripción  
 
-🔍 **Propósito y valor:**  
+**Propósito y valor:**  
 [Breve descripción de la épica, explicando el objetivo y el valor que aporta al proyecto.]
 
-## 🎯 Objetivo  
+## Objetivo  
 
 [¿Qué se busca lograr con esta épica? ¿Por qué es importante?]
 
-## 🏗 Proyecto relacionado  
+## Proyecto relacionado  
 
-📌 **Parte del proyecto:** [Nombre del proyecto](../index.md)
+**Parte del proyecto:** [Nombre del proyecto](../index.md)
 
-## 🏗 Historias de usuario relacionadas  
+## Historias de usuario relacionadas  
 
 - Historia 1 - Nombre de la historia  
 - Historia 2 - Nombre de la historia  
 - Historia 3 - Nombre de la historia  
 
-## ✅ Criterios de finalización  
+## Criterios de finalización  
 
 [Condiciones que indican que esta épica se considera completada, como implementación de todas las historias, validaciones de usuario, pruebas exitosas, etc.]

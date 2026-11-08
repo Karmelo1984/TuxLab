@@ -3,11 +3,11 @@ title: "Ejecutar el instalador"
 description: "Historia de usuario de Gestor de Asociaciones: Ejecutar el instalador."
 ---
 
-# 📜 Ejecutar el instalador
+# Ejecutar el instalador
 
 ---
 
-## 📖 Descripción  
+## Descripción  
 
 **`COMO`**  cualquier usuario con SO Windows 10 o superior
 **`QUIERO`**  poder instalar el software de gestión en mi sistema, sin ningún problema
@@ -15,13 +15,13 @@ description: "Historia de usuario de Gestor de Asociaciones: Ejecutar el instala
 
 ---
 
-## 🏗 **Épica Relacionada**  
+## **Épica Relacionada**  
 
 **Parte de la épica:** [EP-0001 - Instalación de la Aplicación](../epic/EP-0001-instalacion.md)
 
 ---
 
-## 🎯 **Criterios de Aceptación**  
+## **Criterios de Aceptación**  
 
 ```gherkin
 Feature: Ejecutar el instalador

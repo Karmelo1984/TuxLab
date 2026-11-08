@@ -3,34 +3,34 @@ title: "Primera Ejecución del Programa"
 description: "Épica de Gestor de Asociaciones: Primera Ejecución del Programa."
 ---
 
-# 🏗 EP-0002 - Primera Ejecución del Programa
+# EP-0002 - Primera Ejecución del Programa
 
 ---
 
-[🔙 Volver al índice del proyecto](../index.md)
+[Volver al índice del proyecto](../index.md)
 
 ---
 
-## 📖 Descripción
+## Descripción
 
 Esta épica cubre el comportamiento y configuración del sistema durante su primer arranque, justo después de una instalación exitosa. Aquí se valida la licencia, se activa el sistema, se recopila información básica de la asociación y se inicializa el entorno de trabajo.
 
 ---
 
-## 🎯 Objetivo  
+## Objetivo  
 
 Permitir al usuario activar el sistema, ingresar datos esenciales y dejarlo listo para comenzar la operación diaria.
 
 ---
 
-## 🧱 Dependencias Técnicas  
+## Dependencias Técnicas  
 
 - La aplicación debe haber sido instalada (ver [EP-0001](./EP-0001-instalacion.md))
 - Debe existir una licencia válida en la carpeta correspondiente
 
 ---
 
-## 🏗 Historias de usuario relacionadas  
+## Historias de usuario relacionadas  
 
 - HU-0005 - Verificar archivo de licencia _(pendiente)_  
 - HU-0006 - Activar la licencia del programa _(pendiente)_  
@@ -39,7 +39,7 @@ Permitir al usuario activar el sistema, ingresar datos esenciales y dejarlo list
 
 ---
 
-## ✅ Criterios de finalización  
+## Criterios de finalización  
 
 - Se verifica la presencia y validez de una licencia
 - El sistema se activa correctamente y guarda estado
@@ -48,4 +48,4 @@ Permitir al usuario activar el sistema, ingresar datos esenciales y dejarlo list
 
 ---
 
-[🔙 Volver al índice del proyecto](../index.md)
+[Volver al índice del proyecto](../index.md)

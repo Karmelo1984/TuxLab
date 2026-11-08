@@ -18,7 +18,6 @@ description: "Portada de TuxLab: documentación técnica personal sobre Linux ba
 | [Linux](linux/index.md)                                       | Redes (SSH, DHCP, DDNS), sistemas de archivos y scripts                        |
 | [Raspberry Pi](raspberrypi/raspberrypi.md)                    | Instalación, utilidades, cámara y servidor NAS                                 |
 | [Desarrollo](dev/index.md)                                    | Git: fundamentos, flujo para QA y publicación de versiones                     |
-| [Proyectos](proyectos/index.md)                               | Proyectos propios con épicas, historias de usuario y diagramas                 |
 | [IA](ia/index.md)                                             | Fundamentos de IA, ChatGPT y Claude Code                                       |
 
 ## Objetivo

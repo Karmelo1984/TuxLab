@@ -3,11 +3,11 @@ title: "Desinstalar la aplicación"
 description: "Historia de usuario de Gestor de Asociaciones: Desinstalar la aplicación."
 ---
 
-# 📜 Desinstalar la aplicación
+# Desinstalar la aplicación
 
 ---
 
-## 📖 Descripción  
+## Descripción  
 
 **`COMO`** usuario que ya no necesita la aplicación
 **`QUIERO`** poder desinstalarla fácilmente
@@ -15,13 +15,13 @@ description: "Historia de usuario de Gestor de Asociaciones: Desinstalar la apli
 
 ---
 
-## 🏗 **Épica Relacionada**  
+## **Épica Relacionada**  
 
 **Parte de la épica:** [EP-0001 - Instalación de la Aplicación](../epic/EP-0001-instalacion.md)
 
 ---
 
-## 🎯 **Criterios de Aceptación**  
+## **Criterios de Aceptación**  
 
 ```gherkin
 Feature: Desinstalar la aplicación

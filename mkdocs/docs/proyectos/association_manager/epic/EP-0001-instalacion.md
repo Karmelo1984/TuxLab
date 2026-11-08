@@ -3,27 +3,27 @@ title: "Instalación de la Aplicación"
 description: "Épica de Gestor de Asociaciones: Instalación de la Aplicación."
 ---
 
-# 🏗 EP-0001 - Instalación de la Aplicación
+# EP-0001 - Instalación de la Aplicación
 
 ---
 
-[🔙 Volver al índice del proyecto](../index.md)
+[Volver al índice del proyecto](../index.md)
 
 ---
 
-## 📖 Descripción  
+## Descripción  
 
 Esta épica cubre todo el proceso de instalación del sistema de gestión para asociaciones. El objetivo es asegurar que, una vez completada, el entorno base esté listo para ejecutar la aplicación por primera vez: estructura de carpetas creada, base de datos inicializada, licencia incluida y ejecutable funcional.
 
 ---
 
-## 🎯 Objetivo  
+## Objetivo  
 
 Proporcionar un entorno funcional donde se pueda ejecutar correctamente el software de gestión, con todos los archivos y dependencias preparados.
 
 ---
 
-## 🧱 Dependencias Técnicas  
+## Dependencias Técnicas  
 
 - Python y sus dependencias
 - Herramientas de creación de ejecutables (como `PyInstaller`)
@@ -31,7 +31,7 @@ Proporcionar un entorno funcional donde se pueda ejecutar correctamente el softw
 
 ---
 
-## 🏗 Historias de usuario relacionadas  
+## Historias de usuario relacionadas  
 
 - [HU-0001 - Ejecutar el instalador](../hu/HU-0001-ejecutar-instalador.md)  
 - [HU-0002 - Seguir los pasos de instalación](../hu/HU-0002-seguir-pasos-instalacion.md)  
@@ -40,7 +40,7 @@ Proporcionar un entorno funcional donde se pueda ejecutar correctamente el softw
 
 ---
 
-## ✅ Criterios de finalización  
+## Criterios de finalización  
 
 - Se genera la estructura de carpetas básica (`data`, `logs`, `resources`, `license`, etc.)
 - Se copia el ejecutable (`dist/`) y los recursos estáticos
@@ -50,4 +50,4 @@ Proporcionar un entorno funcional donde se pueda ejecutar correctamente el softw
 
 ---
 
-[🔙 Volver al índice del proyecto](../index.md)
+[Volver al índice del proyecto](../index.md)

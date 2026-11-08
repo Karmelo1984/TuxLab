@@ -3,18 +3,18 @@ title: "[NOMBRE DE LA HISTORIA]"
 description: "Plantilla de historia de usuario de HDD Manager con marcadores de posición."
 ---
 
-# 📜 [NOMBRE DE LA HISTORIA]
+# [NOMBRE DE LA HISTORIA]
 
-## 📖 Descripción  
+## Descripción  
 
-🔍 **Propósito y valor:**  
+**Propósito y valor:**  
 [Breve descripción de la historia de usuario, explicando el propósito y el valor que aporta.]
 
-## 🏗 **Épica Relacionada**  
+## **Épica Relacionada**  
 
-📌 **Parte de la épica:** 🏗 Nombre de la épica
+**Parte de la épica:** Nombre de la épica
 
-## 🎯 **Criterios de Aceptación**  
+## **Criterios de Aceptación**  
 
 ```gherkin
 Feature: [Funcionalidad o módulo]

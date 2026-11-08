@@ -3,7 +3,7 @@ title: "Diagrama de Clases"
 description: "Diagrama de clases con la estructura y las relaciones de los componentes de el proyecto de ejemplo. Contenido de ejemplo con marcadores de posición."
 ---
 
-# 📌 Diagrama de Clases  
+# Diagrama de Clases  
 
 El siguiente diagrama de clases representa la estructura del sistema y las relaciones entre sus componentes principales.
 
@@ -49,6 +49,6 @@ classDiagram
 
 ---
 
-[🔙 Volver al índice del proyecto](../index.md)
+[Volver al índice del proyecto](../index.md)
 
 ---

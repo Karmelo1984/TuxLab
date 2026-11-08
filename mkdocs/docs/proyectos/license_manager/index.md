@@ -3,13 +3,13 @@ title: "License Manager - Generador y Gestor de Licencias"
 description: "License Manager: aplicación de escritorio en Python para generar, renovar y gestionar licencias cifradas con SQLite."
 ---
 
-# 🚀 License Manager - Generador y Gestor de Licencias
+# License Manager - Generador y Gestor de Licencias
 
 ![License Manager](img/img-license_manager-header-01.svg)
 
 ---
 
-## 📖 **Descripción General**  
+## **Descripción General**  
 
 **License Manager** es una aplicación de escritorio desarrollada en Python que permite **generar**, **renovar** y **gestionar** licencias para otro software. Utiliza una base de datos SQLite para almacenar la información sobre las licencias, las empresas, y las funcionalidades habilitadas en cada licencia.
 
@@ -17,23 +17,23 @@ Este software permite crear licencias personalizadas, asociarlas a una empresa y
 
 ---
 
-## 🎯 **Objetivos**  
+## **Objetivos**  
 
-- ✅ **Generación y gestión de licencias:** Crear, renovar y eliminar licencias con información cifrada.  
-- ✅ **Integración con base de datos SQLite:** Almacenar licencias, empresas y características asociadas de manera eficiente.  
-- ✅ **Encriptación y seguridad:** Proteger las licencias mediante un sistema de cifrado con claves públicas y privadas.  
-
----
-
-## 📚 **Épicas**  
-
-- 🏗 [EP-001 - Generar Licencia](./epic/EP-001-generar_licencia.md)  
-- 🏗 [EP-002 - Comprobar Validez de una Licencia](./epic/EP-002-comprobar_validez_licencia.md)  
-- 🏗 [EP-003 - Renovar Licencia](./epic/EP-003-renovar_licencia.md)  
+- **Generación y gestión de licencias:** Crear, renovar y eliminar licencias con información cifrada.  
+- **Integración con base de datos SQLite:** Almacenar licencias, empresas y características asociadas de manera eficiente.  
+- **Encriptación y seguridad:** Proteger las licencias mediante un sistema de cifrado con claves públicas y privadas.  
 
 ---
 
-## 🏛️ **Arquitectura del Sistema**  
+## **Épicas**  
+
+- [EP-001 - Generar Licencia](./epic/EP-001-generar_licencia.md)  
+- [EP-002 - Comprobar Validez de una Licencia](./epic/EP-002-comprobar_validez_licencia.md)  
+- [EP-003 - Renovar Licencia](./epic/EP-003-renovar_licencia.md)  
+
+---
+
+## **Arquitectura del Sistema**  
 
 ```mermaid
 classDiagram
@@ -65,34 +65,34 @@ classDiagram
 
 ---
 
-## 🛠 **Tecnologías Utilizadas**  
+## **Tecnologías Utilizadas**  
 
-- 🖥 **Backend:** Python (con librerías como `PyCryptodome` para encriptación y `SQLite3` para la base de datos).  
-- 🎨 **Frontend:** Tkinter (si se va a utilizar una interfaz gráfica de usuario).  
-- 🗄 **Base de datos:** SQLite (estructura de tablas para almacenar información sobre licencias, empresas y características).  
-- ☁️ **Infraestructura:** No se requiere infraestructura en la nube, ya que el sistema es autónomo y basado en un escritorio local.  
-
----
-
-## 📦 **Repositorio del Código**  
-
-🔗 [Enlace al repositorio en GitHub](https://github.com/usuario/repositorio)  
+- **Backend:** Python (con librerías como `PyCryptodome` para encriptación y `SQLite3` para la base de datos).  
+- **Frontend:** Tkinter (si se va a utilizar una interfaz gráfica de usuario).  
+- **Base de datos:** SQLite (estructura de tablas para almacenar información sobre licencias, empresas y características).  
+- **Infraestructura:** No se requiere infraestructura en la nube, ya que el sistema es autónomo y basado en un escritorio local.  
 
 ---
 
-## 📊 **Diagramas del Sistema**
+## **Repositorio del Código**  
 
-- 🖼️ [Diagrama de Clases](diagramas/diagrama_clases.md)
-- 🖼️ [Diagrama Entidad-Relación](diagramas/diagrama_er.md)
-
----
-
-## 👥 **Actores del Sistema**
-
-- 👤 [Actores](actores.md)
+[Enlace al repositorio en GitHub](https://github.com/usuario/repositorio)  
 
 ---
 
-## 🗂️ **Secciones**
+## **Diagramas del Sistema**
 
-- 📂 [Secciones de la Aplicación](secciones.md)
+- [Diagrama de Clases](diagramas/diagrama_clases.md)
+- [Diagrama Entidad-Relación](diagramas/diagrama_er.md)
+
+---
+
+## **Actores del Sistema**
+
+- [Actores](actores.md)
+
+---
+
+## **Secciones**
+
+- [Secciones de la Aplicación](secciones.md)

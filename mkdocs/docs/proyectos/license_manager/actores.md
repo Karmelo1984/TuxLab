@@ -3,17 +3,17 @@ title: "Actores del Sistema"
 description: "Actores que interactúan con License Manager."
 ---
 
-# 👥 Actores del Sistema  
+# Actores del Sistema  
 
 En esta sección se describen los actores que interactúan con la aplicación.
 
 ---
 
-[🔙 Volver al índice del proyecto](./index.md)
+[Volver al índice del proyecto](./index.md)
 
 ---
 
-## 👤 **Administrador**
+## **Administrador**
 
 El administrador del sistema (en este caso, el propietario del software) tiene acceso completo a todas las funcionalidades del sistema de licencias. Sus principales responsabilidades son:
 
@@ -23,7 +23,7 @@ El administrador del sistema (en este caso, el propietario del software) tiene a
 - **Gestionar empresas**: Añadir, editar o eliminar empresas asociadas a las licencias generadas.
 - **Gestionar características**: Asignar o eliminar funcionalidades de las licencias disponibles para cada empresa.
 
-## 👤 **Sistema de Licencias**
+## **Sistema de Licencias**
 
 El sistema actúa de manera autónoma y se encarga de realizar ciertas acciones automáticas, como la encriptación y desencriptación de las licencias generadas. El sistema realiza las siguientes funciones:
 
@@ -33,6 +33,6 @@ El sistema actúa de manera autónoma y se encarga de realizar ciertas acciones 
 
 ---
 
-[🔙 Volver al índice del proyecto](./index.md)
+[Volver al índice del proyecto](./index.md)
 
 ---

@@ -3,11 +3,11 @@ title: "Confirmar instalación exitosa"
 description: "Historia de usuario de Gestor de Asociaciones: Confirmar instalación exitosa."
 ---
 
-# 📜 Confirmar instalación exitosa
+# Confirmar instalación exitosa
 
 ---
 
-## 📖 Descripción  
+## Descripción  
 
 **`COMO`**  usuario que ha completado la instalación
 **`QUIERO`** recibir una confirmación clara de que la aplicación está lista
@@ -15,13 +15,13 @@ description: "Historia de usuario de Gestor de Asociaciones: Confirmar instalaci
 
 ---
 
-## 🏗 **Épica Relacionada**  
+## **Épica Relacionada**  
 
 **Parte de la épica:** [EP-0001 - Instalación de la Aplicación](../epic/EP-0001-instalacion.md)
 
 ---
 
-## 🎯 **Criterios de Aceptación**  
+## **Criterios de Aceptación**  
 
 ```gherkin
 Feature: Confirmar instalación exitosa

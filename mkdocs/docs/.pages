@@ -5,5 +5,5 @@ nav:
   - Linux: linux
   - Raspberry Pi: raspberrypi
   - Desarrollo: dev
-  - Proyectos: proyectos
+  # - Proyectos: proyectos  # oculto: en desarrollo
   - IA: ia
